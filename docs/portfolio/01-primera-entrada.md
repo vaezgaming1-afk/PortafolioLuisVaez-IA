@@ -6,7 +6,7 @@ date: 2025-01-01
 # Entrada 01 — Mi primera experiencia
 
 ## Contexto
-Actividad inicial del curso.
+Actividad inicial del curso. hola
 
 ## Objetivos
 - Familiarizarme con el flujo de trabajo del portafolio
