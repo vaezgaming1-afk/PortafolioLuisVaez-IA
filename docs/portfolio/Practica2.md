@@ -1,187 +1,181 @@
 # 🚀 **Práctica 2: Feature Engineering + Modelo Base**
 
-<span class="pill">Completado</span>
-<span class="pill">#2</span>
-<span class="pill">Feature Engineering</span>
-<span class="pill">Titanic</span>
-<span class="pill">Machine Learning</span>
-<span class="pill">Modelo Base</span>
+![Titanic Banner](https://upload.wikimedia.org/wikipedia/commons/f/fd/RMS_Titanic_3.jpg)
 
-[**Ver Notebook en Google Colab**](https://colab.research.google.com/drive/1xOjYjaSN2DM7szuRU7wsep-l2vCXaDSR?usp=sharing)  
-[**Ver Visualizaciones en Google Drive**](https://drive.google.com/drive/folders/1WMHuuZMkUeXZYrEZBdhwqgbqwMg7vktG?usp=drive_link)  
+> ✨ *Aplicando ingeniería de características y comparando modelos para predecir la supervivencia en el Titanic.*
 
 ---
 
-## 🏆 **Resumen Ejecutivo**
-
-En esta práctica, **trabajamos con el dataset Titanic**, aplicamos **Feature Engineering básico** y entrenamos un modelo de **Regresión Logística**. Luego, comparamos el rendimiento del modelo con un **DummyClassifier** como baseline.
-
-**Objetivo:** Realizar un **análisis exploratorio de características** y construir un modelo básico.  
-**Hallazgos clave:** La **variable 'Sexo'** es crucial para la supervivencia, y el **modelo de Regresión Logística** superó ampliamente al **DummyClassifier**.  
-**Resultado final:** El modelo base y los nuevos features mostraron mejoras en la predicción de la supervivencia.
+## 🏷️ **Etiquetas Rápidas**
+`#2` `#Titanic` `#FeatureEngineering` `#MachineLearning` `#ModeloBase`
 
 ---
 
-## 🎯 **Objetivos de la Práctica**
+## 🚀 **Accesos Directos Importantes**
 
-- [x] Aplicar **Feature Engineering** para mejorar la información del dataset Titanic.  
-- [x] Entrenar un **modelo base** usando **Regresión Logística**.  
-- [x] Comparar el rendimiento entre un **modelo base** y un **modelo entrenado**.
-- [x] **Evaluar** el modelo con métricas como **accuracy**, **classification report**, y **confusion matrix**.
+[![📘 Abrir Notebook en Google Colab](https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1xOjYjaSN2DM7szuRU7wsep-l2vCXaDSR?usp=sharing)  
+[![📊 Ver Visualizaciones en Drive](https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1WMHuuZMkUeXZYrEZBdhwqgbqwMg7vktG?usp=drive_link)
+
+> ✅ *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
 
 ---
 
-## 📊 **Modelos Entrenados**
 
-1. **Modelo Base (DummyClassifier):**  
-   Se entrenó un modelo DummyClassifier como baseline para comparar el rendimiento con el modelo real.
+---
 
-2. **Modelo de Regresión Logística:**  
-   Con el uso de los nuevos features obtenidos a través del Feature Engineering, el modelo de Regresión Logística mostró una mejora significativa en el rendimiento en comparación con el DummyClassifier.
+## 🧠 **Resumen Ejecutivo**
+
+🎯 **Objetivo:**  
+Explorar y aplicar técnicas de **Feature Engineering** sobre el dataset Titanic, entrenar un modelo de **Regresión Logística** y compararlo con un modelo base (**DummyClassifier**).
+
+📌 **Hallazgos clave:**
+- **Sexo** fue la variable más influyente.
+- El modelo de **Regresión Logística** superó al DummyClassifier por amplio margen.
+- Nuevas características como `Title` y `FamilySize` mejoraron la predicción.
+
+📈 **Resultado final:**  
+Modelo con precisión del **78.5%** y F1-score de **0.73**.
+
+---
+
+## 🎯 **Objetivos Específicos**
+
+| Objetivo                                                                 | Estado |
+|--------------------------------------------------------------------------|--------|
+| Aplicar Feature Engineering al dataset Titanic                           | ✅      |
+| Entrenar un modelo base (DummyClassifier)                                | ✅      |
+| Entrenar un modelo real (Regresión Logística)                            | ✅      |
+| Evaluar modelos con Accuracy, F1, Reporte de Clasificación y Confusión  | ✅      |
+
+---
+
+## 📅 **Actividades y Tiempos**
+
+| Actividad                                       | Estimado | Real  | Nota                                                   |
+|------------------------------------------------|----------|-------|--------------------------------------------------------|
+| Configuración en Google Colab                  | 30 m     | 28 m  | Carga desde Kaggle                                     |
+| Feature Engineering                            | 40 m     | 42 m  | Nuevas features + valores nulos                       |
+| DummyClassifier (modelo base)                  | 20 m     | 22 m  | Estrategia: `most_frequent`                          |
+| Regresión Logística                            | 30 m     | 35 m  | `liblinear` como solver                              |
+| Evaluación de ambos modelos                    | 30 m     | 32 m  | Accuracy, F1, matriz de confusión                     |
+| Reflexión final                                | 15 m     | 14 m  | Análisis de errores                                   |
+
+🕒 **Total estimado:** 3 h · **Total real:** 3 h 13 m · Δ: +13 m (+6%)
+
+---
+
+## 🛠️ **Feature Engineering Aplicado**
+
+| Técnica                  | Descripción                                                                 |
+|--------------------------|------------------------------------------------------------------------------|
+| **Imputación de valores**| - `Embarked`: modo<br>- `Fare`: mediana<br>- `Age`: mediana por `Sex` y `Pclass` |
+| **Nuevas variables**     | - `FamilySize = SibSp + Parch + 1`<br>- `IsAlone = (FamilySize == 1)`       |
+| **Títulos desde el nombre** | - Extracción de `Title` (`Mr`, `Mrs`, `Miss`, etc.)<br>- Agrupación en `Rare`     |
+
+---
+
+## ⚙️ **Modelos Entrenados**
+
+### 🔹 **Modelo Base: DummyClassifier**
+- **Estrategia:** `most_frequent`
+- **Accuracy:** 62%
+- **Rol:** Referencia para comparar modelos reales
+
+### 🔸 **Modelo Real: Regresión Logística**
+- **Librería:** `scikit-learn` (`LogisticRegression`)
+- **Solver:** `liblinear`
+- **Accuracy:** 78.5%
+- **F1-Score:** 0.73
+
+✅ **Mejora significativa sobre el baseline**
 
 ---
 
 ## 📈 **Métricas de Evaluación**
 
-- **Accuracy:** El modelo de Regresión Logística superó al DummyClassifier con una precisión más alta.  
-- **Classification Report:** Se utilizaron métricas como Precision, Recall y F1-Score para evaluar la efectividad del modelo.  
-- **Confusion Matrix:** Se generó una matriz de confusión para analizar los verdaderos positivos, falsos negativos y falsos positivos del modelo.
+| Métrica                         | DummyClassifier | Logistic Regression |
+|---------------------------------|------------------|----------------------|
+| Accuracy                        | 62%             | **78.5%**            |
+| F1-Score                        | —               | **0.73**             |
+| Classification Report           | ❌              | ✅                   |
+| Matriz de Confusión             | ❌              | ✅                   |
+
+> ℹ️ F1-score combina precisión y recall, ideal en contextos con clases desbalanceadas.
 
 ---
 
-## 📅 **Próximos Pasos**
+## 📊 **Visualizaciones Relevantes**
 
-- [ ] **Optimizar el Modelo:** Mejorar el modelo con más características y probar otros algoritmos de clasificación.  
-- [ ] **Ajuste de Hiperparámetros:** Probar técnicas como GridSearchCV para encontrar los mejores hiperparámetros para el modelo.  
-- [ ] **Exploración Adicional:** Experimentar con otros tipos de Feature Engineering y técnicas avanzadas como la selección de características.
+### 🎯 Matriz de Confusión - Logistic Regression
 
-## ⏱️ **Actividades y tiempos estimados**
-| Actividad                                   | Estimado | Real | Nota |
-|---|---:|---:|---|
-| Configuración inicial en **Google Colab**    | 30 m | **28 m** | Configuración y carga de datos desde Kaggle. |
-| Preprocesamiento y **Feature Engineering**   | 40 m | **42 m** | Manejo de valores faltantes y creación de nuevas características. |
-| Entrenamiento del **DummyClassifier**        | 20 m | **22 m** | Entrenamiento de un modelo base con la estrategia `most_frequent`. |
-| **Entrenamiento de Regresión Logística**     | 30 m | **35 m** | Entrenamiento de modelo y optimización básica de parámetros. |
-| Evaluación de modelos y comparación          | 30 m | **32 m** | Comparación entre **DummyClassifier** y **Logistic Regression**. |
-| Reflexión y discusión de preguntas           | 15 m | **14 m** | Análisis de errores y patrones en los datos. |
+![imgP2.1](../../assets/ImgPractica2/imgP2.1.png)
 
-> **Totales** — Estimado: **3 h** · Real: **3 h 13 m** · Δ: **+13 m** (**+6%**).
+- **Análisis:** El modelo comete más errores tipo **falso negativo**, es decir, no predice que alguien sobrevivió cuando sí lo hizo.
 
 ---
 
-## 💡 **Desarrollo: Feature Engineering**
+### 📈 Comparación de Accuracy
 
-### 1. **Manejo de valores faltantes:**
-   - **Embarked:** Se reemplaza por el valor más frecuente.
-   - **Fare:** Se completa con la **mediana** de la tarifa.
-   - **Age:** Se completa usando la **mediana** por grupo de `Sex` y `Pclass` para evitar sesgos.
+![imgP2.2](../../assets/ImgPractica2/imgP2.2.png)
 
-### 2. **Creación de nuevas características:**
-   - **FamilySize:** La combinación de `SibSp` (hermanos/esposos) y `Parch` (padres/hijos), para reflejar el tamaño de la familia.
-   - **IsAlone:** Una nueva variable que indica si el pasajero estaba solo (`FamilySize = 1`).
-   - **Title:** Extracción del título del nombre (Sr, Mrs, Miss, etc.) para capturar categorías de clase y edad.
-   - **Rare Titles:** Agrupación de títulos poco frecuentes bajo la categoría 'Rare' para simplificar el modelo.
+> El modelo real supera claramente al DummyClassifier
 
 ---
 
-## 🧑‍🏫 **Modelo base vs Modelo entrenado**
+## 📸 **Explora Todas las Visualizaciones Interactivas**
 
-### **Modelo base: DummyClassifier**
-El **DummyClassifier** es un modelo muy simple que sirve como referencia básica. En este caso, utilizamos la estrategia **most_frequent**, que predice siempre la clase más frecuente (en este caso, que no sobrevivió).
+[![🔗 Ver Visualizaciones - Google Drive](https://img.shields.io/badge/Ver%20Visualizaciones-Google%20Drive-yellowgreen?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1WMHuuZMkUeXZYrEZBdhwqgbqwMg7vktG?usp=drive_link)
 
-- **Accuracy:** 62%  
-- **Propósito:** Ver qué tan bien lo hace un modelo "tonto" comparado con un modelo entrenado.
-
-### **Modelo entrenado: Regresión Logística**
-La **Regresión Logística** es un modelo muy común para problemas de clasificación binaria. En este caso, usamos **LogisticRegression** de **scikit-learn** con un **solver liblinear** para optimizar los parámetros.
-
-- **Accuracy:** 78.5%  
-- **F1-Score:** 0.73  
-- **Mejora significativa sobre el DummyClassifier.**
+> 🖼️ *Mira las gráficas generadas durante el análisis:*  
+> Matrices de confusión · Histogramas · Comparaciones de modelos · Distribuciones por sexo, clase, edad y más.
 
 ---
 
-### Visualización de relaciones en el dataset Titanic
-
-1. **Gráfico de supervivencia por clase y sexo:**
-   ![Matriz de Confusión - Regresión Logística](../../assets/ImgPractica2/imgP2.1.png)
-   - **Relación entre variables clave**: Sexo y clase, destacando la mayor tasa de supervivencia para las mujeres y los pasajeros de 1ª clase.
-
-2. **Histograma de edad de los pasajeros:**
-   ![Gráfico de Precisión: DummyClassifier vs Logistic Regression](../../assets/ImgPractica2/imgP2.2.png)
-   - **Distribución de edades**: Mayor concentración de adultos jóvenes.
-
-[**Ver todas las visualizaciones aquí**](https://drive.google.com/drive/folders/1WMHuuZMkUeXZYrEZBdhwqgbqwMg7vktG?usp=drive_link)
-
 ---
-# 🚀 **Explora el Notebook Interactivo en Google Colab** 🎓
 
-Haz clic en el siguiente **botón** para acceder al **notebook** interactivo y realizar el análisis directamente en Google Colab:
-
-[![Ver Notebook en Google Colab](https://img.shields.io/badge/Accede%20al%20Notebook%20en%20Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/drive/1xOjYjaSN2DM7szuRU7wsep-l2vCXaDSR?usp=sharing)
-
-> **¡Haz clic para empezar a trabajar directamente en el código y explorar las visualizaciones en tiempo real!**
+## 🤔 **Preguntas para el Equipo**
 
 ---
 
-Este diseño utiliza un **badge de color verde brillante** con el logo de Google Colab, lo que hará que se vea llamativo y visualmente atractivo. Además, se proporciona un mensaje claro y amigable para incentivar al usuario a hacer clic en el enlace.
+### 1. ¿Qué variables aportaron más al modelo?
 
-¡Pruébalo y verás cómo resalta!
-
-
-## 📊 **Métricas de evaluación**
-
-| Indicador                                   | Valor / Observación |
-|---|---|
-| **Modelo base (DummyClassifier) accuracy**   | 62% |
-| **Logistic Regression accuracy**             | 78.5% |
-| **F1-score (Logistic Regression)**           | 0.73 |
-| **Confusion Matrix**                         | Basada en las predicciones del modelo |
-
-**F1-Score** es una medida que equilibra la **precisión** (precision) y el **recall**. Para problemas de desbalance de clases, esta métrica es más representativa que el **accuracy**.
+- `Sex`
+- `Pclass`
+- `Title`
+- `Fare`
+- `FamilySize`
 
 ---
 
-## 📈 **Análisis de la matriz de confusión**
-La matriz de confusión muestra cuántas veces el modelo predijo correctamente o incorrectamente cada clase:
+### 2. ¿Qué desafíos encontramos?
 
-- **Filas**: Clases reales (0 = No sobrevivió, 1 = Sobrevivió).
-- **Columnas**: Clases predichas por el modelo.
-
-### **Interpretemos la matriz:**
-- **Falsos negativos (FN)**: Predicciones donde se dijo que no sobrevivieron cuando sí lo hicieron.
-- **Falsos positivos (FP)**: Predicciones donde se dijo que sobrevivieron cuando no lo hicieron.
-  
-El modelo comete más **errores de falsos negativos** (es decir, no predecir que alguien sobrevivió), lo que sería crítico en una situación real de rescate.
+- Imputación de `Age` y valores nulos en `Embarked`.
+- Transformación de variables categóricas con baja frecuencia.
 
 ---
 
-## 🧠 **Preguntas para el equipo**
+### 3. ¿Qué variables podrían estar correlacionadas?
 
-1. **¿Qué variables parecen más relacionadas con la supervivencia?**
-   - **Sexo:** Las mujeres tuvieron una tasa de supervivencia mucho mayor.
-   - **Clase (Pclass):** Los pasajeros de 1ª clase tuvieron más probabilidades de sobrevivir.
-   - **Edad:** Los niños y personas jóvenes fueron priorizados en el rescate.
-
-2. **¿Qué desafíos de calidad de datos esperas encontrar?**
-   - **Valores faltantes:** Especialmente en `Age` y `Cabin`. Usamos técnicas de imputación para los valores faltantes en `Age` y `Embarked`.
-   - **Rango de datos inconsistente:** Aseguramos que todas las variables estén dentro de los rangos lógicos.
-
-3. **¿Qué variables podrían estar correlacionadas?**
-   - **Pclass y Fare:** Los pasajeros de primera clase pagaron tarifas más altas y tienen mayor probabilidad de supervivencia.
+- `Pclass` ↔️ `Fare`
+- `IsAlone` ↔️ `FamilySize`
 
 ---
 
-## 💬 **Reflexión**
+## 🔍 **Reflexión Final**
 
-Esta práctica mostró que el **Feature Engineering** mejora significativamente el rendimiento del modelo. El uso de variables como **FamilySize** y **Title** ayudó a capturar información crucial sobre la supervivencia de los pasajeros.
+📌 El uso de **Feature Engineering básico** incrementó la capacidad del modelo para distinguir entre pasajeros que sobrevivieron y los que no.  
+🧠 Variables como `Title` y `IsAlone` resultaron muy efectivas para captar relaciones no evidentes.
 
-## 🛠 **Próximos pasos**
+---
 
-- [x] Probar **otros modelos** como **Random Forest** y **KNN** para mejorar el rendimiento.
-- [ ] Implementar **curvas ROC** y **métricas por clase** para analizar el rendimiento más a fondo.
-- [ ] Experimentar con técnicas avanzadas de **Feature Engineering** (por ejemplo, interacción de características).
+## 📌 **Siguientes Pasos**
 
+| Próxima Acción                                       | Estado |
+|------------------------------------------------------|--------|
+| Probar modelos como **Random Forest**, **KNN**       | ✅      |
+| Usar curvas **ROC**, métricas por clase              | 🔜      |
+| Aplicar **GridSearchCV** para optimizar hiperparámetros | 🔜      |
+| Explorar más técnicas de Feature Engineering         | 🔜      |
 ---
 
 

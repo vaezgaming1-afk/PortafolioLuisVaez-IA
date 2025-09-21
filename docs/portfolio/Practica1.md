@@ -9,11 +9,17 @@
 ## 🏷️ **Etiquetas**
 `#EDA` `#Titanic` `#MachineLearning` `#AnálisisDeDatos` `#Exploración`
 
-[🔗 **Abrir Notebook en Google Colab**](https://colab.research.google.com/drive/1F0btMIVnncma9EYwR-2togcSPDW35evv)  
-[📊 **Visualizaciones en Google Drive**](https://drive.google.com/drive/folders/1qglTzvqdFPrNMxUhH_MtQFcRrafXEG7x?usp=sharing)
+## 🚀 **Accesos Directos Importantes**
+
+[![📘 Abrir Notebook en Google Colab](https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1F0btMIVnncma9EYwR-2togcSPDW35evv)  
+[![📊 Ver Visualizaciones en Drive](https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1qglTzvqdFPrNMxUhH_MtQFcRrafXEG7x?usp=sharing)
+
+> ✅ *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
+
+---
+
 
 📦 **Dataset**: Titanic - [Kaggle](https://www.kaggle.com/c/titanic/data)  
-⏱️ **Tiempo estimado**: 2 h 30 m  
 📁 **Observaciones**: 891 · **Variables**: 12
 
 ---
