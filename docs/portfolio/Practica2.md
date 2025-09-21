@@ -1,21 +1,20 @@
----
-title: "📊 Práctica 2: Feature Engineering + Modelo Base"
-date: 2025-09-07
-number: 2
-status: "Completado"
-tags: [Feature Engineering, Titanic, Machine Learning, Modelo Base]
-notebook: https://colab.research.google.com/drive/1ut5NvjzklgNwS8wfOD07xslXUY7flhu4
-drive_viz: https://drive.google.com/drive/folders/1qglTzvqdFPrNMxUhH_MtQFcRrafXEG7x?usp=sharing
-dataset: "Titanic — Kaggle"
-time_est: "3 h"
-time_spent: "—"
----
-
 # 🚀 **Práctica 2: Feature Engineering + Modelo Base**
 
-## 🏆 **Resumen ejecutivo**
+<span class="pill">Completado</span>
+<span class="pill">#2</span>
+<span class="pill">Feature Engineering</span>
+<span class="pill">Titanic</span>
+<span class="pill">Machine Learning</span>
+<span class="pill">Modelo Base</span>
 
-En esta práctica, **trabajamos con el dataset Titanic**, aplicamos **Feature Engineering básico** y entrenamos un modelo de **Regresión Logística**. Luego, comparamos el rendimiento del modelo con un **DummyClassifier** como baseline. 
+[**Ver Notebook en Google Colab**](https://colab.research.google.com/drive/1xOjYjaSN2DM7szuRU7wsep-l2vCXaDSR?usp=sharing)  
+[**Ver Visualizaciones en Google Drive**](https://drive.google.com/drive/folders/1WMHuuZMkUeXZYrEZBdhwqgbqwMg7vktG?usp=drive_link)  
+
+---
+
+## 🏆 **Resumen Ejecutivo**
+
+En esta práctica, **trabajamos con el dataset Titanic**, aplicamos **Feature Engineering básico** y entrenamos un modelo de **Regresión Logística**. Luego, comparamos el rendimiento del modelo con un **DummyClassifier** como baseline.
 
 **Objetivo:** Realizar un **análisis exploratorio de características** y construir un modelo básico.  
 **Hallazgos clave:** La **variable 'Sexo'** es crucial para la supervivencia, y el **modelo de Regresión Logística** superó ampliamente al **DummyClassifier**.  
@@ -23,7 +22,7 @@ En esta práctica, **trabajamos con el dataset Titanic**, aplicamos **Feature En
 
 ---
 
-## 🎯 **Objetivos de la práctica**
+## 🎯 **Objetivos de la Práctica**
 
 - [x] Aplicar **Feature Engineering** para mejorar la información del dataset Titanic.  
 - [x] Entrenar un **modelo base** usando **Regresión Logística**.  
@@ -32,8 +31,31 @@ En esta práctica, **trabajamos con el dataset Titanic**, aplicamos **Feature En
 
 ---
 
-## ⏱️ **Actividades y tiempos estimados**
+## 📊 **Modelos Entrenados**
 
+1. **Modelo Base (DummyClassifier):**  
+   Se entrenó un modelo DummyClassifier como baseline para comparar el rendimiento con el modelo real.
+
+2. **Modelo de Regresión Logística:**  
+   Con el uso de los nuevos features obtenidos a través del Feature Engineering, el modelo de Regresión Logística mostró una mejora significativa en el rendimiento en comparación con el DummyClassifier.
+
+---
+
+## 📈 **Métricas de Evaluación**
+
+- **Accuracy:** El modelo de Regresión Logística superó al DummyClassifier con una precisión más alta.  
+- **Classification Report:** Se utilizaron métricas como Precision, Recall y F1-Score para evaluar la efectividad del modelo.  
+- **Confusion Matrix:** Se generó una matriz de confusión para analizar los verdaderos positivos, falsos negativos y falsos positivos del modelo.
+
+---
+
+## 📅 **Próximos Pasos**
+
+- [ ] **Optimizar el Modelo:** Mejorar el modelo con más características y probar otros algoritmos de clasificación.  
+- [ ] **Ajuste de Hiperparámetros:** Probar técnicas como GridSearchCV para encontrar los mejores hiperparámetros para el modelo.  
+- [ ] **Exploración Adicional:** Experimentar con otros tipos de Feature Engineering y técnicas avanzadas como la selección de características.
+
+## ⏱️ **Actividades y tiempos estimados**
 | Actividad                                   | Estimado | Real | Nota |
 |---|---:|---:|---|
 | Configuración inicial en **Google Colab**    | 30 m | **28 m** | Configuración y carga de datos desde Kaggle. |
@@ -78,6 +100,34 @@ La **Regresión Logística** es un modelo muy común para problemas de clasifica
 - **Mejora significativa sobre el DummyClassifier.**
 
 ---
+
+### Visualización de relaciones en el dataset Titanic
+
+1. **Gráfico de supervivencia por clase y sexo:**
+   ![Matriz de Confusión - Regresión Logística](../../assets/ImgPractica2/imgP2.1.png)
+   - **Relación entre variables clave**: Sexo y clase, destacando la mayor tasa de supervivencia para las mujeres y los pasajeros de 1ª clase.
+
+2. **Histograma de edad de los pasajeros:**
+   ![Gráfico de Precisión: DummyClassifier vs Logistic Regression](../../assets/ImgPractica2/imgP2.2.png)
+   - **Distribución de edades**: Mayor concentración de adultos jóvenes.
+
+[**Ver todas las visualizaciones aquí**](https://drive.google.com/drive/folders/1WMHuuZMkUeXZYrEZBdhwqgbqwMg7vktG?usp=drive_link)
+
+---
+# 🚀 **Explora el Notebook Interactivo en Google Colab** 🎓
+
+Haz clic en el siguiente **botón** para acceder al **notebook** interactivo y realizar el análisis directamente en Google Colab:
+
+[![Ver Notebook en Google Colab](https://img.shields.io/badge/Accede%20al%20Notebook%20en%20Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/drive/1xOjYjaSN2DM7szuRU7wsep-l2vCXaDSR?usp=sharing)
+
+> **¡Haz clic para empezar a trabajar directamente en el código y explorar las visualizaciones en tiempo real!**
+
+---
+
+Este diseño utiliza un **badge de color verde brillante** con el logo de Google Colab, lo que hará que se vea llamativo y visualmente atractivo. Además, se proporciona un mensaje claro y amigable para incentivar al usuario a hacer clic en el enlace.
+
+¡Pruébalo y verás cómo resalta!
+
 
 ## 📊 **Métricas de evaluación**
 
@@ -133,6 +183,7 @@ Esta práctica mostró que el **Feature Engineering** mejora significativamente 
 - [ ] Experimentar con técnicas avanzadas de **Feature Engineering** (por ejemplo, interacción de características).
 
 ---
+
 
 ## 🧑‍💻 **Reproducibilidad**
 

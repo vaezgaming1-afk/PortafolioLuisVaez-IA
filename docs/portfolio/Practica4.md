@@ -1,37 +1,35 @@
----
-title: "📝 TAREA 4: Regresión Lineal y Logística - FILL IN THE BLANKS"
-date: 2025-09-07
-number: 4
-status: "Completado"
-tags: [Regresión Lineal, Regresión Logística, Machine Learning, Titanic, Modelo Base]
-notebook: https://colab.research.google.com/drive/1M58b7dSPSF3mcZJqm2eFefcmYeF5HaAs
-drive_viz: https://drive.google.com/drive/folders/1qglTzvqdFPrNMxUhH_MtQFcRrafXEG7x?usp=sharing
-dataset: "Titanic - Kaggle"
-time_est: "3 h"
-time_spent: "—"
----
-
 # 📝 **TAREA 4: Regresión Lineal y Logística - FILL IN THE BLANKS**
 
-## **Resumen ejecutivo**
+<span class="pill">Completado</span>
+<span class="pill">#4</span>
+<span class="pill">Regresión Lineal</span>
+<span class="pill">Regresión Logística</span>
+<span class="pill">Machine Learning</span>
+<span class="pill">Titanic</span>
+<span class="pill">Modelo Base</span>
 
-En esta tarea, exploramos dos modelos de Machine Learning muy comunes: **Regresión Lineal** y **Regresión Logística**. Aplicamos estos modelos en dos contextos diferentes: la predicción del precio de casas en Boston y la clasificación de diagnóstico médico de cáncer de mama. El objetivo fue comparar cómo se desempeñan ambos modelos en diferentes tipos de problemas: **regresión** (predicción de precios) y **clasificación** (predicción de malignidad).
+[**Ver Notebook en Google Colab**](https://colab.research.google.com/drive/114DetBDXPevvD7RS_C5Bg5FB2UjcoZ0I?usp=sharing)  
+[**Ver Visualizaciones en Google Drive**](https://drive.google.com/drive/folders/1zLNaoXm94xbjZ3wICLOtBp_4JDL-QcB0?usp=drive_link)  
+
+---
+
+## 🏆 **Resumen Ejecutivo**
+
+En esta tarea, se exploraron dos modelos clásicos de Machine Learning: **Regresión Lineal** y **Regresión Logística**. Ambos modelos fueron aplicados a distintos problemas para comparar su desempeño: la predicción de precios de casas en **Boston** utilizando **Regresión Lineal** y la clasificación de **diagnóstico médico de cáncer de mama** utilizando **Regresión Logística**. El objetivo fue evaluar cómo cada modelo se comporta en **problemas de regresión** y **clasificación** respectivamente.
 
 ### **Hallazgos clave:**
-- **Regresión Lineal** fue utilizada para predecir el precio de casas, con una precisión medida por métricas como **MAE**, **MSE**, **RMSE**, y **R²**.
-- **Regresión Logística** se utilizó para predecir si un tumor es **benigno** o **maligno**, con métricas de **precision**, **recall**, **f1-score** y **accuracy**.
-- **Logistic Regression** superó al modelo base **DummyClassifier** en precisión, mostrando cómo **Feature Engineering** y **optimización** pueden mejorar el rendimiento.
+- **Regresión Lineal** se utilizó para predecir el precio de las casas en el conjunto de datos de **Boston**. Se evaluó con métricas de error como **MAE**, **MSE**, **RMSE**, y **R²**.
+- **Regresión Logística** se utilizó para clasificar tumores como **benignos** o **malignos**, utilizando métricas como **precision**, **recall**, **f1-score** y **accuracy**.
+- **Regresión Logística** mostró un mejor rendimiento que el modelo base **DummyClassifier**, destacando cómo el **Feature Engineering** y la optimización del modelo pueden mejorar significativamente la precisión y efectividad.
 
 ---
 
 ## 🎯 **Objetivos de la tarea**
 
-- [x] **Aplicar la Regresión Lineal** para predecir precios de casas en el dataset de Boston.  
-- [x] **Implementar la Regresión Logística** para clasificación binaria en el dataset de diagnóstico médico (cáncer).  
-- [x] **Evaluar los modelos** con métricas adecuadas (MAE, RMSE, accuracy, precision, recall, etc.).  
-- [x] Comparar el rendimiento de los modelos entrenados contra un **DummyClassifier** como baseline.
-
----
+- [x] Aplicar **Regresión Lineal** para predecir el precio de las casas en el dataset de **Boston**.  
+- [x] Implementar **Regresión Logística** para la clasificación binaria en el dataset de diagnóstico médico (cáncer de mama).  
+- [x] Evaluar ambos modelos con métricas adecuadas como **MAE**, **MSE**, **RMSE**, **accuracy**, **precision**, y **recall**.  
+- [x] Comparar el rendimiento de los modelos entrenados contra un **DummyClassifier** como baseline.  
 
 ## ⏱️ **Actividades y tiempos estimados**
 
@@ -109,6 +107,18 @@ print(f"R²: {r2:.3f}")
 - **MAE** y **RMSE** nos indican cuánto se alejan, en promedio, nuestras predicciones del precio real.
 
 ---
+## 📸 **Evidencias Visuales**
+
+### Visualización de relaciones en el dataset Titanic
+
+1. **Gráfico de Regresión Lineal - Predicción de Precios de Casas:**
+   ![Gráfico de Regresión Lineal](../../assets/ImgPractica4/imgP3.1.png)
+   - **Relación entre variables clave**: El número de habitaciones (`RM`) y el precio de las casas (`medv`), destacando la tendencia ascendente en los precios conforme aumenta el número de habitaciones.
+
+2. **Análisis Detallado de la Regresión Lineal:**
+   ![Gráfico de Regresión Detallado](../../assets/ImgPractica4/imgP3.2.png)
+   - **Relación entre variables clave**: Dispersión de los datos de precio de casas y número de habitaciones, con la línea de regresión ajustada para visualizar mejor la correlación.
+
 
 ## 🏥 **Regresión Logística - Diagnóstico Médico**
 
@@ -175,6 +185,20 @@ print(f"F1-Score: {f1:.3f}")
 
 ---
 
+## 📸 **Evidencias Visuales**
+
+### Visualización de relaciones en el dataset de Cáncer de Mama
+
+1. **Gráfico de Regresión Logística - Diagnóstico de Cáncer de Mama:**
+   ![Gráfico de Regresión Lineal](../../assets/ImgPractica4/imgP4.1.png)
+   - **Relación entre variables clave**: El radio medio del tumor (`mean radius`) y el diagnóstico (benigno o maligno), destacando la relación entre las características y la probabilidad de malignidad.
+
+2. **Análisis Detallado de la Regresión Logística:**
+   ![Gráfico de Regresión Detallado](../../assets/ImgPractica4/imgP4.2.png)
+   - **Relación entre variables clave**: Dispersión de los datos de suavidad y compactidad del tumor, con la línea de regresión ajustada para visualizar mejor la probabilidad de malignidad.
+
+
+
 ## ❓ **Preguntas de Reflexión**
 
 1. **¿Cuál es la diferencia principal entre regresión lineal y logística?**
@@ -191,6 +215,13 @@ print(f"F1-Score: {f1:.3f}")
    - Es más peligroso predecir "benigno" cuando en realidad es "maligno", ya que podría no tratar a un paciente con un tumor maligno a tiempo.
 
 ---
+
+## Parte 3: Actividad Final - Compara los Dos Modelos
+
+Puedes acceder al archivo PDF de la actividad final a continuación:
+
+<a href="assets/VAEZ ALVAREZ LUIS- CV[1].pdf" target="_blank" style="display:inline-block; padding:10px 20px; margin-top:10px; background-color:#4CAF50; color:white; text-align:center; text-decoration:none; border-radius:5px; font-size:16px;">Descargar Actividad Final - Compara los Dos Modelos</a>
+
 
 ## 🧑‍💻 **Reproducibilidad**
 
@@ -230,3 +261,13 @@ print("Accuracy:", accuracy_score(y_test, predictions))
 
 El **Feature Engineering** y el entrenamiento de modelos como **Regresión Logística** y **Lineal** nos permitieron obtener **modelos más precisos y efectivos**. Continuaremos ajustando estos modelos y aplicando nuevas técnicas para mejorar la predicción en problemas de regresión y clasificación.
 
+---
+# 🚀 **Explora el Notebook Interactivo en Google Colab** 🎓
+
+Haz clic en el siguiente **botón** para acceder al **notebook** interactivo y realizar el análisis directamente en Google Colab:
+
+[![Ver Notebook en Google Colab](https://img.shields.io/badge/Accede%20al%20Notebook%20en%20Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/drive/114DetBDXPevvD7RS_C5Bg5FB2UjcoZ0I?usp=sharing)
+
+> **¡Haz clic para empezar a trabajar directamente en el código y explorar las visualizaciones en tiempo real!**
+
+---
