@@ -1,27 +1,80 @@
-site_name: "Portfolio"
+site_name: Luis Vaez Portafolio
+site_description: Portfolio personal de proyectos 
+site_url: https://vaezgaming1-afk.github.io/PortafolioLuisVaez-IA/
+repo_url: https://vaezgaming1-afk.github.io/PortafolioLuisVaez-IA/
+repo_name: ia-portfolio
+site_dir: site
+
 theme:
   name: material
   language: es
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
   features:
+    - navigation.instant
     - navigation.sections
+    - navigation.tabs 
     - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+  palette:
+        - scheme: default
+          primary: custom
+          accent: custom
+          toggle:
+            icon: material/weather-night
+            name: Modo oscuro
+        - scheme: slate
+          primary: custom
+          accent: custom
+          toggle:
+            icon: material/white-balance-sunny
+            name: Modo claro
+extra_css:
+  - assets/extra.css
+
+
 plugins:
   - search
   - awesome-pages
-  
+  - macros 
   - git-revision-date-localized:
-      fallback_to_build_date: true
-  - glightbox
+      enable_creation_date: true
+
 markdown_extensions:
   - admonition
   - attr_list
-  - footnotes
   - tables
+  - footnotes
   - toc:
       permalink: true
+      toc_depth: 2-3
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
-  - pymdownx.emoji
   - pymdownx.tasklist:
-      custom_checkbox: true
+      custom_checkbox: true         # dibuja los checkboxes bonitos
+      clickable_checkbox: true      # opcional: permite clicarlos (no persiste)
+
+
+
+edit_uri: blob/main/docs/
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Inicio: index.md
+  - "Acerca de mí": acerca.md
+  - Portfolio:
+      - Índice: portfolio/index.md
+      - "01 — EDA del Titanic en Google Colab": "portfolio/Practica1.md"
+      - "02 — Feature Engineering simple + Modelo base": "portfolio/Practica2.md"
+      - "03 — Regresión Lineal y Logística - Fill in the Blanks": "portfolio/Practica4.md"
+      - "04 — Validación y Selección de Modelos - Fill in the Blanks": "portfolio/Practica5.md"
+      - "05 — Clustering y PCA - Mall Customer Segmentation": "portfolio/Practica6.md"
+  - Recursos: recursos.md
+
+
+

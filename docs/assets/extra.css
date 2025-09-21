@@ -1,90 +1,98 @@
 /* ============================================================================
-   PALETA + DISEÑO (SIN CAMBIAR LAYOUT)
-   Paleta personalizada:
-     #314259 (primario) · #C1C2C6 (claro) · #1C2226 (oscuro)
-     #735443 (acento)  · #59433E (secundario)
-   Soporta CLARO (default) y OSCURO (slate) – mismo diseño de tarjetas/burbujas
+   PALETA + DISEÑO (INTERFAZ REFINADA Y MODERNA)
+   Esquema armónico con un diseño profesional y limpio
    ============================================================================ */
 
 /* ---------- MODO CLARO (scheme: default) ---------------------------------- */
 :root{
   /* Primario + acento */
-  --md-primary-fg-color:        #314259;        /* azul navy */
-  --md-primary-fg-color--light: #735443;        /* usamos acento como hover */
-  --md-primary-fg-color--dark:  #314259;
-  --md-accent-fg-color:         #735443;        /* marrón cálido */
+  --md-primary-fg-color:        #4A7CA6;        /* Azul más suave y claro */
+  --md-primary-fg-color--light: #6A8BB5;        /* Acento (hover) más sutil */
+  --md-primary-fg-color--dark:  #1C2226;        /* Oscuro */
+  --md-accent-fg-color:         #A0C1E6;        /* Azul claro para el acento */
 
   /* Superficies, texto y bordes */
-  --surface-1: #C1C2C6;                           /* fondo general */
-  --surface-2: #ffffff;                            /* tarjetas (claro) */
-  --surface-3: #e6e7ea;                            /* resaltado/hover suave */
-  --border-1:  rgba(49,66,89,.28);                 /* del primario */
-  --shadow-1:  rgba(0,0,0,.12);
-  --text-1:    #1C2226;                            /* principal (oscuro) */
-  --text-2:    #59433E;                            /* secundario */
-  --pill-bg:   rgba(49,66,89,.10);                 /* fondo pills */
+  --surface-1: #F5F7FA;                           /* Fondo general más suave */
+  --surface-2: #FFFFFF;                            /* Tarjetas (claro) */
+  --surface-3: #EAEFF5;                            /* Resaltado/hover suave */
+  --border-1:  rgba(49,66,89,.15);                 /* Bordes más suaves y difusos */
+  --shadow-1:  rgba(0,0,0,.08);                   /* Sombra suave */
+  --text-1:    #2E3B46;                            /* Texto principal más suave */
+  --text-2:    #A0C1E6;                            /* Texto secundario azul claro */
+  --pill-bg:   rgba(49,66,89,.08);                 /* Fondo pills más suave */
+
+  /* Tipografía */
+  --font-primary: 'Roboto', sans-serif;            /* Fuente moderna */
+  --font-secondary: 'Arial', sans-serif;           /* Fuente secundaria */
 
   --md-logo-height: 26px;
 }
 
 /* ---------- MODO OSCURO (scheme: slate) ----------------------------------- */
 [data-md-color-scheme="slate"]{
-  --md-primary-fg-color:        #314259;         /* mantenemos navy */
-  --md-primary-fg-color--light: #735443;         /* hover/acento */
-  --md-primary-fg-color--dark:  #1C2226;
-  --md-accent-fg-color:         #735443;
+  --md-primary-fg-color:        #4A7CA6;         /* Azul más suave */
+  --md-primary-fg-color--light: #6A8BB5;         /* Acento/hover más sutil */
+  --md-primary-fg-color--dark:  #1C2226;         /* Oscuro */
 
-  --surface-1: #1C2226;                            /* fondo marino oscuro */
-  --surface-2: #232a31;                            /* tarjeta (un tono ↑) */
-  --surface-3: #2c343c;                            /* hover/énfasis */
-  --border-1:  rgba(49,66,89,.45);                 /* borde más visible */
-  --shadow-1:  rgba(0,0,0,.50);
-  --text-1:    #C1C2C6;                            /* texto principal claro */
-  --text-2:    rgba(193,194,198,.78);              /* secundario */
-  --pill-bg:   rgba(49,66,89,.25);                 /* pill en oscuro */
+  --md-accent-fg-color:         #A0C1E6;         /* Azul claro */
+  --surface-1: #1C2226;                            /* Fondo marino oscuro */
+  --surface-2: #2C353F;                            /* Tarjeta (un tono ↑) */
+  --surface-3: #3A464F;                            /* Hover/énfasis */
+  --border-1:  rgba(49,66,89,.30);                 /* Bordes más suaves */
+  --shadow-1:  rgba(0,0,0,.40);                   /* Sombra más fuerte */
+  --text-1:    #F1F5F8;                            /* Texto principal claro */
+  --text-2:    rgba(193,194,198,.70);              /* Secundario más suave */
+  --pill-bg:   rgba(49,66,89,.15);                 /* Pill en oscuro */
 }
 
-/* ---------------------------------------------------------------------------
-   Botón primario del tema (mismo diseño)
-   --------------------------------------------------------------------------- */
+/* ---------- BOTÓN PRIMARIO ----------------------------------------------- */
 a.md-button.md-button--primary{
   background: var(--md-primary-fg-color);
   border-color: var(--md-primary-fg-color);
   color: #fff;
+  padding: .5rem 1.2rem;
+  border-radius: 10px; /* Bordes más redondeados para mayor suavidad */
+  transition: all .3s ease;
+  font-family: var(--font-primary);
 }
+
 a.md-button.md-button--primary:hover{
   background: var(--md-accent-fg-color);
   border-color: var(--md-accent-fg-color);
+  transform: translateY(-4px); /* Sutil animación de desplazamiento */
+  box-shadow: 0 4px 12px var(--shadow-1); /* Sombras al hover para resaltar el botón */
 }
-.cv-btn{ margin-top: 1rem; } /* separación del botón de CV */
 
-/* ---------------------------------------------------------------------------
-   HERO — avatar + texto (mantengo tamaño que tenías en este archivo)
-   --------------------------------------------------------------------------- */
+/* ---------- HÉROE (perfil) ----------------------------------------------- */
 .profile-hero{
   display: flex;
-  gap: 1.2rem;
+  gap: 1.5rem;
   align-items: center;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0; /* Más espacio debajo para que no se vea tan amontonado */
 }
+
 .profile-hero img{
   width: clamp(160px, 18vw, 230px);
   height: clamp(160px, 18vw, 230px);
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--md-primary-fg-color);
+  border: 4px solid var(--md-primary-fg-color); /* Bordes más anchos para el avatar */
+  transition: transform .3s ease;
 }
 
-/* ---------------------------------------------------------------------------
-   Grids y Cards — mismas clases y layout
-   --------------------------------------------------------------------------- */
+.profile-hero img:hover{
+  transform: scale(1.05); /* Efecto de ampliación suave al pasar el mouse */
+}
+
+/* ---------- TARJETAS Y GRIDS --------------------------------------------- */
 
 /* Grid responsivo */
 .x-cards-grid,
 .cards-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* Aumenté el tamaño mínimo para tarjetas más grandes */
+  gap: 1.5rem;
+  margin: 0 auto; /* Centrar el grid */
 }
 
 /* Card base (imagen arriba) */
@@ -92,18 +100,19 @@ a.md-button.md-button--primary:hover{
 .cards-grid .card{
   display: flex;
   flex-direction: column;
-  padding: 0;
-  border-radius: 12px;
+  padding: 1.2rem;
+  border-radius: 15px; /* Bordes más redondeados para un aspecto más moderno */
   overflow: hidden;
   background: var(--surface-2);
   border: 1px solid var(--border-1);
-  box-shadow: 0 2px 6px var(--shadow-1);
-  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  box-shadow: 0 6px 15px var(--shadow-1);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
 }
+
 .x-card:hover,
 .cards-grid .card:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px var(--shadow-1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px var(--shadow-1);
   border-color: var(--md-primary-fg-color);
 }
 
@@ -112,48 +121,53 @@ a.md-button.md-button--primary:hover{
 .cards-grid .card img{
   display: block;
   width: 100%;
-  height: 200px;      /* ajustable 180–220 */
+  height: 220px;
   object-fit: cover;
   line-height: 0;
+  border-radius: 8px; /* Bordes redondeados en las imágenes también */
 }
 
-/* ---------------------------------------------------------------------------
-   HABILIDADES — cards con degradado suave + pills
-   --------------------------------------------------------------------------- */
+/* ---------- HABILIDADES — Cards con degradado suave + Pills --------------- */
 .x-cards-grid.skills .x-card,
 .cards-grid.skills .card{
   border: 1px solid var(--border-1);
   background: linear-gradient(180deg, var(--surface-2) 0%, var(--surface-1) 100%);
+  transition: background .3s ease;
 }
+
+.x-cards-grid.skills .x-card:hover,
+.cards-grid.skills .card:hover{
+  background: linear-gradient(180deg, var(--surface-2) 0%, var(--md-primary-fg-color) 100%);
+}
+
 .x-cards-grid.skills .x-card h3,
 .cards-grid.skills .card h3{
   margin: .5rem 1rem 0 1rem;
   color: var(--md-primary-fg-color);
 }
 
-/* Lista compacta */
-.list-clean{ list-style: none; margin: .25rem 1rem 1rem 1rem; padding: 0; }
-.list-clean li{ margin: .25rem 0; color: var(--text-2); }
-
-/* Pills/burbujas */
+/* Pills/Burbujas */
 .pill{
   display: inline-block;
   font-size: .85rem;
   line-height: 1;
-  padding: .35rem .55rem;
+  padding: .45rem .65rem;
   border-radius: 999px;
   border: 1px solid var(--border-1);
   background: var(--pill-bg);
   color: var(--text-1);
   margin: .18rem .25rem .18rem 0;
+  transition: background .3s ease;
 }
 
-/* ---------------------------------------------------------------------------
-   GALERÍA / MEDIOS — franja inferior con el primario
-   --------------------------------------------------------------------------- */
+.pill:hover{
+  background: var(--md-accent-fg-color); /* Cambiar color al pasar el ratón */
+}
+
+/* ---------- GALERÍA / MEDIOS -------------------------------------------- */
 .x-cards-grid.media .x-card,
 .cards-grid.media .card{
-  /* heredan de card base */
+  /* Heredan de card base */
 }
 
 .x-caption,
@@ -162,7 +176,9 @@ a.md-button.md-button--primary:hover{
   padding: .9rem 1rem;
   background: var(--md-primary-fg-color);
   color: #fff;
+  font-family: var(--font-secondary);
 }
+
 .x-caption small,
 .cards-grid.media .card .caption small{
   display: block;
@@ -171,94 +187,11 @@ a.md-button.md-button--primary:hover{
   font-weight: 400;
 }
 
-/* Parche anti “bloque blanco” en algunas columnas */
-.md-typeset .cards-grid.media { align-items: stretch; }
-.md-typeset .cards-grid.media > .card::before,
-.md-typeset .cards-grid.media > .card::after { content:none !important; display:none !important; }
-.md-typeset .cards-grid.media > .card{
-  min-height: 0;
-  overflow: hidden;
-  background: var(--surface-2);
-  border: 1px solid var(--border-1);
-  box-shadow: 0 2px 6px var(--shadow-1);
-}
-
-/* ---------------------------------------------------------------------------
-   Ajustes responsivos mínimos
-   --------------------------------------------------------------------------- */
-@media (max-width: 300px){
+/* ---------- AJUSTES RESPONSIVOS ----------------------------------------- */
+@media (max-width: 350px){
   .profile-hero{ flex-direction: column; align-items: flex-start; }
   .profile-hero img{
     width: clamp(100px, 30vw, 150px);
     height: clamp(100px, 30vw, 150px);
   }
 }
-
-/* ====== Tarjetas "Atajos": clamp de líneas y botón pegado abajo ====== */
-.md-typeset .cards-grid.shortcuts{
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.md-typeset .cards-grid.shortcuts > .card{
-  padding: 1.1rem;
-  min-height: 230px;                    /* altura coherente entre tarjetas */
-  gap: .5rem;
-}
-
-/* Título: máximo 2 líneas con elipsis */
-.md-typeset .cards-grid.shortcuts > .card h3{
-  margin: 0 0 .35rem 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;                /* Safari/Chromium */
-  line-clamp: 2;                        /* especificación nueva */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* Descripción: máximo 3 líneas con elipsis */
-.md-typeset .cards-grid.shortcuts > .card > p:first-of-type{
-  color: var(--text-2);
-  margin: 0 0 .6rem 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* Línea de acciones en cada tarjeta del Portafolio */
-.md-typeset .cards-grid.shortcuts > .card > p:last-of-type{
-  margin-top: auto;              /* mantiene el bloque pegado abajo */
-  display: flex;                 /* ponemos los botones en fila */
-  align-items: center;
-  gap: 1.25rem;                  /* ← separación entre botón y estado */
-  flex-wrap: wrap;               /* no rompe en pantallas angostas */
-}
-
-
-/* ===== Portafolio: mostrar el estado (pill) arriba del botón ===== */
-.md-typeset .cards-grid.portfolio-list > .card > p:last-of-type{
-  margin-top: auto;                 /* mantiene el bloque pegado abajo   */
-  display: flex;                    /* línea de acciones como columna    */
-  flex-direction: column;
-  align-items: flex-start;
-  gap: .6rem;                       /* espacio entre estado y botón      */
-}
-
-/* Reordena: la pill primero, el botón debajo */
-.md-typeset .cards-grid.portfolio-list > .card > p:last-of-type .pill{
-  order: -1;
-}
-
-/* Opcional: ancho del botón al contenido (no a toda la fila) */
-.md-typeset .cards-grid.portfolio-list > .card > p:last-of-type .md-button{
-  width: fit-content;
-}
-
-
-.toc-only{
-  position:absolute!important;
-  clip:rect(1px,1px,1px,1px);
-  padding:0;border:0;height:1px;width:1px;overflow:hidden;
-}
-

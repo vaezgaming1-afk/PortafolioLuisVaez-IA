@@ -18,18 +18,20 @@ time_spent: "—"
 {% if page.meta.tags %}{% for t in page.meta.tags %}<span class="pill">{{ t }}</span>{% endfor %}{% endif %}
 
 !!! abstract "Resumen ejecutivo"
-    **Objetivo:** dejar online el **portafolio** con **GitHub Pages** usando **MkDocs + Material** y un workflow de **GitHub Actions**.  
-    **Resultado:** sitio público accesible, estructura mínima completada (About, links a prácticas e insights iniciales) y **pipeline de despliegue** reproducible.
+    **Objetivo:** Publicar el **portafolio** utilizando **GitHub Pages** con **MkDocs + Material** y un pipeline de **GitHub Actions**.  
+    **Resultado:** Un sitio accesible públicamente con una estructura mínima (About, enlaces a prácticas, e imágenes destacadas) y un **workflow de despliegue** automatizado.
 
 **Enlaces rápidos:**  
-[Consigna oficial — “Publicar tu Portafolio con GitHub Pages”](https://juanfkurucz.com/ucu-ia/ut1/03-portafolio-github-pages/)
+[Consigna oficial — "Publicar tu Portafolio con GitHub Pages"](https://juanfkurucz.com/ucu-ia/ut1/03-portafolio-github-pages/)
 
 ---
 
 ## Contexto
+
 Esta práctica asegura que el portafolio esté **online**, con despliegues automáticos en cada `push` a **main**. Se parte de un **template** y se publica con **GitHub Actions**, dejando secciones mínimas visibles (About, prácticas e imágenes destacadas).
 
 ## Objetivos
+
 - [x] Crear el repo **desde el template** (no fork).  
 - [x] Activar **GitHub Pages** con **Source: GitHub Actions**.  
 - [x] Completar el **contenido mínimo** (About, enlaces a prácticas, visualizaciones).  
@@ -41,7 +43,7 @@ Esta práctica asegura que el portafolio esté **online**, con despliegues autom
 ## Actividades (con tiempos estimados)
 
 | Actividad                                         | Estimado | Real | Nota |
-|---|---:|---:|---|
+|---------------------------------------------------|---|---|---|
 | Crear repo desde template                         | 10 m | 5 m | `Use this template` → repo público y nombre corto. |
 | Activar GitHub Pages (Actions)                    | 5 m  | 5 m | Settings → Pages → **Source: GitHub Actions**. |
 | Completar contenido mínimo (About, links, figs)   | 45 m | 20 m | Portada, enlaces a P1 (#01 EDA Iris), capturas destacadas. |
@@ -54,21 +56,21 @@ Esta práctica asegura que el portafolio esté **online**, con despliegues autom
 
 ## Desarrollo
 
-- **Template → Repo**: creación desde `Use this template`; repo **público** y descripción corta.  
+- **Template → Repo**: Creación desde `Use this template`; repo **público** y descripción corta.  
 - **Pages (Actions)**: Settings → Pages → Source = **GitHub Actions**; se verifica el **workflow** en *Actions*.  
 - **Contenido mínimo**:  
-  - **About**: bio breve + links (GitHub/LinkedIn).  
-  - **Prácticas**: enlaces relativos a #01 (EDA) y a esta #02; 3–5 **insights** y 1–2 **figs** (pairplot/heatmap).  
+  - **About**: Breve bio + links (GitHub/LinkedIn).  
+  - **Prácticas**: Enlaces relativos a #01 (EDA) y #02; 3–5 **insights** y 1–2 **figs** (pairplot/heatmap).  
   - **Backlog**: “Próximos pasos” para seguir iterando.  
-- **Publicación**: `git commit -m "feat: publicar estructura inicial del portafolio"` → `git push` → comprobar URL Pages.  
-- **Entrega**: enviar URL pública (no la del repo) y confirmar visibilidad.
+- **Publicación**: `git commit -m "feat: publicar estructura inicial del portafolio"` → `git push` → Comprobar URL Pages.  
+- **Entrega**: Enviar URL pública (no la del repo) y confirmar visibilidad.
 
 ---
 
 ## Indicadores de despliegue
 
 | Indicador                                     | Estado / Valor |
-|---|---|
+|------------------------------------------------|----------------|
 | URL pública (GitHub Pages)                    | **TODO**: pega aquí tu URL |
 | Workflow `deploy` en Actions                  | ✅ Éxito |
 | Tiempo de build (primer deploy)               | ~1–3 min |
@@ -85,7 +87,7 @@ Esta práctica asegura que el portafolio esté **online**, con despliegues autom
 
 ## Decisiones clave (ADR-lite)
 - **Source de Pages:** **GitHub Actions** (no branch `gh-pages` manual).  
-- **Estructura:** mantener `docs/` + `assets/` + `mkdocs.yml` del template.  
+- **Estructura:** Mantener `docs/` + `assets/` + `mkdocs.yml` del template.  
 - **Links relativos** entre prácticas para evitar roturas al mover rutas.  
 - **Sin dominio custom** por ahora; considerar más adelante.
 
@@ -98,22 +100,9 @@ Esta práctica asegura que el portafolio esté **online**, con despliegues autom
 
 ## Reproducibilidad (local)
 Requiere `python 3.11` y:
-
 ```bash
 pip install -q mkdocs mkdocs-material
-mkdocs serve           # servidor local en http://127.0.0.1:8000
+mkdocs serve  
+ ```
+# servidor local en http://127.0.0.1:8000
 # para publicar local→gh, basta con push; el workflow de Actions despliega solo
-```
----
-
-## Evidencias
-
-- [Sitio público (Acerca):](https://aleaurre.github.io/ia-portfolio/acerca/)
-
----
-
-!!! note "Reflexión"
-    Lo más valioso fue automatizar el despliegue: pasar de “publicar a mano” a CI/CD con Actions reduce fricción y errores.
-    Aprendizaje clave: en GitHub Pages de proyecto la URL incluye /<repo>/, por lo que conviene usar links relativos entre páginas para evitar roturas si cambio el nombre del repo o la ruta base.
-    También confirmé que Material para MkDocs resuelve rápido la navegación con tarjetas y pills, manteniendo consistencia visual con mínimas líneas en extra.css.
-    A futuro, este setup permite iterar contenido sin tocar configuración: cada push publica, lo que alinea bien el ritmo de trabajo con la entrega en WebAsignatura.

@@ -16,7 +16,7 @@ date: 2025-01-01
       <a class="md-button md-button--primary" href="../portfolio/">
         Ver Portfolio
       </a>
-      <a class="md-button md-button--primary" href="../acerca/##contacto">
+      <a class="md-button md-button--primary" href="../acerca/#contacto">
         Contactarme
       </a>
     </p>
@@ -30,64 +30,6 @@ Soy estudiante de **Ingeniería de Sistemas** en la **Universidad César Vallejo
 Combino formación técnica con interés por la **gestión de proyectos tecnológicos** y la **innovación**. Actualmente, me enfoco en la implementación de **soluciones efectivas** y en la optimización de infraestructura.  
 Este portfolio reúne proyectos que reflejan mi **perfil colaborativo**, mi **vocación de liderazgo** y mi compromiso con la **mejora continua**.
 
-
----
-## Habilidades principales
-
-<div class="x-cards-grid skills">
-
-<div class="x-card">
-<h3>Lenguajes y Librerías</h3>
-<ul class="list-clean">
-  <li><span class="pill">Python</span></li> 
-  <li>Pandas, Numpy, Scikit-learn, PyTorch</li>
-  <li><span class="pill">SQL</span> <span class="pill">Mongo DB</span></li> 
-  <li>ETL, modelado, KPIs, consultas</li>
-</ul>
-</div>
-
-<div class="x-card">
-<h3>Visualización y BI</h3>
-<ul class="list-clean">
-  <li><span class="pill">Power BI</span> <span class="pill">DAX</span> <span class="pill">Tableau</span></li>
-  <li>Storytelling con datos</li>
-</ul>
-</div>
-
-<div class="x-card">
-<h3>Idiomas y comunicación</h3>
-<ul class="list-clean">
-  <li>Inglés <strong>C2</strong></li>
-  <li>Escritura técnica, docencia y mentoría.</li>
-  <li>Presentaciones en calidad de expositor en eventos públicos.</li>
-  <li>Documentación científica e informática.</li>
-</ul>
-</div>
-
-<div class="x-card">
-<h3>Sistemas embebidos</h3>
-<ul class="list-clean">
-  <li><span class="pill">C++</span> <span class="pill">Assembler</span></li>
-  <li>UART, Timers, Interrupciones.</li>
-  <li>Matriz LED 32×32 (HUB75), ATmega328.</li>
-</ul>
-</div>
-
-<div class="x-card">
-<h3>Habilidades blandas</h3>
-<ul class="list-clean">
-  <li><span class="pill">Proactividad</span></li> 
-  <li><span class="pill">Responsabilidad</span></li>
-  <li><span class="pill">Liderazgo</span></li> 
-  <li><span class="pill">Versatilidad</span></li>
-  <li><span class="pill">Determinación</span></li>
-</ul>
-</div>
-
-</div>
-
-
----
 
 ## Intereses actuales
 
@@ -124,7 +66,10 @@ Este portfolio reúne proyectos que reflejan mi **perfil colaborativo**, mi **vo
   <small>Certificado otorgado a Luis Eduardo Vaez Alvarez por asistir a la conferencia sobre cambios y usos de la tecnología en el crecimiento profesional y personal, organizada por la Universidad Tecnológica del Perú (UTP) en colaboración con Google, realizada en el Campus Trujillo en noviembre de 2023.</small>
 </div>
 
+
+--- 
  ## Contacto
+ 
 - 📧 <a href="mailto:luis.vaezx@correo.ucu.edu.uy">luis.vaezx@correo.ucu.edu.uy</a>  
 - 🌐 <a href="https://www.linkedin.com/in/luis-v%C3%A1ez-%C3%A1lvarez-514a5a357/" target="_blank">LinkedIn</a>
-- 💻 <a href="https://vaezgaming1-afk.github.io/PortafolioLuisVaez-IA/" target="_blank">GitHub</a>
+- 💻 <a href="https://vaezgaming1-afk.github.io/PortafolioLuisVaez-IA/" target="_blank">GitHub</a> 
