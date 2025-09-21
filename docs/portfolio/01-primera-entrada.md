@@ -2,24 +2,15 @@
 title: "Entrada 01 — Mi primera experiencia"
 date: 2025-01-01
 ---
+jupyter:
+  colab:
+  kernelspec:
+    display_name: Python 3
+    name: python3
+  language_info:
+    name: python
+  nbformat: 4
+  nbformat_minor: 0
+---
 
-# Entrada 01 — Mi primera experiencia
 
-## Contexto
-Actividad inicial del curso. hola
-
-## Objetivos
-- Familiarizarme con el flujo de trabajo del portafolio
-
-## Actividades (con tiempos estimados)
-- Configurar el repositorio — 30 min
-- Crear primera entrada — 30 min
-
-## Desarrollo
-Descripción breve de lo realizado.
-
-## Evidencias
-- Enlace a material o capturas en `docs/assets/`
-
-## Reflexión
-Lo más desafiante, lo más valioso, próximos pasos.

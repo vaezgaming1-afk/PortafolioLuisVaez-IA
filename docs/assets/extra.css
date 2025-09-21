@@ -1,0 +1,264 @@
+/* ============================================================================
+   PALETA + DISEÑO (SIN CAMBIAR LAYOUT)
+   Paleta personalizada:
+     #314259 (primario) · #C1C2C6 (claro) · #1C2226 (oscuro)
+     #735443 (acento)  · #59433E (secundario)
+   Soporta CLARO (default) y OSCURO (slate) – mismo diseño de tarjetas/burbujas
+   ============================================================================ */
+
+/* ---------- MODO CLARO (scheme: default) ---------------------------------- */
+:root{
+  /* Primario + acento */
+  --md-primary-fg-color:        #314259;        /* azul navy */
+  --md-primary-fg-color--light: #735443;        /* usamos acento como hover */
+  --md-primary-fg-color--dark:  #314259;
+  --md-accent-fg-color:         #735443;        /* marrón cálido */
+
+  /* Superficies, texto y bordes */
+  --surface-1: #C1C2C6;                           /* fondo general */
+  --surface-2: #ffffff;                            /* tarjetas (claro) */
+  --surface-3: #e6e7ea;                            /* resaltado/hover suave */
+  --border-1:  rgba(49,66,89,.28);                 /* del primario */
+  --shadow-1:  rgba(0,0,0,.12);
+  --text-1:    #1C2226;                            /* principal (oscuro) */
+  --text-2:    #59433E;                            /* secundario */
+  --pill-bg:   rgba(49,66,89,.10);                 /* fondo pills */
+
+  --md-logo-height: 26px;
+}
+
+/* ---------- MODO OSCURO (scheme: slate) ----------------------------------- */
+[data-md-color-scheme="slate"]{
+  --md-primary-fg-color:        #314259;         /* mantenemos navy */
+  --md-primary-fg-color--light: #735443;         /* hover/acento */
+  --md-primary-fg-color--dark:  #1C2226;
+  --md-accent-fg-color:         #735443;
+
+  --surface-1: #1C2226;                            /* fondo marino oscuro */
+  --surface-2: #232a31;                            /* tarjeta (un tono ↑) */
+  --surface-3: #2c343c;                            /* hover/énfasis */
+  --border-1:  rgba(49,66,89,.45);                 /* borde más visible */
+  --shadow-1:  rgba(0,0,0,.50);
+  --text-1:    #C1C2C6;                            /* texto principal claro */
+  --text-2:    rgba(193,194,198,.78);              /* secundario */
+  --pill-bg:   rgba(49,66,89,.25);                 /* pill en oscuro */
+}
+
+/* ---------------------------------------------------------------------------
+   Botón primario del tema (mismo diseño)
+   --------------------------------------------------------------------------- */
+a.md-button.md-button--primary{
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: #fff;
+}
+a.md-button.md-button--primary:hover{
+  background: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+.cv-btn{ margin-top: 1rem; } /* separación del botón de CV */
+
+/* ---------------------------------------------------------------------------
+   HERO — avatar + texto (mantengo tamaño que tenías en este archivo)
+   --------------------------------------------------------------------------- */
+.profile-hero{
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin: 0 0 1rem 0;
+}
+.profile-hero img{
+  width: clamp(160px, 18vw, 230px);
+  height: clamp(160px, 18vw, 230px);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--md-primary-fg-color);
+}
+
+/* ---------------------------------------------------------------------------
+   Grids y Cards — mismas clases y layout
+   --------------------------------------------------------------------------- */
+
+/* Grid responsivo */
+.x-cards-grid,
+.cards-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+/* Card base (imagen arriba) */
+.x-card,
+.cards-grid .card{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface-2);
+  border: 1px solid var(--border-1);
+  box-shadow: 0 2px 6px var(--shadow-1);
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+.x-card:hover,
+.cards-grid .card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px var(--shadow-1);
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Imagen sin gap y altura consistente */
+.x-card img,
+.cards-grid .card img{
+  display: block;
+  width: 100%;
+  height: 200px;      /* ajustable 180–220 */
+  object-fit: cover;
+  line-height: 0;
+}
+
+/* ---------------------------------------------------------------------------
+   HABILIDADES — cards con degradado suave + pills
+   --------------------------------------------------------------------------- */
+.x-cards-grid.skills .x-card,
+.cards-grid.skills .card{
+  border: 1px solid var(--border-1);
+  background: linear-gradient(180deg, var(--surface-2) 0%, var(--surface-1) 100%);
+}
+.x-cards-grid.skills .x-card h3,
+.cards-grid.skills .card h3{
+  margin: .5rem 1rem 0 1rem;
+  color: var(--md-primary-fg-color);
+}
+
+/* Lista compacta */
+.list-clean{ list-style: none; margin: .25rem 1rem 1rem 1rem; padding: 0; }
+.list-clean li{ margin: .25rem 0; color: var(--text-2); }
+
+/* Pills/burbujas */
+.pill{
+  display: inline-block;
+  font-size: .85rem;
+  line-height: 1;
+  padding: .35rem .55rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-1);
+  background: var(--pill-bg);
+  color: var(--text-1);
+  margin: .18rem .25rem .18rem 0;
+}
+
+/* ---------------------------------------------------------------------------
+   GALERÍA / MEDIOS — franja inferior con el primario
+   --------------------------------------------------------------------------- */
+.x-cards-grid.media .x-card,
+.cards-grid.media .card{
+  /* heredan de card base */
+}
+
+.x-caption,
+.cards-grid.media .card .caption{
+  margin: 0;
+  padding: .9rem 1rem;
+  background: var(--md-primary-fg-color);
+  color: #fff;
+}
+.x-caption small,
+.cards-grid.media .card .caption small{
+  display: block;
+  opacity: .92;
+  margin-top: .25rem;
+  font-weight: 400;
+}
+
+/* Parche anti “bloque blanco” en algunas columnas */
+.md-typeset .cards-grid.media { align-items: stretch; }
+.md-typeset .cards-grid.media > .card::before,
+.md-typeset .cards-grid.media > .card::after { content:none !important; display:none !important; }
+.md-typeset .cards-grid.media > .card{
+  min-height: 0;
+  overflow: hidden;
+  background: var(--surface-2);
+  border: 1px solid var(--border-1);
+  box-shadow: 0 2px 6px var(--shadow-1);
+}
+
+/* ---------------------------------------------------------------------------
+   Ajustes responsivos mínimos
+   --------------------------------------------------------------------------- */
+@media (max-width: 300px){
+  .profile-hero{ flex-direction: column; align-items: flex-start; }
+  .profile-hero img{
+    width: clamp(100px, 30vw, 150px);
+    height: clamp(100px, 30vw, 150px);
+  }
+}
+
+/* ====== Tarjetas "Atajos": clamp de líneas y botón pegado abajo ====== */
+.md-typeset .cards-grid.shortcuts{
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.md-typeset .cards-grid.shortcuts > .card{
+  padding: 1.1rem;
+  min-height: 230px;                    /* altura coherente entre tarjetas */
+  gap: .5rem;
+}
+
+/* Título: máximo 2 líneas con elipsis */
+.md-typeset .cards-grid.shortcuts > .card h3{
+  margin: 0 0 .35rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;                /* Safari/Chromium */
+  line-clamp: 2;                        /* especificación nueva */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Descripción: máximo 3 líneas con elipsis */
+.md-typeset .cards-grid.shortcuts > .card > p:first-of-type{
+  color: var(--text-2);
+  margin: 0 0 .6rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Línea de acciones en cada tarjeta del Portafolio */
+.md-typeset .cards-grid.shortcuts > .card > p:last-of-type{
+  margin-top: auto;              /* mantiene el bloque pegado abajo */
+  display: flex;                 /* ponemos los botones en fila */
+  align-items: center;
+  gap: 1.25rem;                  /* ← separación entre botón y estado */
+  flex-wrap: wrap;               /* no rompe en pantallas angostas */
+}
+
+
+/* ===== Portafolio: mostrar el estado (pill) arriba del botón ===== */
+.md-typeset .cards-grid.portfolio-list > .card > p:last-of-type{
+  margin-top: auto;                 /* mantiene el bloque pegado abajo   */
+  display: flex;                    /* línea de acciones como columna    */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .6rem;                       /* espacio entre estado y botón      */
+}
+
+/* Reordena: la pill primero, el botón debajo */
+.md-typeset .cards-grid.portfolio-list > .card > p:last-of-type .pill{
+  order: -1;
+}
+
+/* Opcional: ancho del botón al contenido (no a toda la fila) */
+.md-typeset .cards-grid.portfolio-list > .card > p:last-of-type .md-button{
+  width: fit-content;
+}
+
+
+.toc-only{
+  position:absolute!important;
+  clip:rect(1px,1px,1px,1px);
+  padding:0;border:0;height:1px;width:1px;overflow:hidden;
+}
+

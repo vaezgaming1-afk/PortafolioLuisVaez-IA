@@ -78,6 +78,7 @@ def train(
 | Revisión bibliográfica |  45m  | Lista de fuentes priorizadas     |
 | Implementación      |  90m   | Script ejecutable/documentado    |
 | Evaluación          |  60m   | Métricas y análisis de errores   |
+| Evaluación          |  60m   | Métricas y análisis de errores   |
 
 ### Imágenes con glightbox y atributos
 
