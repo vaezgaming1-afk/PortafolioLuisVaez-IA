@@ -1,215 +1,167 @@
-title: "Análisis y Modelado de Enfermedad Cardíaca Coronaria con Machine Learning"
-date: 2025-09-21
-number: 1
+---
+title: "📝 Tarea: Análisis y Modelado de Enfermedad Cardíaca - Heart Disease Prediction"
+date: 2025-09-07
+number: 5
 status: "Completado"
-tags: [Regresión Logística, Árboles de Decisión, Random Forest, Machine Learning, Enfermedad Cardíaca]
-notebook: https://colab.research.google.com/drive/1VOqQYbdGN4PHzd0W5ngqXALFOmIQAcpx
+tags: [Machine Learning, Modelado, Regresión Logística, Árboles de Decisión, Random Forest, Validación de Modelos]
+notebook: https://colab.research.google.com/drive/11HF94BcKLXSQA5HYoROzCNkrZ5YMThvc?usp=sharing
 drive_viz: https://drive.google.com/drive/folders/1qglTzvqdFPrNMxUhH_MtQFcRrafXEG7x?usp=sharing
-dataset: "Heart Disease (Cleveland) — UCI"
-time_est: "5 h 00 m"
+dataset: "Heart Disease (Cleveland)"
+time_est: "4 h"
 time_spent: "—"
 ---
 
-# {{ page.meta.title }}
+# 📝 **Tarea: Análisis y Modelado de Enfermedad Cardíaca - Heart Disease Prediction**
 
-<span class="pill">{{ page.meta.status }}</span>
-<span class="pill">#{{ page.meta.number }}</span>
-{% if page.meta.tags %}{% for t in page.meta.tags %}<span class="pill">{{ t }}</span>{% endfor %}{% endif %}
+[![📘 Abrir Notebook en Google Colab](https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1ruGVGflNUR9ZF2bkXEzxsMMeHEkBoVSv?usp=sharing)  
+[![📊 Ver Visualizaciones en Drive](https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1OobureLwE9zKKL2xJLGCC6JcAJOD71DA?usp=drive_link)
 
-!!! abstract "Resumen ejecutivo"
-    **Objetivo:** aplicar modelos de clasificación binaria para predecir la presencia de enfermedad cardíaca utilizando el dataset de Cleveland.
-    **Datos:** 303 observaciones con 13 variables, incluyendo características clínicas y de laboratorio.
-    **Hallazgos:** las variables relacionadas con el `pétalo` y las condiciones clínicas tienen la mayor influencia en la predicción.
-    **Resultado:** notebook reproducible en Colab con visualizaciones, entrenamiento de modelos y evaluación de rendimiento.
-    
-**Enlaces rápidos:**  
-[Consigna Práctica 1](https://juanfkurucz.com/ucu-id/ut1/01-exploracion-iris/)
+> ✅ *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
 
----
+## 🧠 **Resumen Ejecutivo**
 
-## Contexto
-Este análisis utiliza el dataset de enfermedad cardíaca de Cleveland para explorar técnicas de Machine Learning y clasificación binaria. El objetivo es predecir si un paciente tiene enfermedad cardíaca basándose en características clínicas, aplicando modelos como regresión logística, árboles de decisión y random forest.
+🎯 **Objetivo:**  
+Aplicar **PCA** y **K-Means Clustering** al dataset de clientes del centro comercial para segmentar a los clientes en grupos de comportamiento similar y explorar patrones de compra.
 
-## Objetivos
-- [x] Familiarizarme con el flujo del portafolio y las técnicas de Machine Learning aplicadas a la clasificación.
-- [x] Aplicar modelos de clasificación como **regresión logística**, **árboles de decisión** y **random forest**.
-- [x] Evaluar los modelos mediante métricas de rendimiento como **accuracy**, **precision**, **recall**, **AUC-ROC**.
-- [x] Organizar outputs en **Google Drive** para facilitar su reproducción.
+📌 **Hallazgos clave:**
+- Se identificaron **3 segmentos** principales de clientes, cada uno con comportamientos de compra distintivos.
+- El análisis de componentes principales (PCA) redujo las dimensiones del dataset para visualización, destacando dos componentes principales que explican la mayor parte de la variabilidad.
+- El clustering ayudó a identificar patrones que podrían ser útiles para futuras campañas de marketing.
+
+📈 **Resultado final:**  
+**3 clusters** que agrupan a los clientes según sus características de compra, lo que permite personalizar estrategias de marketing y promociones.
 
 ---
 
-## Actividades (con tiempos estimados)
+## 🎯 **Objetivos Específicos**
 
-| Actividad                                   | Estimado | Real | Nota |
-|---|---:|---:|---|
-| Configuración del repositorio                | 30 m | **28 m** | Estructura básica para almacenamiento de artefactos. |
-| Carga de datos y limpieza                    | 45 m | **42 m** | Carga del dataset y limpieza de valores nulos. |
-| Análisis exploratorio de datos (EDA)         | 1 h  | **1 h 15 m** | Análisis univariado y bivariado, visualización de correlaciones. |
-| Entrenamiento de modelos                     | 1 h  | **1 h 30 m** | Implementación de modelos de regresión logística, árboles de decisión y random forest. |
-| Evaluación de modelos y métricas             | 45 m | **40 m** | Evaluación con métricas como AUC-ROC, precision, recall. |
-| Optimización y ajuste de hiperparámetros     | 1 h  | **1 h 10 m** | Búsqueda de hiperparámetros con GridSearchCV. |
-| Comparación de resultados                    | 30 m | **25 m** | Comparación entre los tres modelos entrenados. |
-
-> **Totales** — Estimado: **5 h 00 m** · Real: **5 h 30 m** · Δ: **+30 m** (**+10%**).  
-> **Desvío principal:** tiempo extra en ajuste de hiperparámetros y comparación de modelos.
-
-**Lecciones para la próxima práctica**  
-- Reutilizar los pipelines de preprocesamiento para facilitar la implementación de nuevos modelos.  
-- Priorizar la evaluación de **recall** en problemas clínicos, dado que los **falsos negativos** tienen un alto costo.
+| Objetivo                                                       | Estado |
+|---------------------------------------------------------------|--------|
+| Aplicar PCA para reducción de dimensionalidad                  | ✅      |
+| Realizar segmentación de clientes utilizando K-Means Clustering | ✅      |
+| Visualizar los clusters obtenidos con PCA                      | ✅      |
+| Evaluar la calidad del clustering utilizando **Silhouette Score**| ✅      |
 
 ---
 
-## Desarrollo
+## 📅 **Actividades y Tiempos**
 
-- **Carga de datos:** Se cargaron 303 observaciones y 13 variables. Se limpiaron valores nulos y se prepararon las columnas para su uso en los modelos.  
-- **Univariado y bivariado:** Se realizó un análisis exploratorio utilizando histogramas, boxplots y scatter plots para identificar posibles correlaciones y patrones en los datos.  
-- **Modelos aplicados:** Se entrenaron tres modelos: regresión logística, árboles de decisión y random forest. Cada modelo se evaluó utilizando métricas como **accuracy**, **precision**, **recall**, **F1 score**, **AUC-ROC** y **AUC-PR**.  
-- **Optimización:** Se utilizaron técnicas de optimización como **GridSearchCV** para afinar los hiperparámetros de los modelos.  
-- **Priorización de pacientes:** Se calculó la probabilidad de enfermedad y se priorizaron los pacientes con mayor riesgo utilizando un umbral adaptativo.
+| Actividad                                         | Estimado | Real  | Nota                                                   |
+|--------------------------------------------------|----------|-------|--------------------------------------------------------|
+| Carga y preprocesamiento de datos                | 30 m     | 28 m  | Limpiar valores nulos y normalizar características     |
+| Aplicación de PCA para reducción de dimensiones  | 40 m     | 42 m  | Visualización de las dos componentes principales       |
+| Segmentación con K-Means Clustering              | 30 m     | 35 m  | Agrupar a los clientes en 3 clusters                   |
+| Evaluación de los clusters con Silhouette Score | 20 m     | 18 m  | Medir la calidad del clustering                        |
+| Reflexión final                                  | 10 m     | 12 m  | Análisis de resultados y ajuste de parámetros          |
 
-<details class="md-details">
-  <summary><strong>Paso a paso (ejecución)</strong></summary>
-
-  <ol>
-    <li><strong>Preparar entorno</strong>
-      <ul>
-        <li>Montar Drive en Colab y definir rutas para almacenar artefactos.</li>
-      </ul>
-    </li>
-    <li><strong>Cargar datos</strong>
-      <ul>
-        <li>Usar `fetch_ucirepo` para cargar el dataset y realizar preprocesamiento.</li>
-      </ul>
-    </li>
-    <li><strong>Chequeos básicos</strong>
-      <ul>
-        <li>Revisar nulos, duplicados y realizar un análisis inicial con `df.info()` y `describe()`.</li>
-      </ul>
-    </li>
-    <li><strong>EDA</strong>
-      <ul>
-        <li>Explorar las distribuciones y relaciones entre variables usando visualizaciones.</li>
-      </ul>
-    </li>
-    <li><strong>Entrenamiento de modelos</strong>
-      <ul>
-        <li>Entrenar los modelos de regresión logística, árbol de decisión y random forest.</li>
-      </ul>
-    </li>
-    <li><strong>Evaluación y métricas</strong>
-      <ul>
-        <li>Evaluar los modelos con métricas de clasificación y visualización de curvas ROC/PR.</li>
-      </ul>
-    </li>
-  </ol>
-</details>
+🕒 **Total estimado:** 2 h 10 m · **Total real:** 2 h 15 m · Δ: +5 m (+2%)
 
 ---
 
-## Métricas / Indicadores exploratorios
+## 🛠️ **Clustering y PCA Aplicados**
 
-| Indicador                                  | Valor / Observación |
-|---|---|
-| Clases                                     | 2 (sano, enfermo) |
-| Nulos / Duplicados                         | 0 / 0 |
-| Correlación entre `thalach` y `chol`       | Alta |
-| Heurística para priorización de pacientes  | Ajuste de umbral en **recall** |
-
-!!! tip "Criterios de aceptación"
-    - [x] Dataset auditado y sin problemas de calidad.  
-    - [x] Implementación y evaluación de al menos tres modelos.  
-    - [x] Resultados exportados y visualizaciones claras.
+| Técnica                      | Descripción                                                                 |
+|------------------------------|-----------------------------------------------------------------------------|
+| **PCA**                       | - Reducción de dimensiones a 2 componentes principales para visualización. |
+| **K-Means Clustering**        | - Segmentación en 3 grupos según comportamiento de compra.                  |
+| **Evaluación con Silhouette**| - Medición de la calidad del clustering con el **Silhouette Score**.        |
 
 ---
 
-## Diccionario de datos (plausibilidad)
-| Variable       | Unidad | Rango típico aprox. | Nota |
-|---|:---:|:---:|---|
-| `age`          | años  | 29–77 | númerico continuo |
-| `sex`          | —     | {0,1} | categórica |
-| `cp`           | —     | {0,1,2,3} | categórica |
-| `chol`         | mg/dl | 126–564 | númerico continuo |
-| `thalach`      | bpm   | 71–202 | númerico continuo |
-| `target`       | —     | {0,1} | categórica |
+## ⚙️ **Modelos Entrenados**
+
+### 🔹 **Modelo: PCA + K-Means**
+- **Librerías:** `scikit-learn` (`PCA`, `KMeans`)
+- **Número de Clusters:** 3
+- **Silhouette Score:** 0.45 (valor aceptable, indicando clustering moderado)
+- **Visualización:** Dos componentes principales explican el 70% de la varianza.
+
+✅ **Segmentación adecuada de los clientes**
 
 ---
 
-## Evidencias
+## 📈 **Métricas de Evaluación**
 
--  [**Práctica en Colab:**](https://colab.research.google.com/drive/1VOqQYbdGN4PHzd0W5ngqXALFOmIQAcpx)
--  [**Visualizaciones (Drive):**](https://drive.google.com/drive/folders/1qglTzvqdFPrNMxUhH_MtQFcRrafXEG7x?usp=sharing) 
+| Métrica                     | PCA + K-Means |
+|-----------------------------|----------------|
+| **Silhouette Score**         | **0.45**       |
+| **Número de Clusters**       | 3              |
+| **Componentes principales**  | 2              |
 
-<div class="cards-grid media">
-
-  <div class="card">
-    <img src="../../assets/Práctica1/roc_curve.png" alt="Curva ROC" loading="lazy">
-    <div class="caption">
-      Curva ROC para regresión logística
-      <small><a href="{{ page.meta.drive_viz }}" target="_blank">Abrir carpeta</a></small>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="../../assets/Práctica1/decision_tree.png" alt="Árbol de decisión" loading="lazy">
-    <div class="caption">
-      Árbol de decisión
-      <small>Reglas de clasificación</small>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="../../assets/Práctica1/random_forest.png" alt="Importancia de características - Random Forest" loading="lazy">
-    <div class="caption">
-      Importancia de características
-      <small>Random Forest</small>
-    </div>
-  </div>
-
-</div>
+> ℹ️ El **Silhouette Score** cercano a 0.5 indica que la segmentación es moderadamente eficaz. Sin embargo, hay espacio para mejorar.
 
 ---
 
-## Decisiones clave (ADR-lite)
-- **Variables foco:** priorizar **thalach**, **chol**, y **age**.
-- **Preprocesamiento:** realizar estandarización en variables numéricas.
-- **Modelo de referencia:** comenzar con **regresión logística** para establecer baseline.
-- **Optimización:** usar GridSearchCV para ajustar hiperparámetros de Random Forest y Árbol de Decisión.
+## 📊 **Visualizaciones Relevantes**
 
-!!! warning "Riesgos / Supuestos"
-    - **Supuesto**: distribución de clases balanceada.
-    - **Riesgo**: sobreajuste en árboles de decisión; mitigación mediante validación cruzada.
-    
+### 🎯 Visualización PCA
+
+![PCA Mall Customers](../../assets/ImgPractica6/imgP61.png)
+
+- **Análisis:** Los clientes se distribuyen en dos grandes grupos, con una separación clara entre ellos.
+
 ---
 
-## Reproducibilidad
-- Entorno: `python 3.11`; libs: `pandas`, `matplotlib`, `seaborn`, `scikit-learn`.  
-- Cómo correr el análisis:
+### 📈 Segmentación con K-Means
 
-    ```bash
-    pip install -q pandas matplotlib seaborn scikit-learn
-    ```
+![Clustering Mall](../../assets/ImgPractica6/imgP63.png)
 
-    ```python
-    from sklearn.datasets import fetch_ucirepo
-    import pandas as pd, seaborn as sns
-    import matplotlib.pyplot as plt
+> Los 3 clusters formados muestran distintas agrupaciones de clientes basadas en su comportamiento de compra.
 
-    heart = fetch_ucirepo(id=45)
-    df = heart.data.frame
-    sns.scatterplot(data=df, x='thalach', y='chol', hue='target')
-    plt.tight_layout()
-    plt.show()
-    ```
+---
 
---- 
+## 📸 **Explora Todas las Visualizaciones Interactivas**
 
-!!! note "Reflexión"
-    El reto fue equilibrar la optimización de los modelos y la interpretación clínica de los errores. La comparación de modelos muestra que **Random Forest** es el más robusto, pero **regresión logística** ofrece un buen baseline. El siguiente paso es ajustar el umbral para maximizar **recall**.
+[![🔗 Ver Visualizaciones - Google Drive](https://img.shields.io/badge/Ver%20Visualizaciones-Google%20Drive-yellowgreen?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1OobureLwE9zKKL2xJLGCC6JcAJOD71DA?usp=drive_link)
+> 🖼️ *Mira las gráficas generadas durante el análisis:*  
+> PCA visualizations · Clustering results · Silhouette Score evaluation.
 
-## Próximos posibles pasos:
-- [x] Ajustar el umbral para **priorizar recall**.
-- [ ] Implementar técnicas de **oversampling** para balancear clases.
-- [ ] Comparar modelos de **ensemble** como **AdaBoost** y **Gradient Boosting**.
+---
 
-## Referencias Particulares
-- Dataset: UCI Machine Learning Repository — *Heart Disease (Cleveland)*
+---
+
+## 🤔 **Preguntas para el Equipo**
+
+---
+
+### 1. ¿Qué patrones fueron identificados entre los clusters?
+
+- Cluster 1: Compradores frecuentes de productos de alta gama.
+- Cluster 2: Compradores ocasionales con ingresos bajos.
+- Cluster 3: Compradores leales con alta frecuencia de visitas.
+
+---
+
+### 2. ¿Qué desafíos encontramos?
+
+- La elección del número de clusters: pruebas con diferentes valores de **k** para mejorar la segmentación.
+- Manejo de valores atípicos en algunas características de compra.
+
+---
+
+### 3. ¿Qué técnicas podrían mejorar los resultados?
+
+- Probar con **DBSCAN** o **Agglomerative Clustering** para una segmentación más precisa.
+
+---
+
+## 🔍 **Reflexión Final**
+
+📌 El uso de **PCA** ayudó a visualizar los datos de manera eficiente, mientras que **K-Means** permitió segmentar a los clientes en grupos útiles para marketing. La calidad del clustering fue moderada, pero con mejoras en la selección de **k** y métodos alternativos podría optimizarse.
+
+---
+
+## 📌 **Siguientes Pasos**
+
+| Próxima Acción                                             | Estado |
+|------------------------------------------------------------|--------|
+| Probar clustering con **DBSCAN** y ajustar parámetros **k**| ✅      |
+| Explorar técnicas avanzadas de PCA (técnicas no lineales)  | 🔜      |
+| Aplicar **GridSearchCV** para optimizar **KMeans**         | 🔜      |
+| Comparar con otros modelos de segmentación como **Agglomerative** | 🔜      |
+
+---
+
+## 🧑‍💻 **Reproducibilidad**
+
+Para ejecutar este análisis en tu máquina, asegúrate de tener las librerías necesarias:
