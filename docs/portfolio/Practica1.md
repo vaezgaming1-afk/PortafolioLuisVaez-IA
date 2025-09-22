@@ -1,6 +1,6 @@
 # 📖 **Análisis Exploratorio del Dataset Titanic**
 
-![Titanic Banner](https://upload.wikimedia.org/wikipedia/commons/f/fd/RMS_Titanic_3.jpg)
+![Titanic Banner](../assets/acerca/RMS_Titanic_3.jpg)
 
 > 🧠 *Explorando los factores que determinaron la supervivencia en el Titanic*
 

@@ -1,6 +1,6 @@
 # 🚀 **Práctica 2: Feature Engineering + Modelo Base**
 
-![Titanic Banner](https://upload.wikimedia.org/wikipedia/commons/f/fd/RMS_Titanic_3.jpg)
+![Titanic Banner](../assets/acerca/RMS_Titanic_3.jpg)
 
 > ✨ *Aplicando ingeniería de características y comparando modelos para predecir la supervivencia en el Titanic.*
 

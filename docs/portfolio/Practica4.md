@@ -8,9 +8,10 @@
 <span class="pill">Titanic</span>
 <span class="pill">Modelo Base</span>
 
-[**Ver Notebook en Google Colab**](https://colab.research.google.com/drive/114DetBDXPevvD7RS_C5Bg5FB2UjcoZ0I?usp=sharing)  
-[**Ver Visualizaciones en Google Drive**](https://drive.google.com/drive/folders/1zLNaoXm94xbjZ3wICLOtBp_4JDL-QcB0?usp=drive_link)  
+[![📘 Abrir Notebook en Google Colab](https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/114DetBDXPevvD7RS_C5Bg5FB2UjcoZ0I?usp=sharing)  
+[![📊 Ver Visualizaciones en Drive](https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1zLNaoXm94xbjZ3wICLOtBp_4JDL-QcB0?usp=drive_link)
 
+> ✅ *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
 ---
 
 ## 🏆 **Resumen Ejecutivo**
