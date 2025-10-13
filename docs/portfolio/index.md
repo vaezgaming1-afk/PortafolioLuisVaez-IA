@@ -63,8 +63,8 @@ Para el desarrollo de estos proyectos, utilicé un stack de herramientas estánd
 <div class="cards-grid shortcuts portfolio-list">
 
   <div class="card">
-    <h3>Práctica 1 — EDA del Titanic en Google Colab</h3>
-    <p>Exploración y análisis exploratorio de datos.</p>
+    <h3>Análisis Predictivo del Titanic: Descubriendo Patrones de Supervivencia a través de EDA</h3>
+    <p></p>
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica1/">Abrir</a>
@@ -72,8 +72,8 @@ Para el desarrollo de estos proyectos, utilicé un stack de herramientas estánd
   </div>
 
   <div class="card">
-    <h3>Práctica 2 — Feature Engineering simple + Modelo base</h3>
-    <p>Análisis.</p>
+    <h3>De Datos Crudos a Insights: Feature Engineering y Establecimiento del Modelo de Referencia</h3>
+    <p></p>
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica2/">Abrir</a>
@@ -81,8 +81,8 @@ Para el desarrollo de estos proyectos, utilicé un stack de herramientas estánd
   </div>
 
   <div class="card">
-    <h3>Práctica 4 — Regresión Lineal y Logística - Fill in the Blanks</h3>
-    <p>Implementar regresión lineal paso a paso</p>
+    <h3>Construyendo Soluciones Predictivas con Regresión Lineal y Logística</h3>
+    <p></p>
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica4/">Abrir</a>
@@ -90,8 +90,8 @@ Para el desarrollo de estos proyectos, utilicé un stack de herramientas estánd
   </div>
 
 <div class="card">
-    <h3>Práctica 5 — Validación y Selección de Modelos - Fill in the Blanks</h3>
-    <p>Comparar múltiples modelos de forma sistemática</p>
+    <h3> Optimizando el Rendimiento Mediante Validación Cruzada y Selección</h3>
+    <p></p>
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica5/">Abrir</a>
@@ -99,8 +99,9 @@ Para el desarrollo de estos proyectos, utilicé un stack de herramientas estánd
   </div>
   
   <div class="card">
-    <h3>Práctica 6 — Clustering y PCA - Mall Customer Segmentation</h3>
-    <p>CASO DE ESTUDIO: Mall Customer Segmentation Dataset</p>
+    <h3> Inteligencia de Clientes a través de Reducción de Dimensionalidad y Clustering</h3>
+    <p>
+    </p>
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica6/">Abrir</a>
@@ -111,95 +112,118 @@ Para el desarrollo de estos proyectos, utilicé un stack de herramientas estánd
 
 ---
 
-## UT2: Deep Learning Foundations
+## UT2: Deep Learning - Implementación y Optimización Avanzada 🧠
 
-**Al completar UT2, el estudiante será capaz de:**
+En esta unidad, profundicé en el campo del **Deep Learning**, enfocándome en el diseño, entrenamiento y optimización de redes neuronales. Mi trabajo consistió en traducir los fundamentos teóricos en soluciones prácticas y de alto rendimiento, utilizando el ecosistema de **PyTorch** para desarrollar modelos robustos y escalables.
 
-- Comprender la arquitectura de **perceptrones multicapa** y **funciones de activación**
-- Desarrollar **MLPs avanzados** usando **PyTorch Lightning** para aplicaciones reales
-- Aplicar técnicas de **optimización** (SGD, AdamW) y entender **backpropagation**
-- Implementar técnicas de **regularización** y **visualización** con **TensorBoard/Mlflow**
-- Experimentar con **optimizadores avanzados** y **learning rate scheduling**
+---
 
-**Lecturas mínimas (Evaluación el 16/09):**
+### Competencias Profesionales y Logros Clave
 
-- **Kaggle Intro to Deep Learning (Completo):**
-  - A Single Neuron
-  - Deep Neural Networks
-  - Stochastic Gradient Descent
-  - Binary Classification
-  - Dropout and Batch Normalization
-  - Overfitting and Underfitting
-- **Google Deep Learning:**
-  - Neural Networks Course
-- **PyTorch Lightning:**
-  - *PyTorch Lightning Documentation*
-  - *Getting Started Guide*
+* **Diseño de Arquitecturas Neuronales:** Diseñé e implementé **Perceptrones Multicapa (MLPs)** complejos, demostrando un dominio de sus componentes fundamentales, como la selección estratégica de **funciones de activación** para resolver problemas específicos.
 
-**Lecturas totales:**
+* **Desarrollo Eficiente con PyTorch Lightning:** Adquirí una competencia avanzada en **PyTorch Lightning** para construir pipelines de Deep Learning modulares y reproducibles. Esto me permitió acelerar el ciclo de desarrollo y experimentación para aplicaciones del mundo real.
 
-- **Kaggle Intro to Deep Learning (Completo):**
-  - A Single Neuron
-  - Deep Neural Networks
-  - Stochastic Gradient Descent
-  - Binary Classification
-  - Dropout and Batch Normalization
-  - Overfitting and Underfitting
-- **Google Deep Learning:**
-  - Neural Networks Course
-  - Deep Learning Tuning Playbook
-- **PyTorch Ecosystem:**
-  - *PyTorch Lightning Documentation*
-  - *Getting Started Guide*
-  - *PyTorch Documentation*
-  - *TensorBoard Documentation*
+* **Optimización Avanzada de Modelos:** Implementé y ajusté algoritmos de optimización de vanguardia, como **SGD** y **AdamW**, comprendiendo a fondo el mecanismo de **backpropagation**. Gestioné de forma sistemática la convergencia y el rendimiento del modelo a través de técnicas avanzadas como el **ajuste de la tasa de aprendizaje (learning rate scheduling)**.
 
-**Herramientas:**
+* **Tuning y Análisis de Rendimiento:** Apliqué técnicas clave de **regularización** (como Dropout y Batch Normalization) para mitigar el sobreajuste y mejorar la capacidad de generalización del modelo. Utilicé herramientas de visualización como **TensorBoard** para monitorear el proceso de entrenamiento, diagnosticar problemas y analizar el comportamiento del modelo en tiempo real.
 
-**Fundamentals:**
+---
 
-- *NumPy Documentation*: <https://numpy.org/doc/stable/>
-- *PyTorch Documentation*: <https://pytorch.org/docs/stable/index.html>
-- *PyTorch Lightning*: <https://lightning.ai/docs/pytorch/stable/>
+### Ecosistema Tecnológico y Base de Conocimiento
 
-**Optimización:**
+El desarrollo de estos proyectos se sustentó en un stack tecnológico moderno y en recursos de referencia en la industria.
 
-- *PyTorch Optimizers*: <https://pytorch.org/docs/stable/optim.html>
-- *Learning Rate Scheduling*: <https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate>
+* **Frameworks Fundamentales:**
+    * **PyTorch:** Para la construcción de modelos y tensores.
+    * **PyTorch Lightning:** Para la estructuración y escalado de pipelines de entrenamiento.
+    * **NumPy:** Para operaciones numéricas eficientes.
 
-**Visualización:**
+* **Herramientas de Optimización y Visualización:**
+    * **Optimización:** Módulo `torch.optim` para optimizadores y schedulers.
+    * **Visualización y Monitoreo:** TensorBoard y Matplotlib.
 
-- *TensorBoard Documentation*: <https://www.tensorflow.org/tensorboard>
-- *Matplotlib Documentation*: <https://matplotlib.org/stable/contents.html>
+* **Manejo de Datos:**
+    * **Carga y Procesamiento:** `DataLoader` y `Transforms` de PyTorch.
 
-**Data Handling:**
-- *PyTorch DataLoader*: <https://pytorch.org/docs/stable/data.html>
-- *PyTorch Transforms*: <https://pytorch.org/vision/stable/transforms.html>
-
+* **Fundamento Teórico-Práctico:**
+    * Mi experiencia práctica se basa en una sólida base teórica obtenida de recursos líderes como el curso **Intro to Deep Learning de Kaggle**, los materiales de **Deep Learning de Google** y la documentación oficial de **PyTorch** y **PyTorch Lightning**.
 <div class="cards-grid shortcuts portfolio-list">
 
   <div class="card">
-    <h3>Práctica 5 — Missing Data Detective </h3>
-    <p>Aprender a detectar y analizar datos faltantes (MCAR, MAR, MNAR).</p>
+    <h3>🧠 Dominando el Ecosistema Neuronal: De Prototipos en Scikit-learn a Soluciones Avanzadas con PyTorch/TensorFlow  </h3>
+    <p>Entender cuándo usar cada herramienta</p>
     <p class="actions">
-      <span class="pill">En Proceso</span>
-      <a class="md-button md-button--primary" href="Práctica5/">Abrir</a>
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Práctica7/">Abrir</a>
     </p>
   </div>
 
   <div class="card">
-    <h3>Próximamente</h3>
-    <p>Las prácticas faltantes de esta unidad se publicarán aquí cuando estén disponibles.</p>
+    <h3>💡 El Arte de Enseñar a una Red: Backpropagation y Estrategias de Optimización en la Práctica</h3>
+    <p>Guias de experimentacion</p>
     <p class="actions">
-      <span class="pill">En preparación</span>
-      <a class="md-button" href="../">Volver al índice</a>
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Práctica8/">Abrir</a>
     </p>
   </div>
 
 </div>
 
 ---
+## UT3: Computer Vision - Aplicaciones Avanzadas y Soluciones Prácticas 👁️
 
+En esta unidad, me especialicé en el desarrollo de soluciones de **Visión por Computadora**, construyendo sistemas capaces de interpretar y analizar contenido visual. Mi trabajo abarcó desde la clasificación de imágenes hasta tareas complejas como la detección y segmentación de objetos en tiempo real, utilizando arquitecturas de vanguardia.
+
+---
+
+### Competencias Profesionales y Logros Clave 🏆
+
+* **Dominio de Arquitecturas Convolucionales (CNNs):** Adquirí un entendimiento profundo de la arquitectura y el funcionamiento de las **Redes Neuronales Convolucionales**, la base de la visión por computadora moderna, implementando redes personalizadas y eficientes.
+
+* **Transfer Learning con Modelos SOTA:** Implementé técnicas de **transfer learning** utilizando modelos de última generación (State-Of-The-Art) para lograr un alto rendimiento con una eficiencia computacional óptima en tareas de clasificación.
+
+* **Robustez mediante Data Augmentation:** Apliqué estrategias avanzadas de **aumento de datos** para crear modelos más robustos y capaces de generalizar ante variaciones en datos del mundo real.
+
+* **Detección de Objetos en Tiempo Real:** Desarrollé sistemas completos de **detección de objetos** utilizando el framework **YOLO**, entrenando modelos capaces de identificar y localizar múltiples objetos en imágenes y video para aplicaciones prácticas.
+
+* **Segmentación Precisa de Instancias:** Implementé soluciones de **segmentación** utilizando el innovador **Segment Anything Model (SAM)** para delimitar objetos con una precisión a nivel de píxel.
+
+---
+
+### Ecosistema Tecnológico y Herramientas 🛠️
+
+Para el desarrollo de estos proyectos, utilicé un stack tecnológico especializado y de alto rendimiento.
+
+* **Frameworks de Deep Learning:**
+    * PyTorch Lightning, `timm` (para modelos SOTA), `torchvision`.
+* **Detección de Objetos:**
+    * YOLO (Ultralytics), `detectron2`.
+* **Segmentación:**
+    * Segment Anything Model 2 (SAM), HuggingFace Transformers.
+* **Aumento de Datos:**
+    * `Albumentations`.
+
+---
+
+### Base de Conocimiento 📚
+
+Mi experiencia se fundamenta en recursos prácticos de plataformas líderes como **Kaggle (Computer Vision)** y **HuggingFace (Computer Vision Course)**, complementado con la sólida base teórica del prestigioso curso **CS231n de Stanford**.
+
+<div class="cards-grid shortcuts portfolio-list">
+
+  <div class="card">
+    <h3>🛠️ Dominando la Visión Artificial con TensorFlow/Keras: De CNNs a Modelos Pre-entrenados</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica08">Abrir</a>
+    </p>
+  </div>
+
+</div>
+
+---
 ## Utilidades
 
 <div class="cards-grid shortcuts portfolio-list">
@@ -213,6 +237,7 @@ Para el desarrollo de estos proyectos, utilicé un stack de herramientas estánd
   </div>
 
 </div>
+---
 
 ---
 
