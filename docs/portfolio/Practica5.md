@@ -9,6 +9,7 @@ drive_viz: https://drive.google.com/drive/folders/1qglTzvqdFPrNMxUhH_MtQFcRrafXE
 dataset: "Student Dropout and Academic Success"
 time_est: "4 h"
 time_spent: "—"
+
 ---
 
 # 📝 **TAREA 5: Validación y Selección de Modelos**
@@ -19,6 +20,7 @@ time_spent: "—"
 > ✅ *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
 
 ## 🎯 **Objetivos Básicos**
+
 
 En esta tarea, aprenderemos cómo **validar** y **seleccionar modelos** de manera adecuada, utilizando **validación cruzada** y comparando diferentes algoritmos para decidir cuál es el mejor para predecir el **abandono estudiantil** y el **éxito académico**.
 
@@ -217,6 +219,7 @@ print(f"   Media: {scores_kfold.mean():.4f}")
 print(f"   Desviación estándar: {scores_kfold.std():.4f}")
 print(f"   Resultado: {scores_kfold.mean():.4f} ± {scores_kfold.std():.4f}")
 ```
+
 ### 📊 Distribución de Scores - Validación Cruzada
 
 ![Distribución de Scores](../assets/ImgPractica5/imgP5.1.png)
@@ -228,6 +231,7 @@ print(f"   Resultado: {scores_kfold.mean():.4f} ± {scores_kfold.std():.4f}")
 - Permite comparar la **estabilidad** de los modelos y decidir qué técnica de validación cruzada usar.
 
 # 🔬 VALIDACIÓN CRUZADA: ¿Qué tan estable es nuestro modelo?
+
 
 ```python
 # Validación Cruzada: ¿Qué tan estable es nuestro modelo?

@@ -1,16 +1,17 @@
 
 ---
 
-# Portafolio
+# ***Portafolio de experiencia en AI***
 
-## UT0: Setup & Publicación
+## UT0: PUBLICACION DEL PORTAFOLIO
 
-**Al completar UT0, el estudiante será capaz de:**
+**Complete este campo y fui capaz de:**
 
-- Inicializar y organizar el repositorio del portafolio.
+- Inicializar y organizar el repositorio de mi portafolio.
 - Configurar MkDocs Material y publicar con **GitHub Pages / Actions**.
-- Ajustar navegación, tema y assets (logo, estilos, imágenes).
-- Mantener enlaces y estructura de carpetas consistentes.
+- Ajustar la navegación, el tema y los assets (logo, estilos, imágenes).
+- Mantener los enlaces y la estructura de carpetas de manera consistente.
+
 
 <div class="cards-grid shortcuts portfolio-list">
 
@@ -26,50 +27,37 @@
 </div>
 
 ---
-## UT1: Machine Learning Clásico
+## UT1: Dominio de Machine Learning Clásico
 
-**Al completar UT1, el estudiante será capaz de:**
+En esta unidad, consolidé mi experiencia en el ciclo de vida completo de proyectos de **Machine Learning**, abordando desde la exploración de datos hasta la implementación y optimización de modelos predictivos en un contexto organizacional. Mi trabajo se centró en la aplicación práctica de algoritmos supervisados y no supervisados para resolver problemas de negocio.
 
-- Comprender los fundamentos de **Machine Learning** y diferenciarlo de **IA** y **Deep Learning**
-- Implementar **EDA (Exploratory Data Analysis)** completo en datasets organizacionales
-- Desarrollar **pipelines de ML supervisado** (regresión lineal/logística) y **no supervisado** (clustering)
-- Aplicar técnicas de **validación cruzada** y **optimización de hiperparámetros**
-- Implementar **feature engineering** y **reducción de dimensionalidad** con **PCA**
-- Evaluar modelos usando **métricas apropiadas** para contextos organizacionales
-- Resolver problemas reales de **predicción** y **segmentación** en organizaciones
+---
 
-**Lecturas mínimas (Evaluación el 19/08):**
+### Competencias y Logros Profesionales
 
-- Géron, A. (2019). *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* (2nd Ed.). O’Reilly Media: Capítulo 1: The Machine Learning Landscape  
-- Brownlee, J. (2020). *Machine Learning Mastery with Python. Machine Learning Mastery*:  
-  "Master Machine Learning Algorithms", capítulos 3 a 7.  
-  (Capítulo 3 – Algorithms Learn a Mapping From Input to Output  
-  Capítulo 4 – Parametric and Nonparametric Machine Learning Algorithms  
-  Capítulo 5 – Supervised, Unsupervised and Semi-Supervised Learning  
-  Capítulo 6 – The Bias-Variance Trade-Off  
-  Capítulo 7 – Overfitting and Underfitting)
-- Mini curso: **Kaggle Intro to Machine Learning**: <https://www.kaggle.com/learn/intro-to-machine-learning>
-- Mini curso: **Kaggle Data Cleaning**: <https://www.kaggle.com/learn/data-cleaning>
+* **Análisis Exploratorio y Preparación de Datos (EDA):** Implementé análisis exploratorios exhaustivos para identificar patrones y anomalías en datasets complejos. Desarrollé pipelines de preprocesamiento de datos, aplicando técnicas de **ingeniería de características (feature engineering)** y **reducción de dimensionalidad con PCA** para optimizar la entrada de los modelos.
 
-**Lecturas totales:**
+* **Modelado Predictivo y Segmentación:** Construí y desplegué modelos de **aprendizaje supervisado** (regresión lineal y logística) para tareas de predicción, y modelos de **aprendizaje no supervisado** (clustering) para la segmentación de datos. El enfoque siempre estuvo en la creación de soluciones robustas y escalables.
 
-- *Google: Good Data Analysis*
-- *Curso: Machine Learning Crash Course*
-- *Diccionario: Machine Learning Glossary*
-- **Kaggle:**
-  - Mini curso **Pandas**
-  - Mini curso **Data Visualization**
-  - Mini curso **Feature Engineering**
-  - Mini curso **Intermediate Machine Learning**
-  - Mini curso **Time Series**
+* **Validación y Optimización de Modelos:** Dominé técnicas avanzadas para garantizar la generalización y el rendimiento de los modelos, incluyendo la **validación cruzada (cross-validation)** y la **optimización sistemática de hiperparámetros**.
 
-**Herramientas:**
+* **Evaluación y Contexto de Negocio:** Adquirí la habilidad de seleccionar y aplicar las **métricas de evaluación** más adecuadas para cada problema, asegurando que los resultados del modelo estuvieran alineados con los objetivos estratégicos y aportaran valor tangible a la organización.
 
-- *Pandas Documentation*: <https://pandas.pydata.org/docs/>
-- *Matplotlib Documentation*: <https://matplotlib.org/stable/contents.html>
-- *Seaborn Documentation*: <https://seaborn.pydata.org/>
-- *Scikit-learn User Guide*: <https://scikit-learn.org/stable/user_guide.html>
-- *Jupyter notebooks*: <https://docs.jupyter.org/en/latest/>
+---
+
+### Ecosistema Tecnológico y Base de Conocimiento
+
+Para el desarrollo de estos proyectos, utilicé un stack de herramientas estándar en la industria de la ciencia de datos y me apoyé en recursos teóricos y prácticos de referencia.
+
+* **Herramientas y Librerías:**
+    * **Análisis y Manipulación:** Pandas
+    * **Visualización:** Matplotlib, Seaborn
+    * **Modelado de ML:** Scikit-learn
+    * **Entorno de Desarrollo:** Jupyter Notebooks
+
+* **Fundamento Teórico-Práctico:**
+    * **Textos Clave:** *Hands-On Machine Learning* de Aurélien Géron y *Machine Learning Mastery with Python* de Jason Brownlee.
+    * **Plataformas de Aprendizaje:** Cursos intensivos de Kaggle (*Intro to ML, Data Cleaning, Pandas, Feature Engineering*), y el *Machine Learning Crash Course* de Google.
 
 
 <div class="cards-grid shortcuts portfolio-list">
