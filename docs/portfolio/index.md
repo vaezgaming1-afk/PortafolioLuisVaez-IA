@@ -155,7 +155,7 @@ El desarrollo de estos proyectos se sustentó en un stack tecnológico moderno y
     <p>Entender cuándo usar cada herramienta</p>
     <p class="actions">
       <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Práctica7/">Abrir</a>
+      <a class="md-button md-button--primary" href="Practica7/">Abrir</a>
     </p>
   </div>
 
@@ -164,7 +164,7 @@ El desarrollo de estos proyectos se sustentó en un stack tecnológico moderno y
     <p>Guias de experimentacion</p>
     <p class="actions">
       <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Práctica8/">Abrir</a>
+      <a class="md-button md-button--primary" href="Practica8/">Abrir</a>
     </p>
   </div>
 
@@ -224,12 +224,12 @@ Mi experiencia se fundamenta en recursos prácticos de plataformas líderes como
 </div>
 
 ---
-## Utilidades
+## Ademas De
 
 <div class="cards-grid shortcuts portfolio-list">
 
   <div class="card">
-    <h3>Nueva entrada</h3>
+    <h3>Proxima Entrada</h3>
     <p>Usá la plantilla base para crear una práctica numerada.</p>
     <p class="actions">
       <a class="md-button" href="plantilla/">Crear desde plantilla</a>
