@@ -160,25 +160,36 @@ run_dir = os.path.join(ROOT_LOGDIR, "experiment" + dt.datetime.now().strftime("%
 **MATRIZ DE CONFUSIÓN COMPARATIVA:**
 
 ```python
-# Matrices de confusión típicas para cada framework
-confusion_matrices = [
-    np.array([[85, 8], [5, 52]]),    # Sklearn MLP
-    np.array([[82, 11], [7, 50]]),   # TensorFlow
-    np.array([[84, 9], [6, 51]])     # PyTorch Lightning
-]
+# Graficar precisión y pérdida de entrenamiento y validación
+plt.figure(figsize=(12, 4))
 
-# Graficar cada matriz de confusión
-for i, (ax, framework) in enumerate(zip(axes, frameworks)):
-    cm = confusion_matrices[i]
-    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
-               xticklabels=['Pred 0', 'Pred 1'],
-               yticklabels=['True 0', 'True 1'], ax=ax)
+# Precisión
+plt.subplot(1, 2, 1)
+plt.plot(history.history['accuracy'], label='Precisión de entrenamiento')
+plt.plot(history.history['val_accuracy'], label='Precisión de validación')
+plt.title('Precisión durante el entrenamiento')
+plt.xlabel('Épocas')
+plt.ylabel('Precisión')
+plt.legend()
+
+# Pérdida
+plt.subplot(1, 2, 2)
+plt.plot(history.history['loss'], label='Pérdida de entrenamiento')
+plt.plot(history.history['val_loss'], label='Pérdida de validación')
+plt.title('Pérdida durante el entrenamiento')
+plt.xlabel('Épocas')
+plt.ylabel('Pérdida')
+plt.legend()
+
+plt.show()
+
 ```
 
-![img7.1](../../assets/ImgPractica7/img7.8.png)
-Aqui hice un analisis a las matrices de confusión para evaluar el rendimiento de tres modelos diferentes: Sklearn MLP, TensorFlow, y PyTorch Lightning. Cada matriz muestra cuántas predicciones fueron correctas (TN + TP) y cuántas fueron incorrectas (FP + FN), lo cual es esencial para analizar la precisión de cada modelo.
+![img8.1](../../assets/ImgPractica8/Img8.1.png)
+
+Es esencial verificar si el dataset tiene una distribución balanceada entre las 10 clases. Esto impacta directamente en el rendimiento del modelo, ya que si hay clases subrepresentadas, el modelo puede tener problemas para predecir correctamente esas clases.
 
 ---
-Este es el análisis detallado del proceso de implementación y experimentación utilizando redes neuronales para la clasificación de imágenes en **CIFAR-10**. Como puedes ver, el modelo **MLP** con TensorFlow/Keras, combinado con técnicas de regularización y optimización adecuadas, logró un desempeño sólido.
+La parte más crítica para evaluar si el modelo está aprendiendo adecuadamente es ver cómo cambia la precisión y la pérdida a lo largo de las épocas. Esto te dirá si el modelo está sobreajustándose (overfitting) o si está aprendiendo correctamente.
 
 

@@ -9,6 +9,7 @@
 ## 🏷️ **Etiquetas Rápidas**
 `#8` `#Backpropagation` `#RedesNeuronales` `#Optimizadores` `#MachineLearning`
 
+
 ---
 
 ## 🚀 **Accesos Directos Importantes**
@@ -186,7 +187,7 @@ for j, (w1, w2, bias) in enumerate(intentos):
 ```
 
 ![img7.4](../../assets/ImgPractica7/Img7.4.png)
----
+
 
 
 # 📈 **Métricas de Evaluación**
@@ -260,7 +261,9 @@ ax2.contourf(xx, yy, Z_mlp, levels=1, alpha=0.8, colors=['lightcoral', 'lightblu
 ```
 
 ![img7.6](../../assets/ImgPractica7/Img7.6.png)
+
 Aqui compare visualmente cómo un perceptrón (línea recta) no puede resolver XOR, mientras que un MLP (superficie curva) puede hacerlo correctamente.
+
 ---
 
 ---
@@ -280,9 +283,12 @@ plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
 ```
 
 ![img7.7](../../assets/ImgPractica7/Img7.7.png)
+
 Muestra gráficamente el comportamiento del modelo durante el entrenamiento: cómo disminuye la pérdida (loss) y cómo aumenta la precisión (accuracy) tanto en los datos de entrenamiento como de validación.
 
 ---
+
+
 # 🤔 **Preguntas para Reflexión**
 
 1. **¿Por qué XOR no se resuelve con un perceptrón?**
@@ -318,6 +324,7 @@ for i, (ax, framework) in enumerate(zip(axes, frameworks)):
 ```
 
 ![img7.8](../../assets/ImgPractica7/Img7.8.png)
+
 Aqui hice un analisis a las matrices de confusión para evaluar el rendimiento de tres modelos diferentes: Sklearn MLP, TensorFlow, y PyTorch Lightning. Cada matriz muestra cuántas predicciones fueron correctas (TN + TP) y cuántas fueron incorrectas (FP + FN), lo cual es esencial para analizar la precisión de cada modelo.
 
 ---
@@ -332,7 +339,7 @@ mlp_model.fit(X_xor, y_xor)
 plt.contourf(xx, yy, Z, levels=1, alpha=0.8, colors=['lightcoral', 'lightblue'])
 ```
 
-![img7.9](C:\Users\USER\Documents\GitHub\PortafolioLuisVaez-IA\docs\assets\ImgPractica7\Img7.9.png)
+![img7.9](../../assets/ImgPractica7/Img7.9.png)
 
 Entrenè el MLP con los datos del problema XOR y luego visualiza la frontera de decisión generada por el modelo. La frontera de decisión es crucial para entender cómo el MLP separa las clases de XOR, lo que muestra cómo una red neuronal multicapa puede resolver problemas no lineales, algo que un perceptrón simple no puede hacer.
 
@@ -353,7 +360,7 @@ grid_search.fit(X_train, y_train)
 print("Mejores parámetros encontrados: ", grid_search.best_params_)
 ```
 
-![img7.10](C:\Users\USER\Documents\GitHub\PortafolioLuisVaez-IA\docs\assets\ImgPractica7\Img7.10.png)
+![img7.10](../../assets/ImgPractica7/Img7.10.png)
 
 Este fragmento es clave porque realiza la búsqueda exhaustiva de los mejores hiperparámetros del modelo MLP. Utilizando GridSearchCV, se evalúan diferentes combinaciones de hiperparámetros (hidden_layer_sizes, activation, solver, learning_rate_init) a través de validación cruzada (cv=5).
 

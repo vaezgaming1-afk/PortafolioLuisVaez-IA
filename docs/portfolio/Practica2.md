@@ -7,6 +7,7 @@
 ---
 
 ## 🏷️ **Etiquetas Rápidas**
+
 `#2` `#Titanic` `#FeatureEngineering` `#MachineLearning` `#ModeloBase`
 
 ---
@@ -20,7 +21,6 @@
 
 ---
 
-
 ---
 
 ## 🧠 **Resumen Ejecutivo**
@@ -29,6 +29,7 @@
 Explorar y aplicar técnicas de **Feature Engineering** sobre el dataset Titanic, entrenar un modelo de **Regresión Logística** y compararlo con un modelo base (**DummyClassifier**).
 
 📌 **Hallazgos clave:**
+
 - **Sexo** fue la variable más influyente.
 - El modelo de **Regresión Logística** superó al DummyClassifier por amplio margen.
 - Nuevas características como `Title` y `FamilySize` mejoraron la predicción.
@@ -77,11 +78,13 @@ Modelo con precisión del **78.5%** y F1-score de **0.73**.
 ## ⚙️ **Modelos Entrenados**
 
 ### 🔹 **Modelo Base: DummyClassifier**
+
 - **Estrategia:** `most_frequent`
 - **Accuracy:** 62%
 - **Rol:** Referencia para comparar modelos reales
 
 ### 🔸 **Modelo Real: Regresión Logística**
+
 - **Librería:** `scikit-learn` (`LogisticRegression`)
 - **Solver:** `liblinear`
 - **Accuracy:** 78.5%
@@ -176,8 +179,8 @@ Modelo con precisión del **78.5%** y F1-score de **0.73**.
 | Usar curvas **ROC**, métricas por clase              | 🔜      |
 | Aplicar **GridSearchCV** para optimizar hiperparámetros | 🔜      |
 | Explorar más técnicas de Feature Engineering         | 🔜      |
----
 
+---
 
 ## 🧑‍💻 **Reproducibilidad**
 
