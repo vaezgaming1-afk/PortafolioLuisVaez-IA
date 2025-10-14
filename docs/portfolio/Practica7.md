@@ -121,7 +121,7 @@ for i, (x1, x2) in enumerate(datos):
     print(f"  {x1},{x2} → {prediccion} (esperado {esperado}) {ok}")
 ```
 
-![img7.1](../../assets/ImgPractica7/img7.1.png)
+![img7.1](../../assets/ImgPractica7/Img7.1.png)
 
 **El fragmento clave que cambia todo es el ajuste de los pesos y el sesgo para el problema OR:**
 ```python
@@ -130,7 +130,7 @@ graficar_perceptron(w1, w2, bias, datos, resultados_or, "Perceptrón OR")
 # ¿qué bias permite que una sola entrada active?
 ```
 
-![img7.2](../../assets/ImgPractica7/img7.2.png)
+![img7.2](../../assets/ImgPractica7/Img7.2.png)
 
 **Se ajusta el peso y el sesgo para la lógica NOT.**
 
@@ -162,7 +162,7 @@ def graficar_not(w1, bias):
     plt.grid(True, alpha=0.3)
     plt.show()
 ```
-![img7.3](../../assets/ImgPractica7/img7.3.png)
+![img7.3](../../assets/ImgPractica7/Img7.3.png)
 
 **Aqui pruebo diferentes configuraciones de pesos y sesgo para intentar que el perceptrón resuelva el problema XOR.**
 
@@ -185,7 +185,7 @@ for j, (w1, w2, bias) in enumerate(intentos):
             aciertos += 1
 ```
 
-![img7.4](../../assets/ImgPractica7/img7.4.png)
+![img7.4](../../assets/ImgPractica7/Img7.4.png)
 ---
 
 
@@ -235,7 +235,7 @@ def dibujar_red_neuronal(input_size, hidden_sizes, output_size):
 ```
 Este fragmento dibuja las neuronas y las conexiones entre capas, lo que permite visualizar cómo se estructura la red neuronal multicapa.
 
-![img7.5](../../assets/ImgPractica7/img7.5.png)
+![img7.5](../../assets/ImgPractica7/Img7.5.png)
 
 ---
 
@@ -259,7 +259,7 @@ ax2.contourf(xx, yy, Z_mlp, levels=1, alpha=0.8, colors=['lightcoral', 'lightblu
 
 ```
 
-![img7.6](../../assets/ImgPractica7/img7.6.png)
+![img7.6](../../assets/ImgPractica7/Img7.6.png)
 Aqui compare visualmente cómo un perceptrón (línea recta) no puede resolver XOR, mientras que un MLP (superficie curva) puede hacerlo correctamente.
 ---
 
@@ -279,7 +279,7 @@ plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
 
 ```
 
-![img7.7](../../assets/ImgPractica7/img7.7.png)
+![img7.7](../../assets/ImgPractica7/Img7.7.png)
 Muestra gráficamente el comportamiento del modelo durante el entrenamiento: cómo disminuye la pérdida (loss) y cómo aumenta la precisión (accuracy) tanto en los datos de entrenamiento como de validación.
 
 ---
@@ -317,7 +317,7 @@ for i, (ax, framework) in enumerate(zip(axes, frameworks)):
                yticklabels=['True 0', 'True 1'], ax=ax)
 ```
 
-![img7.8](../../assets/ImgPractica7/img7.8.png)
+![img7.8](../../assets/ImgPractica7/Img7.8.png)
 Aqui hice un analisis a las matrices de confusión para evaluar el rendimiento de tres modelos diferentes: Sklearn MLP, TensorFlow, y PyTorch Lightning. Cada matriz muestra cuántas predicciones fueron correctas (TN + TP) y cuántas fueron incorrectas (FP + FN), lo cual es esencial para analizar la precisión de cada modelo.
 
 ---
