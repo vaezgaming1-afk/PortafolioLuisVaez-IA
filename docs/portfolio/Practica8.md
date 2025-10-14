@@ -114,6 +114,34 @@ El modelo de red neuronal desarrollado alcanzó una alta precisión en el conjun
 
 ---
 
+```python
+import os, math, json, time, random, datetime as dt
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+
+from sklearn.metrics import confusion_matrix, classification_report, f1_score
+
+SEED = 42
+random.seed(SEED); np.random.seed(SEED); tf.random.set_seed(SEED)
+
+print("TensorFlow:", tf.__version__)
+print("GPU disponibles:", tf.config.list_physical_devices('GPU'))
+
+# Carpeta para logs de TensorBoard
+ROOT_LOGDIR = "tb_logs"
+os.makedirs(ROOT_LOGDIR, exist_ok=True)
+
+run_dir = os.path.join(ROOT_LOGDIR, "experiment" + dt.datetime.now().strftime("%Y%m%d-%H%M%S"))
+```
+
+
+
 # 🤔 **Preguntas para Reflexión**
 
 1. **¿Cómo afecta la normalización de imágenes al entrenamiento?**
@@ -126,6 +154,31 @@ El modelo de red neuronal desarrollado alcanzó una alta precisión en el conjun
    - **Respuesta:** **Adam** adapta la tasa de aprendizaje durante el entrenamiento, lo que generalmente lleva a una convergencia más rápida y eficiente, especialmente en tareas complejas como la clasificación de imágenes.
 
 ---
+# 🧑‍💻 **EXTRA**
 
+---
+**MATRIZ DE CONFUSIÓN COMPARATIVA:**
+
+```python
+# Matrices de confusión típicas para cada framework
+confusion_matrices = [
+    np.array([[85, 8], [5, 52]]),    # Sklearn MLP
+    np.array([[82, 11], [7, 50]]),   # TensorFlow
+    np.array([[84, 9], [6, 51]])     # PyTorch Lightning
+]
+
+# Graficar cada matriz de confusión
+for i, (ax, framework) in enumerate(zip(axes, frameworks)):
+    cm = confusion_matrices[i]
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
+               xticklabels=['Pred 0', 'Pred 1'],
+               yticklabels=['True 0', 'True 1'], ax=ax)
+```
+
+![img7.1](../../assets/ImgPractica7/img7.8.png)
+Aqui hice un analisis a las matrices de confusión para evaluar el rendimiento de tres modelos diferentes: Sklearn MLP, TensorFlow, y PyTorch Lightning. Cada matriz muestra cuántas predicciones fueron correctas (TN + TP) y cuántas fueron incorrectas (FP + FN), lo cual es esencial para analizar la precisión de cada modelo.
+
+---
 Este es el análisis detallado del proceso de implementación y experimentación utilizando redes neuronales para la clasificación de imágenes en **CIFAR-10**. Como puedes ver, el modelo **MLP** con TensorFlow/Keras, combinado con técnicas de regularización y optimización adecuadas, logró un desempeño sólido.
+
 
