@@ -9,7 +9,7 @@ date: 2025-01-01
       Ingeniería de Sistemas
     </p>
     <p style="margin-top:.6rem">
-      <a class="md-button md-button--primary" href="portfolio/">Ver Portfolio</a>
+      <a class="md-button md-button--primary" href="portafolio/">Ver Portfolio</a>
       <a class="md-button" href="acerca/">Acerca de mí</a>
       <a class="md-button" href="assets/VAEZ ALVAREZ LUIS- CV[1].pdf">Descargar CV</a>
     </p> 
@@ -20,7 +20,7 @@ date: 2025-01-01
 ## ¿Cómo navegar?
 
 1. **Acerca de mí:** contexto, habilidades y galería breve.  
-2. **Portfolio:** cada práctica es una entrada con objetivo → proceso → evidencia → reflexión.  
+2. **Portafolio:** cada práctica es una entrada con objetivo → proceso → evidencia → reflexión.  
 3. **Recursos:** snippets, plantillas y referencias utilizadas durante el semestre.
 
 ## Atajos

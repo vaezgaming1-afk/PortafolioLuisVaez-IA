@@ -7,6 +7,7 @@
 ---
 
 ## 🏷️ **Etiquetas**
+
 `#EDA` `#Titanic` `#MachineLearning` `#AnálisisDeDatos` `#Exploración`
 
 ## 🚀 **Accesos Directos Importantes**
@@ -20,6 +21,7 @@
 
 
 📦 **Dataset**: Titanic - [Kaggle](https://www.kaggle.com/c/titanic/data)  
+
 📁 **Observaciones**: 891 · **Variables**: 12
 
 ---
@@ -30,6 +32,7 @@
 Realizar un análisis exploratorio detallado del dataset Titanic, entendiendo las relaciones entre variables y su impacto en la supervivencia.
 
 📌 **Hallazgos clave:**
+
 - 📍 **Sexo**: Alta influencia en la supervivencia (mujeres sobreviven más).
 - 🎟️ **Clase (Pclass)**: Pasajeros de 1ª clase tienen mayor tasa de supervivencia.
 - 👶 **Edad**: Jóvenes adultos predominan en el dataset.
@@ -65,18 +68,22 @@ Realizar un análisis exploratorio detallado del dataset Titanic, entendiendo la
 ## 🔍 **Análisis Exploratorio**
 
 ### 🧮 Dataset
+
 - 🔢 Observaciones: 891
 - 🧩 Variables clave: `Survived`, `Sex`, `Age`, `Pclass`, `Fare`
 
 ### 📈 Univariado
+
 - Mujeres tienen más probabilidad de sobrevivir.
 - La mayoría de pasajeros son jóvenes adultos.
 
 ### 🔗 Bivariado
+
 - Alta correlación entre **Sexo** y **Supervivencia**.
 - Clase del pasajero y tarifa están ligadas a la supervivencia.
 
 ### 🧪 Correlaciones
+
 - `Pclass` y `Fare` tienen correlaciones significativas con `Survived`.
 - `SibSp` y `Age` menos relevantes.
 
@@ -115,7 +122,7 @@ Realizar un análisis exploratorio detallado del dataset Titanic, entendiendo la
 
 ### 🎯 Supervivencia por Clase y Sexo
 
-![imgP1](../../assets/ImgPractica1/imgP1.png)
+![imgP1](../assets/ImgPractica1/imgP1.png)
 
 > Las mujeres de 1ª clase tuvieron la tasa de supervivencia más alta.
 
@@ -123,7 +130,7 @@ Realizar un análisis exploratorio detallado del dataset Titanic, entendiendo la
 
 ### 🧓 Histograma de Edad
 
-![imgP1.2](../../assets/ImgPractica1/imgP1.2.png)
+![imgP1.2](../assets/ImgPractica1/imgP1.2.png)
 
 > Mayoría de pasajeros: adultos jóvenes entre 20 y 35 años.
 
@@ -134,14 +141,17 @@ Realizar un análisis exploratorio detallado del dataset Titanic, entendiendo la
 ## 🏆 **Resultados Clave**
 
 ✅ **Variables clave:**  
+
 - **Sexo:** Mujeres sobrevivieron en mayor proporción.  
 - **Clase:** 1ª clase con ventaja clara.
 
 ⚠️ **Desafíos:**  
+
 - Valores faltantes en `Cabin` y `Age`.  
 - Imputar `Age` por mediana segmentada por clase.
 
 🔜 **Próximos pasos:**  
+
 - Modelar con **Logistic Regression** y **Random Forest**  
 - Añadir métricas ROC, precisión, recall y F1-score.
 

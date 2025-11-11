@@ -24,6 +24,7 @@ time_spent: "—"
 Aplicar **PCA** y **K-Means Clustering** al dataset de clientes del centro comercial para segmentar a los clientes en grupos de comportamiento similar y explorar patrones de compra.
 
 📌 **Hallazgos clave:**
+
 - Se identificaron **3 segmentos** principales de clientes, cada uno con comportamientos de compra distintivos.
 - El análisis de componentes principales (PCA) redujo las dimensiones del dataset para visualización, destacando dos componentes principales que explican la mayor parte de la variabilidad.
 - El clustering ayudó a identificar patrones que podrían ser útiles para futuras campañas de marketing.
@@ -71,6 +72,7 @@ Aplicar **PCA** y **K-Means Clustering** al dataset de clientes del centro comer
 ## ⚙️ **Modelos Entrenados**
 
 ### 🔹 **Modelo: PCA + K-Means**
+
 - **Librerías:** `scikit-learn` (`PCA`, `KMeans`)
 - **Número de Clusters:** 3
 - **Silhouette Score:** 0.45 (valor aceptable, indicando clustering moderado)
@@ -96,7 +98,7 @@ Aplicar **PCA** y **K-Means Clustering** al dataset de clientes del centro comer
 
 ### 🎯 Visualización PCA
 
-![PCA Mall Customers](../../assets/ImgPractica6/imgP61.png)
+![PCA Mall Customers](../assets/ImgPractica6/imgP61.png)
 
 - **Análisis:** Los clientes se distribuyen en dos grandes grupos, con una separación clara entre ellos.
 
@@ -104,7 +106,7 @@ Aplicar **PCA** y **K-Means Clustering** al dataset de clientes del centro comer
 
 ### 📈 Segmentación con K-Means
 
-![Clustering Mall](../../assets/ImgPractica6/imgP63.png)
+![Clustering Mall](../assets/ImgPractica6/imgP63.png)
 
 > Los 3 clusters formados muestran distintas agrupaciones de clientes basadas en su comportamiento de compra.
 

@@ -1,6 +1,12 @@
-# ***Portafolio de experiencia en AI***
 
-## UT0: PUBLICACION DEL PORTAFOLIO
+<!-- markdownlint-disable MD033 -->
+<div class="hero-banner minimal">
+  <h1> Portafolio de Experiencia en AI</h1>
+</div>
+<!-- markdownlint-enable MD033 -->
+
+
+## **PUBLICACIÓN DEL PORTAFOLIO**
 
 **Complete este campo y fui capaz de:**
 
@@ -9,12 +15,11 @@
 - Ajustar la navegación, el tema y los assets (logo, estilos, imágenes).
 - Mantener los enlaces y la estructura de carpetas de manera consistente.
 
-
 <div class="cards-grid shortcuts portfolio-list">
 
   <div class="card">
-    <h3>Práctica 3 — Publicación del portafolio</h3>
-    <p>Configurar repo, tema y deploy con GitHub Pages. Enlaces, navegación y estilo base.</p>
+    <h3>Publicación del portafolio</h3>
+    <p>Configuré el tema y desplegué el sitio con GitHub Pages.</p>
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica01">Abrir</a>
@@ -23,38 +28,24 @@
 
 </div>
 
----
-## UT1: Dominio de Machine Learning Clásico
-
-En esta unidad, consolidé mi experiencia en el ciclo de vida completo de proyectos de **Machine Learning**, abordando desde la exploración de datos hasta la implementación y optimización de modelos predictivos en un contexto organizacional. Mi trabajo se centró en la aplicación práctica de algoritmos supervisados y no supervisados para resolver problemas de negocio.
 
 ---
+## Dominio de Machine Learning Clásico
 
-### Competencias y Logros Profesionales
+Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**, desde la exploración y preparación de datos hasta la implementación, evaluación y optimización de modelos predictivos. Apliqué técnicas supervisadas y no supervisadas para resolver desafíos reales de negocio, integrando análisis técnico con una visión estratégica orientada a resultados.
 
-* **Análisis Exploratorio y Preparación de Datos (EDA):** Implementé análisis exploratorios exhaustivos para identificar patrones y anomalías en datasets complejos. Desarrollé pipelines de preprocesamiento de datos, aplicando técnicas de **ingeniería de características (feature engineering)** y **reducción de dimensionalidad con PCA** para optimizar la entrada de los modelos.
+### Competencias Clave
 
-* **Modelado Predictivo y Segmentación:** Construí y desplegué modelos de **aprendizaje supervisado** (regresión lineal y logística) para tareas de predicción, y modelos de **aprendizaje no supervisado** (clustering) para la segmentación de datos. El enfoque siempre estuvo en la creación de soluciones robustas y escalables.
-
-* **Validación y Optimización de Modelos:** Dominé técnicas avanzadas para garantizar la generalización y el rendimiento de los modelos, incluyendo la **validación cruzada (cross-validation)** y la **optimización sistemática de hiperparámetros**.
-
-* **Evaluación y Contexto de Negocio:** Adquirí la habilidad de seleccionar y aplicar las **métricas de evaluación** más adecuadas para cada problema, asegurando que los resultados del modelo estuvieran alineados con los objetivos estratégicos y aportaran valor tangible a la organización.
-
----
+- **Exploración y Preparación de Datos:** Desarrollo de análisis exploratorios y pipelines de limpieza, integración y transformación de datos. Aplicación de técnicas de *feature engineering* y reducción de dimensionalidad mediante **PCA** para optimizar el rendimiento de los modelos.  
+- **Modelado Predictivo y Segmentación:** Construcción de modelos de regresión, clasificación y *clustering* enfocados en la precisión, interpretabilidad y escalabilidad de las soluciones.  
+- **Validación y Optimización:** Implementación de estrategias de **cross-validation** y búsqueda sistemática de **hiperparámetros** para garantizar la estabilidad y capacidad de generalización de los modelos.  
+- **Evaluación y Contexto de Negocio:** Selección de **métricas de desempeño** adecuadas al problema y análisis de resultados con enfoque en la toma de decisiones basada en datos.
 
 ### Ecosistema Tecnológico y Base de Conocimiento
 
-Para el desarrollo de estos proyectos, utilicé un stack de herramientas estándar en la industria de la ciencia de datos y me apoyé en recursos teóricos y prácticos de referencia.
+**Herramientas:** Pandas · Matplotlib · Seaborn · Scikit-learn · Jupyter Notebooks  
+**Fundamento:** *Hands-On Machine Learning* (A. Géron), *Machine Learning Mastery with Python* (J. Brownlee), cursos de Kaggle y *Machine Learning Crash Course* de Google.
 
-* **Herramientas y Librerías:**
-    * **Análisis y Manipulación:** Pandas
-    * **Visualización:** Matplotlib, Seaborn
-    * **Modelado de ML:** Scikit-learn
-    * **Entorno de Desarrollo:** Jupyter Notebooks
-
-* **Fundamento Teórico-Práctico:**
-    * **Textos Clave:** *Hands-On Machine Learning* de Aurélien Géron y *Machine Learning Mastery with Python* de Jason Brownlee.
-    * **Plataformas de Aprendizaje:** Cursos intensivos de Kaggle (*Intro to ML, Data Cleaning, Pandas, Feature Engineering*), y el *Machine Learning Crash Course* de Google.
 
 
 <div class="cards-grid shortcuts portfolio-list">
@@ -118,6 +109,7 @@ En esta unidad, profundicé en el campo del **Deep Learning**, enfocándome en e
 ### Competencias Profesionales y Logros Clave
 
 * **Diseño de Arquitecturas Neuronales:** Diseñé e implementé **Perceptrones Multicapa (MLPs)** complejos, demostrando un dominio de sus componentes fundamentales, como la selección estratégica de **funciones de activación** para resolver problemas específicos.
+
 
 * **Desarrollo Eficiente con PyTorch Lightning:** Adquirí una competencia avanzada en **PyTorch Lightning** para construir pipelines de Deep Learning modulares y reproducibles. Esto me permitió acelerar el ciclo de desarrollo y experimentación para aplicaciones del mundo real.
 

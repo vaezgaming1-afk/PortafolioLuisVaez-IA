@@ -1,7 +1,8 @@
 site_name: Luis Vaez Portafolio
 site_description: Portfolio personal de proyectos 
 site_url: https://vaezgaming1-afk.github.io/PortafolioLuisVaez-IA/
-repo_url: https://vaezgaming1-afk.github.io/PortafolioLuisVaez-IA/
+repo_url: https://github.com/vaezgaming1-afk/PortafolioLuisVaez-IA
+
 repo_name: ia-portfolio
 site_dir: site
 
@@ -76,5 +77,4 @@ nav:
       - "05 — Clustering y PCA - Mall Customer Segmentation": "portfolio/Practica6.md"
   - Recursos: recursos.md
 
-
-
+docs_dir: docs

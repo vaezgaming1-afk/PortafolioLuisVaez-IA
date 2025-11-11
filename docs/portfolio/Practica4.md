@@ -19,6 +19,7 @@
 En esta tarea, se exploraron dos modelos clásicos de Machine Learning: **Regresión Lineal** y **Regresión Logística**. Ambos modelos fueron aplicados a distintos problemas para comparar su desempeño: la predicción de precios de casas en **Boston** utilizando **Regresión Lineal** y la clasificación de **diagnóstico médico de cáncer de mama** utilizando **Regresión Logística**. El objetivo fue evaluar cómo cada modelo se comporta en **problemas de regresión** y **clasificación** respectivamente.
 
 ### **Hallazgos clave:**
+
 - **Regresión Lineal** se utilizó para predecir el precio de las casas en el conjunto de datos de **Boston**. Se evaluó con métricas de error como **MAE**, **MSE**, **RMSE**, y **R²**.
 - **Regresión Logística** se utilizó para clasificar tumores como **benignos** o **malignos**, utilizando métricas como **precision**, **recall**, **f1-score** y **accuracy**.
 - **Regresión Logística** mostró un mejor rendimiento que el modelo base **DummyClassifier**, destacando cómo el **Feature Engineering** y la optimización del modelo pueden mejorar significativamente la precisión y efectividad.
@@ -50,6 +51,7 @@ En esta tarea, se exploraron dos modelos clásicos de Machine Learning: **Regres
 ## 💡 **Desarrollo: Regresión Lineal - Predecir Precios de Casas**
 
 ### **1. Cargar el Dataset de Boston Housing**
+
 El dataset contiene información sobre viviendas en Boston, incluyendo características como **edad de la vivienda**, **número de habitaciones** y **distancia a centros de trabajo**.
 
 ```python
@@ -61,10 +63,12 @@ print(boston_data.head())
 ```
 
 ### **2. Dividir los datos en entrenamiento y prueba**
+
 - **X (variables independientes):** todas las columnas excepto `medv` (precio).
 - **y (variable dependiente):** el precio de las casas.
 
 ### **3. Entrenar el modelo de Regresión Lineal**
+
 Usamos el modelo de **LinearRegression** de **scikit-learn** para predecir el precio de las casas.
 
 ```python
@@ -82,6 +86,7 @@ modelo_regresion.fit(X_train, y_train)
 ```
 
 ### **4. Evaluación del Modelo**
+
 Evaluamos el modelo utilizando varias métricas como **MAE**, **MSE**, **RMSE**, y **R²**:
 
 ```python
@@ -104,26 +109,29 @@ print(f"R²: {r2:.3f}")
 ```
 
 ### **5. Interpretación**
+
 - **R²** nos dice qué porcentaje de la variabilidad en el precio de las casas es explicado por nuestro modelo.
 - **MAE** y **RMSE** nos indican cuánto se alejan, en promedio, nuestras predicciones del precio real.
 
 ---
+
 ## 📸 **Evidencias Visuales**
 
 ### Visualización de relaciones en el dataset Titanic
 
 1. **Gráfico de Regresión Lineal - Predicción de Precios de Casas:**
-   ![Gráfico de Regresión Lineal](../../assets/ImgPractica4/imgP3.1.png)
+   ![Gráfico de Regresión Lineal](../assets/ImgPractica4/imgP3.1.png)
    - **Relación entre variables clave**: El número de habitaciones (`RM`) y el precio de las casas (`medv`), destacando la tendencia ascendente en los precios conforme aumenta el número de habitaciones.
 
 2. **Análisis Detallado de la Regresión Lineal:**
-   ![Gráfico de Regresión Detallado](../../assets/ImgPractica4/imgP3.2.png)
+   ![Gráfico de Regresión Detallado](../assets/ImgPractica4/imgP3.2.png)
    - **Relación entre variables clave**: Dispersión de los datos de precio de casas y número de habitaciones, con la línea de regresión ajustada para visualizar mejor la correlación.
 
 
 ## 🏥 **Regresión Logística - Diagnóstico Médico**
 
 ### **1. Cargar el dataset de cáncer de mama**
+
 Utilizamos el dataset **Breast Cancer Wisconsin**, que contiene características sobre tumores (benignos o malignos).
 
 ```python
@@ -135,6 +143,7 @@ y_cancer = cancer_data.target
 ```
 
 ### **2. Evaluar el Balance de Clases**
+
 Vemos cuántos tumores son **benignos** y **malignos**:
 
 ```python
@@ -145,6 +154,7 @@ print(f"Casos malignos: {malignos}")
 ```
 
 ### **3. Entrenar el Modelo de Regresión Logística**
+
 Usamos **LogisticRegression** para predecir si un tumor es **benigno** o **maligno**.
 
 ```python
@@ -161,6 +171,7 @@ modelo_clasificacion.fit(X_train_cancer, y_train_cancer)
 ```
 
 ### **4. Evaluar el Modelo**
+
 Calculamos la **exactitud**, **precisión**, **recall**, y **f1-score**.
 
 ```python
@@ -180,6 +191,7 @@ print(f"F1-Score: {f1:.3f}")
 ```
 
 ### **5. Interpretación**
+
 - **Precision**: De todas las predicciones positivas, ¿cuántas fueron realmente correctas?
 - **Recall**: De todos los casos reales positivos, ¿cuántos fueron detectados?
 - **F1-Score**: Balance entre precisión y recall, útil cuando hay un desbalance de clases.
@@ -191,11 +203,11 @@ print(f"F1-Score: {f1:.3f}")
 ### Visualización de relaciones en el dataset de Cáncer de Mama
 
 1. **Gráfico de Regresión Logística - Diagnóstico de Cáncer de Mama:**
-   ![Gráfico de Regresión Lineal](../../assets/ImgPractica4/imgP4.1.png)
+   ![Gráfico de Regresión Lineal](../assets/ImgPractica4/imgP4.1.png)
    - **Relación entre variables clave**: El radio medio del tumor (`mean radius`) y el diagnóstico (benigno o maligno), destacando la relación entre las características y la probabilidad de malignidad.
 
 2. **Análisis Detallado de la Regresión Logística:**
-   ![Gráfico de Regresión Detallado](../../assets/ImgPractica4/imgP4.2.png)
+   ![Gráfico de Regresión Detallado](../assets/ImgPractica4/imgP4.2.png)
    - **Relación entre variables clave**: Dispersión de los datos de suavidad y compactidad del tumor, con la línea de regresión ajustada para visualizar mejor la probabilidad de malignidad.
 
 
@@ -221,7 +233,20 @@ print(f"F1-Score: {f1:.3f}")
 
 Puedes acceder al archivo PDF de la actividad final a continuación:
 
-<a href="assets/VAEZ ALVAREZ LUIS- CV[1].pdf" target="_blank" style="display:inline-block; padding:10px 20px; margin-top:10px; background-color:#4CAF50; color:white; text-align:center; text-decoration:none; border-radius:5px; font-size:16px;">Descargar Actividad Final - Compara los Dos Modelos</a>
+<a href="../assets/Parte_3_Actividad_Final.pdf" target="_blank"
+   style="display:inline-block;
+          padding:10px 20px;
+          margin-top:12px;
+          background-color:#4A7CA6;
+          color:white;
+          font-weight:500;
+          text-align:center;
+          text-decoration:none;
+          border-radius:8px;
+          font-size:15px;
+          transition:background-color .3s ease;">
+  📄 Descargar Actividad Final — Compara los Dos Modelos
+</a>
 
 
 ## 🧑‍💻 **Reproducibilidad**
@@ -264,6 +289,7 @@ El **Feature Engineering** y el entrenamiento de modelos como **Regresión Logí
 
 ---
 # 🚀 **Explora el Notebook Interactivo en Google Colab** 🎓
+
 
 Haz clic en el siguiente **botón** para acceder al **notebook** interactivo y realizar el análisis directamente en Google Colab:
 

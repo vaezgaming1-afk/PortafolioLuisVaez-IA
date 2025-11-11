@@ -444,7 +444,9 @@ plt.ylabel('Accuracy')
 plt.grid(True, alpha=0.3)
 plt.show()
 ```
+
 ---
+
 
 ## 📈 **Análisis de Estabilidad y Selección de Modelos**
 
@@ -453,7 +455,9 @@ El **StratifiedKFold** mostró ser el método más estable debido a la **preserv
 Recomendación: Usar **StratifiedKFold** para este dataset.
 
 ---
+
 ### 🚀 BONUS: Optimización de Hiperparámetros
+
 #### 🔧 Paso 6: GridSearchCV vs RandomizedSearchCV
 
 La optimización de hiperparámetros es crucial para mejorar el rendimiento del modelo. Comparamos dos métodos de búsqueda de hiperparámetros para el **mejor modelo** de la competencia anterior.
@@ -479,10 +483,12 @@ La optimización de hiperparámetros es crucial para mejorar el rendimiento del 
   - Mejor score: `{random_search.best_score_:.4f}`
 
 #### Comparación de eficiencia:
+
 - **GridSearch probó**: `{len(grid_search.cv_results_['params'])}` combinaciones.
 - **RandomSearch probó**: `{len(random_search.cv_results_['params'])}` combinaciones.
 
 #### Evaluación del Modelo Final Optimizado:
+
 - **Modelo Final** (utilizando GridSearchCV): `{final_scores.mean():.4f} ± {final_scores.std():.4f}`
 
 Este análisis nos muestra que **RandomizedSearchCV** es más eficiente al probar menos combinaciones, pero **GridSearchCV** proporciona una búsqueda más exhaustiva, lo cual puede ser más útil si se requiere una optimización más precisa.
@@ -497,11 +503,3 @@ Este análisis nos muestra que **RandomizedSearchCV** es más eficiente al proba
 
 ---
 
-
-
-
-
-
-       
-       
-    

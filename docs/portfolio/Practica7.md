@@ -29,6 +29,7 @@
 Explorar y comparar las técnicas de redes neuronales, desde el perceptrón básico hasta redes neuronales multicapa (MLP), utilizando **scikit-learn MLP**, **TensorFlow/Keras** y **PyTorch Lightning**. Resolver problemas como **XOR**, y evaluar cuál herramienta es más efectiva para diferentes tipos de problemas.
 
 📌 **Hallazgos clave:**
+
 - **El perceptrón básico** no puede resolver problemas **no lineales** como **XOR**, debido a su limitación de solo separar datos linealmente.
 - **MLP (sklearn)** logra resolver XOR, mostrando la capacidad de las redes multicapa para aprender representaciones no lineales.
 - **TensorFlow y PyTorch Lightning** ofrecen más flexibilidad, pero con un mayor nivel de complejidad en comparación con **sklearn**.
@@ -122,7 +123,7 @@ for i, (x1, x2) in enumerate(datos):
     print(f"  {x1},{x2} → {prediccion} (esperado {esperado}) {ok}")
 ```
 
-![img7.1](../../assets/ImgPractica7/Img7.1.png)
+![img7.1](../assets/ImgPractica7/Img7.1.png)
 
 **El fragmento clave que cambia todo es el ajuste de los pesos y el sesgo para el problema OR:**
 ```python
@@ -131,13 +132,13 @@ graficar_perceptron(w1, w2, bias, datos, resultados_or, "Perceptrón OR")
 # ¿qué bias permite que una sola entrada active?
 ```
 
-![img7.2](../../assets/ImgPractica7/Img7.2.png)
+![img7.2](../assets/ImgPractica7/Img7.2.png)
 
 **Se ajusta el peso y el sesgo para la lógica NOT.**
 
 **Se grafican los puntos de entrada y salida con el umbral de decisión (línea verde).**
 
-**El gráfico es más compacto, manteniendo la visualización del comportamiento del perceptrón**
+**El gráfico es más compacto, manteniendo la visualización del comportamiento del perceptrón.**
 
 ```python
 # === LÓGICA NOT (1 entrada) ===
@@ -163,7 +164,7 @@ def graficar_not(w1, bias):
     plt.grid(True, alpha=0.3)
     plt.show()
 ```
-![img7.3](../../assets/ImgPractica7/Img7.3.png)
+![img7.3](../assets/ImgPractica7/Img7.3.png)
 
 **Aqui pruebo diferentes configuraciones de pesos y sesgo para intentar que el perceptrón resuelva el problema XOR.**
 
@@ -186,7 +187,7 @@ for j, (w1, w2, bias) in enumerate(intentos):
             aciertos += 1
 ```
 
-![img7.4](../../assets/ImgPractica7/Img7.4.png)
+![img7.4](../assets/ImgPractica7/Img7.4.png)
 
 
 
@@ -236,7 +237,7 @@ def dibujar_red_neuronal(input_size, hidden_sizes, output_size):
 ```
 Este fragmento dibuja las neuronas y las conexiones entre capas, lo que permite visualizar cómo se estructura la red neuronal multicapa.
 
-![img7.5](../../assets/ImgPractica7/Img7.5.png)
+![img7.5](../assets/ImgPractica7/Img7.5.png)
 
 ---
 
@@ -260,7 +261,7 @@ ax2.contourf(xx, yy, Z_mlp, levels=1, alpha=0.8, colors=['lightcoral', 'lightblu
 
 ```
 
-![img7.6](../../assets/ImgPractica7/Img7.6.png)
+![img7.6](../assets/ImgPractica7/Img7.6.png)
 
 Aqui compare visualmente cómo un perceptrón (línea recta) no puede resolver XOR, mientras que un MLP (superficie curva) puede hacerlo correctamente.
 
@@ -282,7 +283,7 @@ plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
 
 ```
 
-![img7.7](../../assets/ImgPractica7/Img7.7.png)
+![img7.7](../assets/ImgPractica7/Img7.7.png)
 
 Muestra gráficamente el comportamiento del modelo durante el entrenamiento: cómo disminuye la pérdida (loss) y cómo aumenta la precisión (accuracy) tanto en los datos de entrenamiento como de validación.
 
@@ -323,7 +324,7 @@ for i, (ax, framework) in enumerate(zip(axes, frameworks)):
                yticklabels=['True 0', 'True 1'], ax=ax)
 ```
 
-![img7.8](../../assets/ImgPractica7/Img7.8.png)
+![img7.8](../assets/ImgPractica7/Img7.8.png)
 
 Aqui hice un analisis a las matrices de confusión para evaluar el rendimiento de tres modelos diferentes: Sklearn MLP, TensorFlow, y PyTorch Lightning. Cada matriz muestra cuántas predicciones fueron correctas (TN + TP) y cuántas fueron incorrectas (FP + FN), lo cual es esencial para analizar la precisión de cada modelo.
 
@@ -339,7 +340,7 @@ mlp_model.fit(X_xor, y_xor)
 plt.contourf(xx, yy, Z, levels=1, alpha=0.8, colors=['lightcoral', 'lightblue'])
 ```
 
-![img7.9](../../assets/ImgPractica7/Img7.9.png)
+![img7.9](../assets/ImgPractica7/Img7.9.png)
 
 Entrenè el MLP con los datos del problema XOR y luego visualiza la frontera de decisión generada por el modelo. La frontera de decisión es crucial para entender cómo el MLP separa las clases de XOR, lo que muestra cómo una red neuronal multicapa puede resolver problemas no lineales, algo que un perceptrón simple no puede hacer.
 
@@ -360,7 +361,7 @@ grid_search.fit(X_train, y_train)
 print("Mejores parámetros encontrados: ", grid_search.best_params_)
 ```
 
-![img7.10](../../assets/ImgPractica7/Img7.10.png)
+![img7.10](../assets/ImgPractica7/Img7.10.png)
 
 Este fragmento es clave porque realiza la búsqueda exhaustiva de los mejores hiperparámetros del modelo MLP. Utilizando GridSearchCV, se evalúan diferentes combinaciones de hiperparámetros (hidden_layer_sizes, activation, solver, learning_rate_init) a través de validación cruzada (cv=5).
 

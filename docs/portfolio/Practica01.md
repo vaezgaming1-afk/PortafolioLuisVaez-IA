@@ -86,6 +86,7 @@ Esta práctica asegura que el portafolio esté **online**, con despliegues autom
 ---
 
 ## Decisiones clave (ADR-lite)
+
 - **Source de Pages:** **GitHub Actions** (no branch `gh-pages` manual).  
 - **Estructura:** Mantener `docs/` + `assets/` + `mkdocs.yml` del template.  
 - **Links relativos** entre prácticas para evitar roturas al mover rutas.  
@@ -99,10 +100,14 @@ Esta práctica asegura que el portafolio esté **online**, con despliegues autom
 ---
 
 ## Reproducibilidad (local)
+
 Requiere `python 3.11` y:
+
 ```bash
 pip install -q mkdocs mkdocs-material
 mkdocs serve  
  ```
+
 # servidor local en http://127.0.0.1:8000
+
 # para publicar local→gh, basta con push; el workflow de Actions despliega solo

@@ -185,7 +185,7 @@ plt.show()
 
 ```
 
-![img8.1](../../assets/ImgPractica8/Img8.1.png)
+![img8.1](../assets/ImgPractica8/Img8.1.png)
 
 Es esencial verificar si el dataset tiene una distribución balanceada entre las 10 clases. Esto impacta directamente en el rendimiento del modelo, ya que si hay clases subrepresentadas, el modelo puede tener problemas para predecir correctamente esas clases.
 

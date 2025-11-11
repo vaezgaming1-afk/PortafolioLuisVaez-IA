@@ -111,7 +111,7 @@ Modelo con precisión del **78.5%** y F1-score de **0.73**.
 
 ### 🎯 Matriz de Confusión - Logistic Regression
 
-![imgP2.1](../../assets/ImgPractica2/imgP2.1.png)
+![imgP2.1](../assets/ImgPractica2/imgP2.1.png)
 
 - **Análisis:** El modelo comete más errores tipo **falso negativo**, es decir, no predice que alguien sobrevivió cuando sí lo hizo.
 
@@ -119,7 +119,7 @@ Modelo con precisión del **78.5%** y F1-score de **0.73**.
 
 ### 📈 Comparación de Accuracy
 
-![imgP2.2](../../assets/ImgPractica2/imgP2.2.png)
+![imgP2.2](../assets/ImgPractica2/imgP2.2.png)
 
 > El modelo real supera claramente al DummyClassifier
 
