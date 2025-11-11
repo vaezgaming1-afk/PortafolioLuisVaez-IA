@@ -1,6 +1,3 @@
-
----
-
 # ***Portafolio de experiencia en AI***
 
 ## UT0: PUBLICACION DEL PORTAFOLIO

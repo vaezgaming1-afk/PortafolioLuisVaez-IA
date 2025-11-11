@@ -1,196 +1,220 @@
 /* ============================================================================
-   PALETA + DISEÑO (INTERFAZ REFINADA Y MODERNA)
-   Esquema armónico con un diseño profesional y limpio
-   ============================================================================ */
+    DISEÑO FINAL MEJORADO (ELEGANTE + FUNCIONAL + MODO OSCURO)
+    ========================================================================= */
 
 /* ---------- MODO CLARO (scheme: default) ---------------------------------- */
-:root{
-  /* Primario + acento */
-  --md-primary-fg-color:        #4A7CA6;        /* Azul más suave y claro */
-  --md-primary-fg-color--light: #6A8BB5;        /* Acento (hover) más sutil */
-  --md-primary-fg-color--dark:  #1C2226;        /* Oscuro */
-  --md-accent-fg-color:         #A0C1E6;        /* Azul claro para el acento */
+:root {
+  color-scheme: light dark; /* Pista al navegador para UI nativa */
+  --md-primary-fg-color:        #4A7CA6;
+  --md-primary-fg-color--light: #6FA7D9;
+  --md-primary-fg-color--dark:  #1C2226;
+  --md-accent-fg-color:         #A0C1E6;
 
-  /* Superficies, texto y bordes */
-  --surface-1: #F5F7FA;                           /* Fondo general más suave */
-  --surface-2: #FFFFFF;                            /* Tarjetas (claro) */
-  --surface-3: #EAEFF5;                            /* Resaltado/hover suave */
-  --border-1:  rgba(49,66,89,.15);                 /* Bordes más suaves y difusos */
-  --shadow-1:  rgba(0,0,0,.08);                   /* Sombra suave */
-  --text-1:    #2E3B46;                            /* Texto principal más suave */
-  --text-2:    #A0C1E6;                            /* Texto secundario azul claro */
-  --pill-bg:   rgba(49,66,89,.08);                 /* Fondo pills más suave */
+  --surface-1: #F5F8FB;
+  --surface-2: #FFFFFF;
+  --surface-3: #EAF1F7;
+  --border-1: rgba(49, 66, 89, .12);
+  --shadow-1: rgba(0, 0, 0, .08);
+  --text-1: #2B3945;
+  --text-2: #4A7CA6;
+  --pill-bg: rgba(74, 124, 166, .08);
 
-  /* Tipografía */
-  --font-primary: 'Roboto', sans-serif;            /* Fuente moderna */
-  --font-secondary: 'Arial', sans-serif;           /* Fuente secundaria */
-
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Arial', sans-serif;
   --md-logo-height: 26px;
 }
 
 /* ---------- MODO OSCURO (scheme: slate) ----------------------------------- */
-[data-md-color-scheme="slate"]{
-  --md-primary-fg-color:        #4A7CA6;         /* Azul más suave */
-  --md-primary-fg-color--light: #6A8BB5;         /* Acento/hover más sutil */
-  --md-primary-fg-color--dark:  #1C2226;         /* Oscuro */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #6FA7D9;
+  --md-primary-fg-color--light: #8CBFEA;
+  --md-primary-fg-color--dark:  #121619;
+  --md-accent-fg-color:         #A0C1E6;
 
-  --md-accent-fg-color:         #A0C1E6;         /* Azul claro */
-  --surface-1: #1C2226;                            /* Fondo marino oscuro */
-  --surface-2: #2C353F;                            /* Tarjeta (un tono ↑) */
-  --surface-3: #3A464F;                            /* Hover/énfasis */
-  --border-1:  rgba(49,66,89,.30);                 /* Bordes más suaves */
-  --shadow-1:  rgba(0,0,0,.40);                   /* Sombra más fuerte */
-  --text-1:    #F1F5F8;                            /* Texto principal claro */
-  --text-2:    rgba(193,194,198,.70);              /* Secundario más suave */
-  --pill-bg:   rgba(49,66,89,.15);                 /* Pill en oscuro */
+  --surface-1: #171C20;
+  --surface-2: #1E252B;
+  --surface-3: #2E3740;
+  --border-1: rgba(160, 193, 230, .15);
+  --shadow-1: rgba(0, 0, 0, .45);
+  --text-1: #EEF3F7;
+  --text-2: rgba(193, 194, 198, .7);
+  --pill-bg: rgba(160, 193, 230, .12);
 }
 
-/* ---------- BOTÓN PRIMARIO ----------------------------------------------- */
-a.md-button.md-button--primary{
-  background: var(--md-primary-fg-color);
-  border-color: var(--md-primary-fg-color);
+/* ---------- RESET + TRANSICIONES ----------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  /* Evita animar TODO: sólo lo que aporta valor y es barato de animar */
+  transition:
+    color .3s cubic-bezier(.25,.8,.25,1),
+    background-color .3s cubic-bezier(.25,.8,.25,1),
+    border-color .3s cubic-bezier(.25,.8,.25,1),
+    box-shadow .3s cubic-bezier(.25,.8,.25,1),
+    transform .3s cubic-bezier(.25,.8,.25,1),
+    opacity .3s cubic-bezier(.25,.8,.25,1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- BOTÓN PRIMARIO GENERAL -------------------------------------- */
+a.md-button.md-button--primary {
+  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-primary-fg-color--light));
+  border: none;
   color: #fff;
+  padding: .6rem 1.3rem;
+  border-radius: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
+
+a.md-button.md-button--primary:hover {
+  background: linear-gradient(135deg, var(--md-primary-fg-color--light), var(--md-accent-fg-color));
+  box-shadow: 0 6px 18px var(--shadow-1), 0 0 8px rgba(160, 193, 230, .4);
+  transform: translateY(-4px);
+}
+
+a.md-button.md-button--primary:focus-visible,
+.card a.open-btn:focus-visible,
+.x-card a.open-btn:focus-visible,
+.pill:focus-visible {
+  outline: 3px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* ---------- BOTÓN “ABRIR” / ACCIONES EN TARJETAS ------------------------ */
+.card a.open-btn,
+.x-card a.open-btn {
+  display: inline-block;
+  margin-top: .8rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  color: #fff;
+  font-weight: 500;
+  border-radius: 10px;
   padding: .5rem 1.2rem;
-  border-radius: 10px; /* Bordes más redondeados para mayor suavidad */
-  transition: all .3s ease;
-  font-family: var(--font-primary);
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
 }
 
-a.md-button.md-button--primary:hover{
-  background: var(--md-accent-fg-color);
-  border-color: var(--md-accent-fg-color);
-  transform: translateY(-4px); /* Sutil animación de desplazamiento */
-  box-shadow: 0 4px 12px var(--shadow-1); /* Sombras al hover para resaltar el botón */
+.card a.open-btn:hover,
+.x-card a.open-btn:hover {
+  background: linear-gradient(135deg, var(--md-accent-fg-color), var(--md-primary-fg-color--light));
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, .2), 0 0 10px rgba(160, 193, 230, .4);
 }
 
-/* ---------- HÉROE (perfil) ----------------------------------------------- */
-.profile-hero{
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-  margin: 0 0 1.5rem 0; /* Más espacio debajo para que no se vea tan amontonado */
-}
-
-.profile-hero img{
-  width: clamp(160px, 18vw, 230px);
-  height: clamp(160px, 18vw, 230px);
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid var(--md-primary-fg-color); /* Bordes más anchos para el avatar */
-  transition: transform .3s ease;
-}
-
-.profile-hero img:hover{
-  transform: scale(1.05); /* Efecto de ampliación suave al pasar el mouse */
-}
-
-/* ---------- TARJETAS Y GRIDS --------------------------------------------- */
-
-/* Grid responsivo */
+/* ---------- TARJETAS Y GRIDS -------------------------------------------- */
 .x-cards-grid,
-.cards-grid{
+.cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* Aumenté el tamaño mínimo para tarjetas más grandes */
-  gap: 1.5rem;
-  margin: 0 auto; /* Centrar el grid */
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.6rem;
+  margin: 0 auto;
 }
 
-/* Card base (imagen arriba) */
 .x-card,
-.cards-grid .card{
-  display: flex;
-  flex-direction: column;
-  padding: 1.2rem;
-  border-radius: 15px; /* Bordes más redondeados para un aspecto más moderno */
-  overflow: hidden;
-  background: var(--surface-2);
+.cards-grid .card {
+  background: linear-gradient(180deg, var(--surface-2), var(--surface-1));
   border: 1px solid var(--border-1);
+  border-radius: 18px;
   box-shadow: 0 6px 15px var(--shadow-1);
-  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  overflow: hidden;
+  padding: 1.2rem;
+  position: relative;
 }
 
 .x-card:hover,
-.cards-grid .card:hover{
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px var(--shadow-1);
+.cards-grid .card:hover {
+  transform: translateY(-6px);
   border-color: var(--md-primary-fg-color);
+  box-shadow: 0 10px 25px var(--shadow-1), 0 0 12px rgba(160, 193, 230, .25);
 }
 
-/* Imagen sin gap y altura consistente */
+/* Imagen dentro de card */
 .x-card img,
-.cards-grid .card img{
-  display: block;
+.cards-grid .card img {
+  display: block; /* evita el “gap” por línea base */
+  border-radius: 12px;
   width: 100%;
   height: 220px;
   object-fit: cover;
-  line-height: 0;
-  border-radius: 8px; /* Bordes redondeados en las imágenes también */
+  margin-bottom: .6rem;
 }
 
-/* ---------- HABILIDADES — Cards con degradado suave + Pills --------------- */
-.x-cards-grid.skills .x-card,
-.cards-grid.skills .card{
-  border: 1px solid var(--border-1);
-  background: linear-gradient(180deg, var(--surface-2) 0%, var(--surface-1) 100%);
-  transition: background .3s ease;
-}
-
-.x-cards-grid.skills .x-card:hover,
-.cards-grid.skills .card:hover{
-  background: linear-gradient(180deg, var(--surface-2) 0%, var(--md-primary-fg-color) 100%);
-}
-
-.x-cards-grid.skills .x-card h3,
-.cards-grid.skills .card h3{
-  margin: .5rem 1rem 0 1rem;
-  color: var(--md-primary-fg-color);
-}
-
-/* Pills/Burbujas */
-.pill{
+/* ---------- PILLS ------------------------------------------------------- */
+.pill {
   display: inline-block;
   font-size: .85rem;
-  line-height: 1;
-  padding: .45rem .65rem;
+  padding: .45rem .75rem;
   border-radius: 999px;
   border: 1px solid var(--border-1);
-  background: var(--pill-bg);
+  background: linear-gradient(135deg, var(--pill-bg), transparent);
   color: var(--text-1);
-  margin: .18rem .25rem .18rem 0;
-  transition: background .3s ease;
+  font-weight: 500;
+  -webkit-backdrop-filter: blur(3px); /* compat. Safari */
+  backdrop-filter: blur(3px);
 }
 
-.pill:hover{
-  background: var(--md-accent-fg-color); /* Cambiar color al pasar el ratón */
-}
-
-/* ---------- GALERÍA / MEDIOS -------------------------------------------- */
-.x-cards-grid.media .x-card,
-.cards-grid.media .card{
-  /* Heredan de card base */
-}
-
-.x-caption,
-.cards-grid.media .card .caption{
-  margin: 0;
-  padding: .9rem 1rem;
-  background: var(--md-primary-fg-color);
+.pill:hover {
+  background: linear-gradient(135deg, #28a745, #3ddc63); /* Cambiado a gradiente verde */
   color: #fff;
-  font-family: var(--font-secondary);
+  box-shadow: 0 0 10px rgba(40, 167, 69, .5); /* Cambiado a sombra verde */
 }
 
-.x-caption small,
-.cards-grid.media .card .caption small{
+/* ---------- PERFIL / HERO ---------------------------------------------- */
+.profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(145deg, var(--surface-2), var(--surface-1));
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-1);
+  box-shadow: 0 8px 18px var(--shadow-1);
+}
+
+.profile-hero img {
   display: block;
-  opacity: .92;
-  margin-top: .25rem;
-  font-weight: 400;
+  border-radius: 50%;
+  width: clamp(160px, 18vw, 230px);
+  height: clamp(160px, 18vw, 230px);
+  border: 4px solid var(--md-primary-fg-color);
+  object-fit: cover;
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
-/* ---------- AJUSTES RESPONSIVOS ----------------------------------------- */
-@media (max-width: 350px){
-  .profile-hero{ flex-direction: column; align-items: flex-start; }
-  .profile-hero img{
+.profile-hero img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(160, 193, 230, .4);
+}
+
+/* ---------- CAPTION ----------------------------------------------------- */
+.x-caption,
+.cards-grid.media .card .caption {
+  background: linear-gradient(90deg, var(--md-primary-fg-color), var(--md-primary-fg-color--light));
+  color: #fff;
+  padding: 1rem;
+  font-family: var(--font-secondary);
+  border-radius: 0 0 18px 18px; /* alineado con el radio de la tarjeta */
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+/* ---------- RESPONSIVO -------------------------------------------------- */
+@media (max-width: 350px) {
+  .profile-hero { 
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  .profile-hero img {
     width: clamp(100px, 30vw, 150px);
     height: clamp(100px, 30vw, 150px);
   }
