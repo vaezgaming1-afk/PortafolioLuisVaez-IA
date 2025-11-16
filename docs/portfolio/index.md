@@ -22,7 +22,7 @@
     <p>Configuré el tema y desplegué el sitio con GitHub Pages.</p>
     <p class="actions">
       <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica01">Abrir</a>
+      <a class="md-button md-button--primary" href="1Publicacion">Abrir</a>
     </p>
   </div>
 
@@ -47,7 +47,6 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 **Fundamento:** *Hands-On Machine Learning* (A. Géron), *Machine Learning Mastery with Python* (J. Brownlee), cursos de Kaggle y *Machine Learning Crash Course* de Google.
 
 
-
 <div class="cards-grid shortcuts portfolio-list">
 
   <div class="card">
@@ -56,6 +55,24 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica1/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Extra 1 - Analisis Predictivo del Titanic </h3>
+    <p></p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica1.2/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Extra 2 - Analisis Predictivo del Titanic</h3>
+    <p></p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica1.3/">Abrir</a>
     </p>
   </div>
 
@@ -69,11 +86,47 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
   </div>
 
   <div class="card">
+    <h3>Extra 1 - De Datos Crudos a Insights</h3>
+    <p></p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica2.1/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Extra 2 - De Datos Crudos a Insights</h3>
+    <p></p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica2.2/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
     <h3>Construyendo Soluciones Predictivas con Regresión Lineal y Logística</h3>
     <p></p>
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica4/">Abrir</a>
+    </p>
+  </div>
+
+ <div class="card">
+    <h3>Extra 1 - Construyendo Soluciones </h3>
+    <p></p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica4.1/">Abrir</a>
+    </p>
+  </div>
+
+<div class="card">
+    <h3>Extra 2 - Construyendo Soluciones </h3>
+    <p></p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica4.2/">Abrir</a>
     </p>
   </div>
 
@@ -85,14 +138,52 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
       <a class="md-button md-button--primary" href="Practica5/">Abrir</a>
     </p>
   </div>
+
+<div class="card">
+    <h3> Extra 1 - Optimizando el Rendimiento</h3>
+    <p></p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica5.1/">Abrir</a>
+    </p>
+  </div>
+
+<div class="card">
+    <h3> Extra 2 - Optimizando el Rendimiento</h3>
+    <p></p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica5.2/">Abrir</a>
+    </p>
+  </div>
   
-  <div class="card">
+<div class="card">
     <h3> Inteligencia de Clientes a través de Reducción de Dimensionalidad y Clustering</h3>
     <p>
     </p>
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica6/">Abrir</a>
+    </p>
+  </div>
+
+<div class="card">
+    <h3> Extra 1 - Inteligencia de Clientes</h3>
+    <p>
+    </p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica6.1/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3> Extra 1 - Inteligencia de Clientes</h3>
+    <p>
+    </p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica6.2/">Abrir</a>
     </p>
   </div>
 

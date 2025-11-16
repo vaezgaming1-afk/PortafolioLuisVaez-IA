@@ -1,5 +1,5 @@
 ---
-title: "02 — Publicación del Portafolio (GitHub Pages + MkDocs)"
+title: "Creación y publicación del portafolio "
 date: 2025-09-07
 number: 2
 status: "Completado"
@@ -18,17 +18,14 @@ time_spent: "—"
 {% if page.meta.tags %}{% for t in page.meta.tags %}<span class="pill">{{ t }}</span>{% endfor %}{% endif %}
 
 !!! abstract "Resumen ejecutivo"
-    **Objetivo:** Publicar el **portafolio** utilizando **GitHub Pages** con **MkDocs + Material** y un pipeline de **GitHub Actions**.  
-    **Resultado:** Un sitio accesible públicamente con una estructura mínima (About, enlaces a prácticas, e imágenes destacadas) y un **workflow de despliegue** automatizado.
-
-**Enlaces rápidos:**  
-[Consigna oficial — "Publicar tu Portafolio con GitHub Pages"](https://juanfkurucz.com/ucu-ia/ut1/03-portafolio-github-pages/)
+    **Objetivo:** Aqui mi proposito fue Publicar el **portafolio** utilizando **GitHub Pages** con **MkDocs + Material** y un pipeline de **GitHub Actions**.  
+    **Resultado:** Me dio como resultado un sitio accesible y didactico públicamente con una estructura mínima y un **workflow de despliegue** automatizado.
 
 ---
 
 ## Contexto
 
-Esta práctica asegura que el portafolio esté **online**, con despliegues automáticos en cada `push` a **main**. Se parte de un **template** y se publica con **GitHub Actions**, dejando secciones mínimas visibles (About, prácticas e imágenes destacadas).
+Esta accion asegura que el portafolio esté **online**, con despliegues automáticos en cada `push` a **main**. Se parte de un **template** y se publica con **GitHub Actions**, dejando secciones mínimas visibles (About, prácticas e imágenes destacadas).
 
 ## Objetivos
 
@@ -98,16 +95,3 @@ Esta práctica asegura que el portafolio esté **online**, con despliegues autom
     - **Leak privado**: confirmar que el repo sea **público** pero sin credenciales en commits.
 
 ---
-
-## Reproducibilidad (local)
-
-Requiere `python 3.11` y:
-
-```bash
-pip install -q mkdocs mkdocs-material
-mkdocs serve  
- ```
-
-# servidor local en http://127.0.0.1:8000
-
-# para publicar local→gh, basta con push; el workflow de Actions despliega solo

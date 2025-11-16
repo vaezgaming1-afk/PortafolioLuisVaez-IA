@@ -41,7 +41,7 @@ plugins:
   - awesome-pages
   - macros 
   - git-revision-date-localized:
-      enable_creation_date: true
+      enable_git_follow: false
 
 markdown_extensions:
   - admonition
@@ -70,7 +70,7 @@ nav:
   - "Acerca de mí": acerca.md
   - Portfolio:
       - Índice: portfolio/index.md
-      - "01 — EDA del Titanic en Google Colab": "portfolio/Practica1.md"
+      - "01 — EDA del Titanic en Google Colab": "portfolio/Practica1.md" 
       - "02 — Feature Engineering simple + Modelo base": "portfolio/Practica2.md"
       - "03 — Regresión Lineal y Logística - Fill in the Blanks": "portfolio/Practica4.md"
       - "04 — Validación y Selección de Modelos - Fill in the Blanks": "portfolio/Practica5.md"
@@ -78,3 +78,4 @@ nav:
   - Recursos: recursos.md
 
 docs_dir: docs
+
