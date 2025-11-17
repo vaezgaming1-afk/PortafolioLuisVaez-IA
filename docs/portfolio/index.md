@@ -228,10 +228,11 @@ El desarrollo de estos proyectos se sustentó en un stack tecnológico moderno y
 
 * **Fundamento Teórico-Práctico:**
     * Mi experiencia práctica se basa en una sólida base teórica obtenida de recursos líderes como el curso **Intro to Deep Learning de Kaggle**, los materiales de **Deep Learning de Google** y la documentación oficial de **PyTorch** y **PyTorch Lightning**.
+
 <div class="cards-grid shortcuts portfolio-list">
 
-  <div class="card">
-    <h3>🧠 Dominando el Ecosistema Neuronal: De Prototipos en Scikit-learn a Soluciones Avanzadas con PyTorch/TensorFlow  </h3>
+<div class="card">
+    <h3>Dominando el Ecosistema Neuronal: De Prototipos en Scikit-learn a Soluciones Avanzadas con PyTorch/TensorFlow  </h3>
     <p>Entender cuándo usar cada herramienta</p>
     <p class="actions">
       <span class="pill">Completado</span>
@@ -240,11 +241,47 @@ El desarrollo de estos proyectos se sustentó en un stack tecnológico moderno y
   </div>
 
   <div class="card">
-    <h3>💡 El Arte de Enseñar a una Red: Backpropagation y Estrategias de Optimización en la Práctica</h3>
+    <h3>Extra 1 - Dominando el Ecosistema Neuronal</h3>
+    <p>Entender cuándo usar cada herramienta</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica7.1/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Extra 2 - Dominando el Ecosistema Neuronal</h3>
+    <p>Entender cuándo usar cada herramienta</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica7.2/">Abrir</a>
+    </p>
+  </div>
+
+<div class="card">
+    <h3>El Arte de Enseñar a una Red: Backpropagation y Estrategias de Optimización en la Práctica</h3>
     <p>Guias de experimentacion</p>
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica8/">Abrir</a>
+    </p>
+  </div>
+
+<div class="card">
+    <h3>Extra 1 - El Arte de Enseñar a una Red</h3>
+    <p>Guias de experimentacion</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica8.1/">Abrir</a>
+    </p>
+  </div>
+
+<div class="card">
+    <h3>Extra 2 - El Arte de Enseñar a una Red/h3>
+    <p>Guias de experimentacion</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica8.2/">Abrir</a>
     </p>
   </div>
 
@@ -284,8 +321,199 @@ Para el desarrollo de estos proyectos, utilicé un stack tecnológico especializ
 * **Aumento de Datos:**
     * `Albumentations`.
 
+<div class="cards-grid shortcuts portfolio-list">
+
+  <div class="card">
+    <h3>CNNs y Transfer Learning con TensorFlow/Keras - Fill in the Blanks</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica9/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Extra 1 - CNNs y Transfer Learning con TensorFlow/Keras - Fill in the Blanks</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica9.1">Abrir</a>
+    </p>
+  </div>
+
+</div>
+
+<style>
+  .cards-grid.shortcuts.portfolio-list {
+    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
+  }
+</style>
+ 
+<div class="cards-grid shortcuts portfolio-list">
+
+  <div class="card">
+    <h3>Data Augmentation Avanzado & Explicabilidad - Fill in the Blanks</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica10/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Extra 1 - Data Augmentation Avanzado & Explicabilidad</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica10.1">Abrir</a>
+    </p>
+  </div>
+
+
+</div>
+
+<style>
+  .cards-grid.shortcuts.portfolio-list {
+    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
+  }
+</style>
+ 
+<div class="cards-grid shortcuts portfolio-list">
+
+  <div class="card">
+    <h3>YOLOv8 Fine-tuning & Tracking</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica11/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Extra 1 - YOLOv8 Fine-tuning & Tracking</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica11.1">Abrir</a>
+    </p>
+  </div>
+
+
+</div>
+
+<style>
+  .cards-grid.shortcuts.portfolio-list {
+    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
+  }
+</style>
+ 
+<div class="cards-grid shortcuts portfolio-list">
+
+  <div class="card">
+    <h3>SAM Segmentation - Pretrained vs Fine-tuned</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica12/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Extra 1 - SAM Segmentation - Pretrained vs Fine-tuned</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica12.1">Abrir</a>
+    </p>
+  </div>
+
+
+</div>
+
+---
+## DOMINIO DE NLP MODERNO Y MODELADO DE TEXTO
+
+Desarrollé experiencia en el **ciclo completo de proyectos de Procesamiento de Lenguaje Natural (NLP)**, integrando modelos clásicos y arquitecturas modernas basadas en Transformers. Trabajé en representación, modelado y evaluación de texto para construir sistemas de clasificación ofensiva, análisis de sentimiento y aplicaciones basadas en modelos de lenguaje (LLMs).
+
 ---
 
+### COMPETENCIAS CLAVE
+
+- **Procesamiento y Representación del Texto:**  
+  Técnicas de limpieza, normalización, tokenización y construcción de representaciones mediante **TF-IDF**, embeddings y tokenizers propios de arquitecturas Transformer.
+
+- **Modelado Clásico y Transformers:**  
+  Desarrollo de modelos base (TF-IDF + regresión logística) y comparación con modelos modernos **BERT**, **RoBERTa** y **FinBERT** mediante *fine-tuning* para clasificación de contenido ofensivo y análisis de sentimiento.
+
+- **Evaluación y Robustez:**  
+  Uso de métricas como **accuracy**, **precision**, **recall** y **F1-score**, junto con validación cruzada para asegurar estabilidad y capacidad de generalización.
+
+- **Aplicaciones con LLMs:**  
+  Construcción de prototipos utilizando **LangChain** y **OpenAI**, incorporando cadenas, memoria contextual y prompts estructurados para automatizar análisis y generación de respuestas basadas en modelos GPT.
+
+---
+
+### ECOSISTEMA TECNOLÓGICO Y BASE DE CONOCIMIENTO
+
+**Herramientas:**  
+*HuggingFace Transformers* · *Scikit-learn* · *LangChain* · *OpenAI API* · *PyTorch/TensorFlow* · *Matplotlib* · *Seaborn* · *Jupyter Notebooks*
+
+**Fundamento:**  
+Unidad Temática 4 (NLP): clasificación ofensiva, *fine-tuning* de Transformers, comparación TF-IDF vs modelos modernos, y construcción de aplicaciones con LLMs utilizando *LangChain* y *OpenAI*.
+
+<div class="cards-grid shortcuts portfolio-list">
+
+  <div class="card">
+    <h3>Fine-tuning de Transformers para Clasificación Ofensiva</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica13/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Extra 1 - Fine-tuning de Transformers para Clasificación Ofensiva</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica13.1">Abrir</a>
+    </p>
+  </div>
+
+
+</div>
+
+<style>
+  .cards-grid.shortcuts.portfolio-list {
+    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
+  }
+</style>
+ 
+<div class="cards-grid shortcuts portfolio-list">
+
+  <div class="card">
+    <h3>LLMs con LangChain (OpenAI)</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica14/">Abrir</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Extra 1 - LLMs con LangChain (OpenAI)</h3>
+    <p>xxxxxxx</p>
+    <p class="actions">
+      <span class="pill">Completado</span>
+      <a class="md-button md-button--primary" href="Practica14.1">Abrir</a>
+    </p>
+  </div>
+
+
+</div>
+
+---
 ### Base de Conocimiento 📚
 
 Mi experiencia se fundamenta en recursos prácticos de plataformas líderes como **Kaggle (Computer Vision)** y **HuggingFace (Computer Vision Course)**, complementado con la sólida base teórica del prestigioso curso **CS231n de Stanford**.
