@@ -1,8 +1,10 @@
-# 📖 **Análisis Exploratorio del Dataset Titanic**
+<h1 align="center">Análisis Exploratorio del Dataset Titanic</h1>
 
 ![Titanic Banner](../assets/acerca/RMS_Titanic_3.jpg)
 
-> 🧠 *Explorando los factores que determinaron la supervivencia en el Titanic*
+<p align="center">
+  <em>Explorando los factores que determinaron la supervivencia en el Titanic</em>
+</p>
 
 ---
 
@@ -12,165 +14,109 @@
 
 ## 🚀 **Accesos Directos Importantes**
 
-[![📘 Abrir Notebook en Google Colab](https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1F0btMIVnncma9EYwR-2togcSPDW35evv)  
-[![📊 Ver Visualizaciones en Drive](https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1qglTzvqdFPrNMxUhH_MtQFcRrafXEG7x?usp=sharing)
+> *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
 
-> ✅ *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
+<div align="center">
 
----
+<a href="https://colab.research.google.com/drive/1F0btMIVnncma9EYwR-2togcSPDW35evv">
+  <img src="https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Abrir en Colab" />
+</a>
+&nbsp;
+<a href="https://drive.google.com/drive/folders/1ozJ9VwMfqzfbsES0uH3cl2FiYWbHdOFh?usp=drive_link">
+  <img src="https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white" alt="Ver en Drive" />
+</a>
 
-
-📦 **Dataset**: Titanic - [Kaggle](https://www.kaggle.com/c/titanic/data)  
-
-📁 **Observaciones**: 891 · **Variables**: 12
+</div>
 
 ---
 
 ## 📝 **Resumen Ejecutivo**
 
-🎯 **Objetivo:**  
-Realizar un análisis exploratorio detallado del dataset Titanic, entendiendo las relaciones entre variables y su impacto en la supervivencia.
+**🎯 Objetivo Principal**
+Realizar un análisis exploratorio detallado (EDA) para entender las correlaciones entre las variables demográficas y la probabilidad de supervivencia de los pasajeros.
 
-📌 **Hallazgos clave:**
+**📌 Hallazgos Clave**
+> * "Las mujeres y los pasajeros de primera clase tuvieron significativamente mayores probabilidades de sobrevivir."*
 
-- 📍 **Sexo**: Alta influencia en la supervivencia (mujeres sobreviven más).
-- 🎟️ **Clase (Pclass)**: Pasajeros de 1ª clase tienen mayor tasa de supervivencia.
-- 👶 **Edad**: Jóvenes adultos predominan en el dataset.
+* **📍 Sexo:** Factor determinante n.º 1 (Mujeres > Hombres).
+* **🎟️ Clase (Pclass):** Clara jerarquía socioeconómica en la supervivencia (1ª > 3ª).
+* **👶 Edad:** La prioridad de "niños primero" es visible en los datos.
 
----
-
-## ✅ **Checklist de Objetivos**
-
-| Tarea                                               | Estado |
-|-----------------------------------------------------|--------|
-| Familiarización con Google Colab y carga del dataset| ☑️      |
-| Identificación de variables clave                   | ☑️      |
-| Visualizaciones con `seaborn` y `matplotlib`        | ☑️      |
-| Análisis de correlaciones                           | ☑️      |
+**📦 Ficha Técnica del Dataset**
+* **Fuente:** [Kaggle - Titanic Challenge](https://www.kaggle.com/c/titanic/data)
+* **Dimensiones:** 891 Observaciones · 12 Variables
 
 ---
 
-## ⏰ **Tiempos Estimados vs Reales**
+## 📊 **Gestión del Proyecto**
 
-| Actividad                               | ⏱️ Estimado | ⏰ Real | ✅ Notas |
-|----------------------------------------|--------------|----------|----------|
-| Configuración en Google Colab          | 30 m         | 28 m     | Setup + carga de datos desde Kaggle |
-| Exploración inicial (`info()` / `describe()`) | 30 m | 32 m | Análisis descriptivo |
-| Visualizaciones básicas                | 30 m         | 35 m     | Uso de seaborn y matplotlib |
-| Valores faltantes / outliers           | 15 m         | 18 m     | Distribuciones y NA |
-| Correlaciones                          | 20 m         | 22 m     | Variables numéricas |
-| Reflexión final                        | 15 m         | 14 m     | Insights y conclusiones |
+### ✅ Checklist de Objetivos
 
-📌 **Total real**: 2 h 39 m — 🔼 **+6%** (+9 m)
+| Tarea | Estado |
+| :--- | :---: |
+| 📥 Carga de datos y Setup en Colab | ☑️ |
+| 🔍 Limpieza de datos (Nulls/Outliers) | ☑️ |
+| 📈 Visualizaciones (`seaborn`/`matplotlib`) | ☑️ |
+| 🧮 Análisis de Correlaciones | ☑️ |
 
----
+### ⏰ Cronograma: Estimado vs. Real
 
-## 🔍 **Análisis Exploratorio**
-
-### 🧮 Dataset
-
-- 🔢 Observaciones: 891
-- 🧩 Variables clave: `Survived`, `Sex`, `Age`, `Pclass`, `Fare`
-
-### 📈 Univariado
-
-- Mujeres tienen más probabilidad de sobrevivir.
-- La mayoría de pasajeros son jóvenes adultos.
-
-### 🔗 Bivariado
-
-- Alta correlación entre **Sexo** y **Supervivencia**.
-- Clase del pasajero y tarifa están ligadas a la supervivencia.
-
-### 🧪 Correlaciones
-
-- `Pclass` y `Fare` tienen correlaciones significativas con `Survived`.
-- `SibSp` y `Age` menos relevantes.
+| Actividad | ⏱️ Estimado | ⏰ Real | 📝 Notas |
+| :--- | :---: | :---: | :--- |
+| **Configuración** | 30 m | **28 m** | Setup + Carga desde Kaggle |
+| **Exploración Inicial** | 30 m | **32 m** | `info()`, `describe()` |
+| **Visualización** | 30 m | **35 m** | Ajuste de gráficos |
+| **Limpieza** | 15 m | **18 m** | Tratamiento de NAs |
+| **Correlaciones** | 20 m | **22 m** | Matriz de calor |
+| **Conclusiones** | 15 m | **14 m** | Redacción final |
+| **TOTAL** | **2h 20m** | **2h 39m** | 🔼 **+6%** (Desviación aceptable) |
 
 ---
-
-## 📊 **Indicadores Clave**
-
-| Métrica                        | Valor / Observación                  |
-|-------------------------------|--------------------------------------|
-| Clases (`Survived`)           | 0 = No, 1 = Sí                        |
-| Datos faltantes / duplicados  | 0 / 0                                 |
-| Correlación `Pclass` ~ `Fare` | Alta                                  |
-| Sexo como predictor           | Altamente significativo              |
-
----
-
 ## 📚 **Diccionario de Datos**
 
-| Variable   | Tipo      | Rango / Valores          | Descripción                              |
-|------------|-----------|--------------------------|------------------------------------------|
-| `Survived` | Categórica| {0, 1}                   | Supervivencia                            |
-| `Pclass`   | Categórica| {1, 2, 3}                | Clase del pasajero                       |
-| `Sex`      | Categórica| {male, female}           | Género                                   |
-| `Age`      | Numérica  | 0 – 80+                  | Edad del pasajero                        |
-| `SibSp`    | Numérica  | 0 – 8                    | Hermanos / Esposo a bordo                |
-| `Parch`    | Numérica  | 0 – 6                    | Padres / Hijos a bordo                   |
-| `Fare`     | Numérica  | £0 – £512.33             | Tarifa pagada                            |
-| `Embarked` | Categórica| {C, Q, S}                | Puerto de embarque                       |
-| `Cabin`    | Categórica| —                        | Número de cabina (muchos nulos)         |
-| `Ticket`   | Categórica| —                        | Número de ticket                         |
-| `Name`     | Categórica| —                        | Nombre completo                          |
+| Variable | Tipo | Rango / Valores | Descripción |
+| :--- | :--- | :--- | :--- |
+| `Survived` | Categórica | {0, 1} | Supervivencia |
+| `Pclass` | Categórica | {1, 2, 3} | Clase del pasajero |
+| `Sex` | Categórica | {male, female} | Género |
+| `Age` | Numérica | 0 – 80+ | Edad del pasajero |
+| `SibSp` | Numérica | 0 – 8 | Hermanos / Esposo a bordo |
+| `Parch` | Numérica | 0 – 6 | Padres / Hijos a bordo |
+| `Fare` | Numérica | £0 – £512.33 | Tarifa pagada |
+| `Embarked` | Categórica | {C, Q, S} | Puerto de embarque |
+| `Cabin` | Categórica | — | Número de cabina (muchos nulos) |
+| `Ticket` | Categórica | — | Número de ticket |
+| `Name` | Categórica | — | Nombre completo |
+
+</details>
 
 ---
 
-## 📸 **Visualizaciones Destacadas**
 
-### 🎯 Supervivencia por Clase y Sexo
+## 🔍 **Análisis Detallado**
 
-![imgP1](../assets/ImgPractica1/imgP1.png)
+### 1. Análisis Univariado
+* **Desbalance de clases:** La mayoría de pasajeros no sobrevivió.
+* **Demografía:** Predominancia de adultos jóvenes (20-35 años).
 
-> Las mujeres de 1ª clase tuvieron la tasa de supervivencia más alta.
+### 2. Análisis Bivariado & Multivariado
+* **Clase vs. Precio:** Existe una correlación directa, pero con outliers en 1ª clase (tarifas muy altas).
+* **El factor "Sexo":** Es el predictor más fuerte individualmente.
 
----
-
-### 🧓 Histograma de Edad
-
-![imgP1.2](../assets/ImgPractica1/imgP1.2.png)
-
-> Mayoría de pasajeros: adultos jóvenes entre 20 y 35 años.
-
-[🔗 Ver todas las visualizaciones aquí](https://drive.google.com/drive/folders/1M4qND3ec7dxzzagT3HjI05VCggnWIZzy?usp=sharing)
+### 3. Matriz de Correlación
+* **Fuerte:** `Fare` y `Pclass` (-0.55, a mejor clase, mayor precio).
+* **Moderada:** `Pclass` y `Survived` (-0.34, a mejor clase [menor número], mayor supervivencia).
 
 ---
 
-## 🏆 **Resultados Clave**
+## 📸 **Galería de Visualizaciones**
 
-✅ **Variables clave:**  
+| **Supervivencia por Clase y Sexo** | **Distribución de Edad** |
+| :---: | :---: |
+| ![imgP1](../assets/ImgPractica1/imgP1.png) | ![imgP1.2](../assets/ImgPractica1/imgP1.2.png) |
+| *Mujeres de 1ª clase: Tasa más alta de supervivencia.* | *La mayoría de pasajeros tenía entre 20 y 35 años.* |
 
-- **Sexo:** Mujeres sobrevivieron en mayor proporción.  
-- **Clase:** 1ª clase con ventaja clara.
-
-⚠️ **Desafíos:**  
-
-- Valores faltantes en `Cabin` y `Age`.  
-- Imputar `Age` por mediana segmentada por clase.
-
-🔜 **Próximos pasos:**  
-
-- Modelar con **Logistic Regression** y **Random Forest**  
-- Añadir métricas ROC, precisión, recall y F1-score.
-
----
-
-## 🧩 **Criterios de Aceptación**
-
-- ☑️ Exploración completa del dataset  
-- ☑️ Correlaciones clave identificadas  
-- ☑️ Visualizaciones subidas a Drive  
-- ☑️ Código reproducible
-
----
-
-## 🚀 **Notebook Interactivo**
-
-[![Ver Notebook en Google Colab](https://img.shields.io/badge/Ver%20en%20Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/drive/1F0btMIVnncma9EYwR-2togcSPDW35evv)
-
-> 💡 *Haz clic para empezar a trabajar directamente en el análisis y visualizar resultados en tiempo real.*
+[🔗 Ver galería completa en Google Drive](https://drive.google.com/drive/folders/1ozJ9VwMfqzfbsES0uH3cl2FiYWbHdOFh?usp=drive_link)
 
 ---
 
@@ -212,11 +158,3 @@ plt.show()
 🧠 Reflexión Final
 
 El análisis exploratorio del dataset Titanic nos permitió identificar que las variables Sexo y Pclass son determinantes para la supervivencia. Las próximas etapas incluyen la construcción de modelos predictivos más avanzados para mejorar la exactitud y tomar decisiones basadas en estos factores clave.
-
-⏩ Próximos Pasos
-
-Entrenar modelos como Logistic Regression y Random Forest.
-
-Implementar curvas ROC y métricas por clase para análisis de rendimiento del modelo.
-
-Experimentar con imputación avanzada de datos faltantes.

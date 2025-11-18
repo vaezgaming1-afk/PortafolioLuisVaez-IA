@@ -49,23 +49,35 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 
 <div class="cards-grid shortcuts portfolio-list">
 
-  <div class="card">
-    <h3>Análisis Predictivo del Titanic: Descubriendo Patrones de Supervivencia a través de EDA</h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica1/">Abrir</a>
-    </p>
-  </div>
+<div class="card">
+  <h3>Análisis Predictivo del Titanic 🚢 </h3>
+  
+  <p>
+    Descubriendo Patrones de Supervivencia a través de EDA.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">Stack: Python · Pandas · Seaborn</small>
+  </p>
 
-  <div class="card">
-    <h3>Extra 1 - Analisis Predictivo del Titanic </h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica1.2/">Abrir</a>
-    </p>
-  </div>
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="Practica1/">Abrir</a>
+  </p>
+</div>
+
+<div class="card">
+  <h3>Identificacion de especies en Palmer Penguins 🐧</h3>
+  
+  <p>
+    Explorando e identificando especies complejas.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">Stack: Python · Pandas · Seaborn · Scipy</small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="Practica1.2/">Abrir</a>
+  </p>
+</div>
 
   <div class="card">
     <h3>Extra 2 - Analisis Predictivo del Titanic</h3>
