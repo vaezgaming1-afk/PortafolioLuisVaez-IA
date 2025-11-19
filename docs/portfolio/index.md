@@ -79,14 +79,20 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
   </p>
 </div>
 
-  <div class="card">
-    <h3>Extra 2 - Analisis Predictivo del Titanic</h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica1.3/">Abrir</a>
-    </p>
-  </div>
+<div class="card">
+  <h3>Estrategia de Negocio: Tips Dataset 💵</h3>
+  
+  <p>
+    Segmentación de clientes, grupos y mapas de rentabilidad.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">Stack: Python · Pandas · Seaborn · Matplotlib</small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="Practica1.3/">Abrir</a>
+  </p>
+</div>
 
   <div class="card">
     <h3>De Datos Crudos a Insights: Feature Engineering y Establecimiento del Modelo de Referencia</h3>
