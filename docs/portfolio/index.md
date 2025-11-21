@@ -94,14 +94,21 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
   </p>
 </div>
 
-  <div class="card">
-    <h3>De Datos Crudos a Insights: Feature Engineering y Establecimiento del Modelo de Referencia</h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica2/">Abrir</a>
-    </p>
-  </div>
+
+<div class="card">
+  <h3>Aplicando ingeniería de características 🛠️</h3>
+  
+  <p>
+    Explorar y aplicar técnicas de Feature Engineering
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">Stack: Python · Pandas · SkLearn· Matplotlib</small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="Practica2/">Abrir</a>
+  </p>
+</div>
 
   <div class="card">
     <h3>Extra 1 - De Datos Crudos a Insights</h3>

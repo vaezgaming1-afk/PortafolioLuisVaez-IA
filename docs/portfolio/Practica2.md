@@ -1,32 +1,41 @@
-# 🚀 **Práctica 2: Feature Engineering + Modelo Base**
+<h1 align="center">Cuando los datos hablan mejor</h1>
 
-![Titanic Banner](../assets/acerca/RMS_Titanic_3.jpg)
+![skylearn](../assets/ImgPractica3/Img3.1.1.png)
 
-> ✨ *Aplicando ingeniería de características y comparando modelos para predecir la supervivencia en el Titanic.*
+<p align="center">
+  <em>Aplicando ingeniería de características y comparando modelos.</em>
+</p>
 
 ---
 
 ## 🏷️ **Etiquetas Rápidas**
 
-`#2` `#Titanic` `#FeatureEngineering` `#MachineLearning` `#ModeloBase`
+`#2` `#FeatureEngineering` `#MachineLearning` `#ModeloBase`
 
 ---
 
 ## 🚀 **Accesos Directos Importantes**
 
-[![📘 Abrir Notebook en Google Colab](https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1xOjYjaSN2DM7szuRU7wsep-l2vCXaDSR?usp=sharing)  
-[![📊 Ver Visualizaciones en Drive](https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1WMHuuZMkUeXZYrEZBdhwqgbqwMg7vktG?usp=drive_link)
+> *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
 
-> ✅ *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
+<div align="center">
 
----
+<a href="https://colab.research.google.com/drive/1xOjYjaSN2DM7szuRU7wsep-l2vCXaDSR?usp=sharing">
+  <img src="https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Abrir en Colab" />
+</a>
+&nbsp;
+<a href="https://drive.google.com/drive/folders/1WMHuuZMkUeXZYrEZBdhwqgbqwMg7vktG?usp=drive_link">
+  <img src="https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white" alt="Ver en Drive" />
+</a>
+
+</div>
 
 ---
 
 ## 🧠 **Resumen Ejecutivo**
 
 🎯 **Objetivo:**  
-Explorar y aplicar técnicas de **Feature Engineering** sobre el dataset Titanic, entrenar un modelo de **Regresión Logística** y compararlo con un modelo base (**DummyClassifier**).
+Explorar y aplicar técnicas de **Feature Engineering**, entrenar un modelo de **Regresión Logística** y compararlo con un modelo base (**DummyClassifier**).
 
 📌 **Hallazgos clave:**
 
