@@ -99,7 +99,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
   <h3>Aplicando ingeniería de características 🛠️</h3>
   
   <p>
-    Explorar y aplicar técnicas de Feature Engineering
+    Explorar y aplicar técnicas de Feature Engineering de la mano con scikit-learn.
     <br>
     <small style="opacity: 0.7; font-size: 0.85em;">Stack: Python · Pandas · SkLearn· Matplotlib</small>
   </p>
@@ -110,14 +110,20 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
   </p>
 </div>
 
-  <div class="card">
-    <h3>Extra 1 - De Datos Crudos a Insights</h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica2.1/">Abrir</a>
-    </p>
-  </div>
+<div class="card">
+  <h3>Clasificación de Inventario: El Detector de Lujo 💎</h3>
+  
+  <p>
+    Automatizando la tasación con Future Engineering y Deteccion de Fraudes.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">Stack: Python · Pandas · SkLearn · Seaborn</small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="Practica2.1/">Abrir</a>
+  </p>
+</div>
 
   <div class="card">
     <h3>Extra 2 - De Datos Crudos a Insights</h3>

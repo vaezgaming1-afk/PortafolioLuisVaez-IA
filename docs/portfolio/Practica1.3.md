@@ -311,8 +311,10 @@ Sintetizar todo el análisis matemático en un **Manifiesto Operativo**. El obje
 > Este bloque consolida las decisiones estratégicas derivadas de los datos:
 
 > 1.  **El Mito del Género:** Queda desmentido. Estadísticamente, hombres y mujeres son igual de generosos (~16%). El servicio debe ser equitativo.
+
 > 2.  **La Trampa de los Grupos:** Se confirma que en mesas de **+5 personas**, la generosidad individual colapsa. **Acción:** Es imperativo aplicar un "Service Charge" automático en estos casos.
+
 > 3.  **El Cliente de Oro:** Se identificó el nicho ganador. Los **Hombres No Fumadores (Jueves/Viernes)** ofrecen la mejor combinación de alto retorno y bajo riesgo.
+
 > 4.  **Topografía del Consumo:** El mapa de densidad revela que el "corazón" del negocio son los tickets de **\$15-\$25**. Las promociones masivas deben atacar este rango, no a los clientes de lujo (outliers).
 
-> *"Los datos no solo nos dicen cuánto ganamos, sino **a quién** debemos priorizar para ganar más."*
