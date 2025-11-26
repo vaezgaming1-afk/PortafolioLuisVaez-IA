@@ -95,6 +95,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 </div>
 
 
+
 <div class="card">
   <h3>Aplicando ingeniería de características 🛠️</h3>
   
@@ -125,25 +126,32 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
   </p>
 </div>
 
-  <div class="card">
-    <h3>Extra 2 - De Datos Crudos a Insights</h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica2.2/">Abrir</a>
-    </p>
-  </div>
+<div class="card">
+  <h3>Valoración Inmobiliaria: El Oráculo de California 🏠</h3>
+  
+  <p>
+    Análisis geoespacial y detección de anomalías en precios de vivienda.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">Stack: Python · Pandas · Seaborn · SkLearn</small>
+  </p>
 
-  <div class="card">
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="Practica2.2/">Abrir</a>
+  </p>
+</div>
+
+
+<div class="card">
     <h3>Construyendo Soluciones Predictivas con Regresión Lineal y Logística</h3>
     <p></p>
     <p class="actions">
       <span class="pill">Completado</span>
       <a class="md-button md-button--primary" href="Practica4/">Abrir</a>
     </p>
-  </div>
+</div>
 
- <div class="card">
+<div class="card">
     <h3>Extra 1 - Construyendo Soluciones </h3>
     <p></p>
     <p class="actions">
