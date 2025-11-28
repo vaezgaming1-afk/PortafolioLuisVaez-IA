@@ -134,13 +134,13 @@ El objetivo es identificar **los factores que elevan o reducen el Valor Mediano 
 
 Este dashboard resume cómo la ubicación y la ocupación definen el valor inmobiliario.
 
-> 💡 Aquí puedes insertar una imagen compuesta de tus gráficos (Mapa + Casas Fantasma).
+![calor mapa](../assets/ImgPractica2/extra2.2.1.png)
 
 - **A. Mapa de Calor:** Confirma visualmente la concentración de riqueza en la franja costera (puntos rojos).  
 - **B. El Enigma Fantasma:** El gráfico de dispersión revela la anomalía de la izquierda: casas con `< 2` habitantes que alcanzan los precios más altos del mercado.  
 - **C. Paradoja de la Edad:** Las líneas divergentes muestran cómo lo "viejo" se revaloriza en la costa (línea azul ascendente) pero se deprecia en el interior (línea naranja plana).
 
-![calor mapa](../assets/ImgPractica2/extra2.2.1.png)
+
 
 ## 🔄 **DESAFIOS DIRECTOS CON EL DATASET**
 

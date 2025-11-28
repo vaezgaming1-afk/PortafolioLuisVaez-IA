@@ -1,17 +1,32 @@
-# 📝 **TAREA 4: Regresión Lineal y Logística - FILL IN THE BLANKS**
+<h1 align="center"> Regresión Lineal y Logística 📈</h1>
 
-<span class="pill">Completado</span>
-<span class="pill">#4</span>
-<span class="pill">Regresión Lineal</span>
-<span class="pill">Regresión Logística</span>
-<span class="pill">Machine Learning</span>
-<span class="pill">Titanic</span>
-<span class="pill">Modelo Base</span>
+![Banner](../assets/ImgPractica4/img4.1.1.png)
 
-[![📘 Abrir Notebook en Google Colab](https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/114DetBDXPevvD7RS_C5Bg5FB2UjcoZ0I?usp=sharing)  
-[![📊 Ver Visualizaciones en Drive](https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1zLNaoXm94xbjZ3wICLOtBp_4JDL-QcB0?usp=drive_link)
+<p align="center">
+  <em>Modelos base aplicados a Titanic usando regresión lineal y logística</em>
+</p>
 
-> ✅ *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
+
+🏷️ **Etiquetas**  
+`#RegresiónLineal` `#RegresiónLogística` `#MachineLearning` `#Titanic` `#ModeloBase` `#Tarea4`
+
+
+## 🚀 Accesos Directos Importantes
+
+> *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
+
+<div align="center">
+
+<a href="https://colab.research.google.com/drive/114DetBDXPevvD7RS_C5Bg5FB2UjcoZ0I?usp=sharing">
+  <img src="https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Abrir en Colab" />
+</a>
+&nbsp;
+<a href="https://drive.google.com/drive/folders/1zLNaoXm94xbjZ3wICLOtBp_4JDL-QcB0?usp=drive_link">
+  <img src="https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white" alt="Ver en Drive" />
+</a>
+
+</div>
+
 ---
 
 ## 🏆 **Resumen Ejecutivo**

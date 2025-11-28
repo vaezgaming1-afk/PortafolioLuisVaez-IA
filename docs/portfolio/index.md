@@ -143,22 +143,39 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 
 
 <div class="card">
-    <h3>Construyendo Soluciones Predictivas con Regresión Lineal y Logística</h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica4/">Abrir</a>
-    </p>
+  <h3>Construyendo Soluciones Predictivas con Regresión Lineal y Logística 📈</h3>
+  
+  <p>
+    Modelado supervisado para resolver problemas de predicción y clasificación.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Pandas · Seaborn · Scikit-Learn
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="Practica4/">Abrir</a>
+  </p>
 </div>
 
+
 <div class="card">
-    <h3>Extra 1 - Construyendo Soluciones </h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica4.1/">Abrir</a>
-    </p>
-  </div>
+  <h3>Campañas Publicitarias para conseguir una venta al éxito 🎯</h3>
+  
+  <p>
+    Predicción para optimizar presupuesto y detectar campañas exitosas.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Pandas · Seaborn · Scikit-Learn · LogisticRegression
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="Practica4.1/">Abrir</a>
+  </p>
+</div>
 
 <div class="card">
     <h3>Extra 2 - Construyendo Soluciones </h3>
