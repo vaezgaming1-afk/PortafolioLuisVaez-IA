@@ -178,10 +178,10 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 </div>
 
 <div class="card">
-  <h3>Diagnóstico y Gravedad del Cáncer de Mama 🧬</h3>
+  <h3>Diagnóstico y Gravedad del Cáncer de Mama en medicina 🧬</h3>
   
   <p>
-    Clasificación de tumores (Maligno vs Benigno) y estimación del tamaño crítico <code>(worst area)</code>.
+    Clasificación de tumores (Maligno vs Benigno) y estimación del tamaño crítico.
     <br>
     <small style="opacity: 0.7; font-size: 0.85em;">
       Stack: Python · Pandas · Seaborn · Scikit-Learn · LinearRegression
@@ -196,61 +196,111 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 
 
 <div class="card">
-    <h3> Optimizando el Rendimiento Mediante Validación Cruzada y Selección</h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica5/">Abrir</a>
-    </p>
-  </div>
+  <h3>Validación y Selección de Modelos con Cross-Validation  📊</h3>
+  
+  <p>
+    Evaluación justa de modelos supervisados usando pipelines y validación cruzada.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Pandas · Scikit-Learn
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">En progreso</span>
+    <a class="md-button md-button--primary" href="Practica5/">Abrir</a>
+  </p>
+</div>
+
 
 <div class="card">
-    <h3> Extra 1 - Optimizando el Rendimiento</h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica5.1/">Abrir</a>
-    </p>
-  </div>
+  <h3>Prediciendo Notas Finales en una Secundaria de Portugal 🎓</h3>
+  
+  <p>
+    Modelos supervisados para anticipar el rendimiento académico directo.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Pandas · Scikit-Learn
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="StudentsPortugal/">Abrir</a>
+  </p>
+</div>
+
 
 <div class="card">
-    <h3> Extra 2 - Optimizando el Rendimiento</h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica5.2/">Abrir</a>
-    </p>
-  </div>
+  <h3>Detectando Clientes en Riesgo de Abandono en Telco Churn 📉</h3>
+  
+  <p>
+    Clasificación binaria para identificar churn a partir de servicios contratados.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Pandas · Scikit-Learn
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="TelcoChurn/">Abrir</a>
+  </p>
+</div>
+
   
 <div class="card">
-    <h3> Inteligencia de Clientes a través de Reducción de Dimensionalidad y Clustering</h3>
-    <p>
-    </p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica6/">Abrir</a>
-    </p>
-  </div>
+  <h3>Clustering & PCA para  segmentación de clientes relevantes 🧩</h3>
+  
+  <p>
+    Segmentación de clientes con K-Means, selección de variables y PCA para evaluar clusters de marketing.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Pandas · Scikit-Learn · PCA · K-Means
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="ClusteringPCA/">Abrir</a>
+  </p>
+</div>
+
 
 <div class="card">
-    <h3> Extra 1 - Inteligencia de Clientes</h3>
-    <p>
-    </p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica6.1/">Abrir</a>
-    </p>
-  </div>
+  <h3>Descubriendo Sabores Ocultos en Clusters de Vinos 🍷</h3>
+  
+  <p>
+    Exploración de vinos portugueses para descubrir perfiles y estilos ocultos mediante clustering y PCA.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Pandas · Scikit-Learn · PCA · K-Means
+    </small>
+  </p>
 
-  <div class="card">
-    <h3> Extra 1 - Inteligencia de Clientes</h3>
-    <p>
-    </p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica6.2/">Abrir</a>
-    </p>
-  </div>
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="WineQuality/">Abrir</a>
+  </p>
+</div>
+
+
+<div class="card">
+  <h3>Descubriendo perfiles de clientes con análisis de personalidad 🧠</h3>
+  
+  <p>
+    Segmentación de clientes según ingresos, hábitos de compra y respuesta a campañas directas de empresa.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Pandas · Scikit-Learn · PCA · K-Means
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="CustomerPersonality/">Abrir</a>
+  </p>
+</div>
 
 </div>
 
@@ -297,58 +347,111 @@ El desarrollo de estos proyectos se sustentó en un stack tecnológico moderno y
 <div class="cards-grid shortcuts portfolio-list">
 
 <div class="card">
-    <h3>Dominando el Ecosistema Neuronal: De Prototipos en Scikit-learn a Soluciones Avanzadas con PyTorch/TensorFlow  </h3>
-    <p>Entender cuándo usar cada herramienta</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica7/">Abrir</a>
-    </p>
-  </div>
+  <h3>Cuando una recta estricta no basta en redes neuronales establecidas🧠</h3>
+  
+  <p>
+    De problemas lógicos clásicos a MLP capaces de resolver XOR, exploramos superficies de decisión y activacion.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Scikit-Learn · TensorFlow · Keras
+    </small>
+  </p>
 
-  <div class="card">
-    <h3>Extra 1 - Dominando el Ecosistema Neuronal</h3>
-    <p>Entender cuándo usar cada herramienta</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica7.1/">Abrir</a>
-    </p>
-  </div>
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="MLPActivaciones/">Abrir</a>
+  </p>
+</div>
 
-  <div class="card">
-    <h3>Extra 2 - Dominando el Ecosistema Neuronal</h3>
-    <p>Entender cuándo usar cada herramienta</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica7.2/">Abrir</a>
-    </p>
-  </div>
 
 <div class="card">
-    <h3>El Arte de Enseñar a una Red: Backpropagation y Estrategias de Optimización en la Práctica</h3>
-    <p>Guias de experimentacion</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica8/">Abrir</a>
-    </p>
-  </div>
+  <h3>Reconociendo dígitos escritos a mano con redes neuronales 🔢</h3>
+  
+  <p>
+    Clasificación de imágenes 28×28 de MNIST comparando modelos lineales y MLP con distintas funciones de activación.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · TensorFlow · Keras · Matplotlib
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="MNISTDigitos/">Abrir</a>
+  </p>
+</div>
+
 
 <div class="card">
-    <h3>Extra 1 - El Arte de Enseñar a una Red</h3>
-    <p>Guias de experimentacion</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica8.1/">Abrir</a>
-    </p>
-  </div>
+  <h3>Clasificando prendas con redes neuronales en TensorFlow y clases 👗</h3>
+  
+  <p>
+    Reconocimiento de imágenes Fashion-MNIST para distinguir tipos de ropa usando MLP y direccion de activación.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · TensorFlow · Keras · Matplotlib
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="FashionMNIST/">Abrir</a>
+  </p>
+</div>
+
 
 <div class="card">
-    <h3>Extra 2 - El Arte de Enseñar a una Red/h3>
-    <p>Guias de experimentacion</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica8.2/">Abrir</a>
-    </p>
-  </div>
+  <h3>Entrenando Backprop y optimizadores en redes profundas ⚙️</h3>
+  
+  <p>
+    MLP sobre CIFAR-10 probando arquitecturas, tasas de aprendizaje y optimizadores con TensorBoard.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · TensorFlow · Keras · TensorBoard
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="BackpropOptimizadores/">Abrir</a>
+  </p>
+</div>
+
+<div class="card">
+  <h3>Analisis de imágenes pequeñas con CIFAR 100 DataSet🧩</h3>
+  
+  <p>
+    Clasificación de imágenes 32×32 en 100 clases para probar arquitecturas, learning rate y optimizadores con backprop.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · TensorFlow · Keras · TensorBoard
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="CIFAR100/">Abrir</a>
+  </p>
+</div>
+
+
+<div class="card">
+  <h3>Detectando y analizando el sentimiento en reseñas de cine🎬</h3>
+  
+  <p>
+    Análisis de texto IMDB para clasificar opiniones positivas y negativas usando MLP y distintos optimizadores.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · TensorFlow · Keras · TensorBoard
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="IMDBSentiment/">Abrir</a>
+  </p>
+</div>
+
 
 </div>
 
@@ -386,25 +489,134 @@ Para el desarrollo de estos proyectos, utilicé un stack tecnológico especializ
 * **Aumento de Datos:**
     * `Albumentations`.
 
+
 <div class="cards-grid shortcuts portfolio-list">
 
-  <div class="card">
-    <h3>CNNs y Transfer Learning con TensorFlow/Keras - Fill in the Blanks</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica9/">Abrir</a>
-    </p>
-  </div>
+<div class="card">
+  <h3> Utilizando CNN y transfer learning en imágenes ya expuestas 🖼️</h3>
+  
+  <p>
+    Clasificación de CIFAR-10 comparando una CNN básica y un modelo preentrenado con fine-tuning.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · TensorFlow · Keras
+    </small>
+  </p>
 
-  <div class="card">
-    <h3>Extra 1 - CNNs y Transfer Learning con TensorFlow/Keras - Fill in the Blanks</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica9.1">Abrir</a>
-    </p>
-  </div>
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="CNNTransferLearning/">Abrir</a>
+  </p>
+</div>
+
+
+<div class="card">
+  <h3>Clasificando platos con CNN y transfer learning 🍽️</h3>
+  
+  <p>
+    Food-101 como banco de pruebas para comparar una CNN  y un modelo preentrenado con fine-tuning.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · TensorFlow · Keras · TFDS
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="Food101/">Abrir</a>
+  </p>
+</div>
+
+</div>
+
+<style>
+  .cards-grid.shortcuts.portfolio-list {
+    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
+  }
+</style>
+
+<div class="cards-grid shortcuts portfolio-list">
+
+<div class="card">
+  <h3>Mejora de la Robustez y Explicabilidad en la Clasificación de Especies Florales 🌸</h3>
+  
+  <p>
+    Mejora de robustez (Augmentation) y explicabilidad (GradCAM/IG) en Flowers102 DatSet.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · TensorFlow · Keras · TFDS
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="FlowersXAI/">Abrir</a>
+  </p>
+</div>
+
+<div class="card">
+  <h3>Analizando razas de mascotas con visión explicable y estableciendo diferencias🐶</h3>
+  
+  <p>
+    Oxford-IIIT Pet para probar augmentation avanzado y predicciones con GradCAM e Integrated Gradients.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · TensorFlow · Keras · TFDS
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="OxfordPetsXAI/">Abrir</a>
+  </p>
+</div>
+
+
+</div>
+
+<style>
+  .cards-grid.shortcuts.portfolio-list {
+    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
+  }
+</style>
+
+<div class="cards-grid shortcuts portfolio-list">
+
+<div class="card">
+  <h3>Sistema de Detección y Multi-Object Tracking en Tiempo Real con YOLOv8 🎯</h3>
+  
+  <p>
+    Fine-tuning de YOLOv8 en frutas y tracking con Norfair seguir objetos en videos de supermercado.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Ultralytics YOLOv8 · OpenCV · Norfair
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="YOLOv8DeteccionTracking/">Abrir</a>
+  </p>
+</div>
+
+
+<div class="card">
+  <h3>Analizando y perfeccionando la Detección de vehículos en tráfico con YOLOv8 🚗</h3>
+  
+  <p>
+    Escenas de carretera para entrenar un YOLOv8 fine-tuned, seguimiento de autos en video con Norfair.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Ultralytics YOLOv8 · OpenCV · Norfair
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="TrafficYOLOv8/">Abrir</a>
+  </p>
+</div>
+
 
 </div>
 
@@ -416,81 +628,41 @@ Para el desarrollo de estos proyectos, utilicé un stack tecnológico especializ
  
 <div class="cards-grid shortcuts portfolio-list">
 
-  <div class="card">
-    <h3>Data Augmentation Avanzado & Explicabilidad - Fill in the Blanks</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica10/">Abrir</a>
-    </p>
-  </div>
+<div class="card">
+  <h3>Fine-tuning del Modelo SAM para evaluar la Segmentación de Inundaciones 🌊</h3>
+  
+  <p>
+    Flood Area Segmentation para comparar SAM preentrenado y fine-tuned en detección de zonas inundadas.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · PyTorch · SAM · Albumentations
+    </small>
+  </p>
 
-  <div class="card">
-    <h3>Extra 1 - Data Augmentation Avanzado & Explicabilidad</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica10.1">Abrir</a>
-    </p>
-  </div>
-
-
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="SAMInundaciones/">Abrir</a>
+  </p>
 </div>
 
-<style>
-  .cards-grid.shortcuts.portfolio-list {
-    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
-  }
-</style>
- 
-<div class="cards-grid shortcuts portfolio-list">
 
-  <div class="card">
-    <h3>YOLOv8 Fine-tuning & Tracking</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica11/">Abrir</a>
-    </p>
-  </div>
+<div class="card">
+  <h3>Analizamos la segmentación de una propia infraestructura urbana con SAM 🛰️</h3>
+  
+  <p>
+    Imágenes aéreas para comparar SAM preentrenado y fine-tuned en la segmentación de estructuras y entorno urbano.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · PyTorch · SAM · Albumentations
+    </small>
+  </p>
 
-  <div class="card">
-    <h3>Extra 1 - YOLOv8 Fine-tuning & Tracking</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica11.1">Abrir</a>
-    </p>
-  </div>
-
-
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="SAMAerialSegmentation/">Abrir</a>
+  </p>
 </div>
 
-<style>
-  .cards-grid.shortcuts.portfolio-list {
-    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
-  }
-</style>
- 
-<div class="cards-grid shortcuts portfolio-list">
-
-  <div class="card">
-    <h3>SAM Segmentation - Pretrained vs Fine-tuned</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica12/">Abrir</a>
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>Extra 1 - SAM Segmentation - Pretrained vs Fine-tuned</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica12.1">Abrir</a>
-    </p>
-  </div>
 
 
 </div>
@@ -528,23 +700,39 @@ Unidad Temática 4 (NLP): clasificación ofensiva, *fine-tuning* de Transformers
 
 <div class="cards-grid shortcuts portfolio-list">
 
-  <div class="card">
-    <h3>Fine-tuning de Transformers para Clasificación Ofensiva</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica13/">Abrir</a>
-    </p>
-  </div>
+<div class="card">
+  <h3>Fine-tuning de Transformers para Análisis de Sentimiento Financiero 💹</h3>
+  
+  <p>
+    Comparación entre un baseline TF-IDF + Regresión Logística y un modelo Transformer fine-tuned para clasificar noticias financieras.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Hugging Face Datasets · Transformers · Scikit-Learn
+    </small>
+  </p>
 
-  <div class="card">
-    <h3>Extra 1 - Fine-tuning de Transformers para Clasificación Ofensiva</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica13.1">Abrir</a>
-    </p>
-  </div>
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="NLPTransformersFinanzas/">Abrir</a>
+  </p>
+</div>
+
+<div class="card">
+  <h3>Detección de Toxicidad y Lenguaje Ofensivo con Transformers 🧨</h3>
+  
+  <p>
+    OffendES nos ayudara a comparar un baseline TF-IDF + Regresión Logística con Transformers fine-tuned en comentarios reales.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Hugging Face Datasets · Transformers · Scikit-Learn
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="OffendESTransformers/">Abrir</a>
+  </p>
+</div>
 
 
 </div>
@@ -554,26 +742,92 @@ Unidad Temática 4 (NLP): clasificación ofensiva, *fine-tuning* de Transformers
     margin-bottom: 40px; /* Ajusta el valor según lo necesites */
   }
 </style>
- 
+
 <div class="cards-grid shortcuts portfolio-list">
 
-  <div class="card">
-    <h3>LLMs con LangChain (OpenAI)</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica14/">Abrir</a>
-    </p>
-  </div>
+<div class="card">
+  <h3>Analizando el funcionamiento de Apps con LLMs con LangChain y OpenAI ⚙️</h3>
+  
+  <p>
+    Primeros pasos para crear cadenas con ChatOpenAI, prompts reutilizables, salida estructurada, métricas y un mini RAG de preguntas y respuestas.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · LangChain · OpenAI · LangSmith
+    </small>
+  </p>
 
-  <div class="card">
-    <h3>Extra 1 - LLMs con LangChain (OpenAI)</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica14.1">Abrir</a>
-    </p>
-  </div>
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="LangChainOpenAIIntro/">Abrir</a>
+  </p>
+</div>
+
+
+<div class="card">
+  <h3> Analizando el asistente RAG para la docs de LangChain y OpenAI🤖</h3>
+  
+  <p>
+    Mini-FAQ inteligente sobre la documentación de LangChain usando embeddings, retrieval y generación con LLM.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · LangChain · OpenAI · FAISS
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="LangChainDocsRAG/">Abrir</a>
+  </p>
+</div>
+
+
+
+</div>
+
+<style>
+  .cards-grid.shortcuts.portfolio-list {
+    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
+  }
+</style>
+
+
+<div class="cards-grid shortcuts portfolio-list">
+
+<div class="card">
+  <h3>Arquitectura de Agentes Inteligentes con LangGraph 🏗️</h3>
+  
+  <p>
+    Agente conversacional con RAG, herramientas y memoria ligera usando grafos de estado para orquestar llamadas a LLM y tools.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · LangGraph · LangChain · OpenAI
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="LangGraphAgents/">Abrir</a>
+  </p>
+</div>
+
+
+<div class="card">
+  <h3>Agente de soporte e-commerce con LangGraph 🛒</h3>
+  
+  <p>
+    Conversaciones reales de atención al cliente para construir un agente con RAG, tools y memoria conversacional sobre casos de e-commerce.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · LangGraph · OpenAI · FAISS · Hugging Face Datasets
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="LangGraphEcommerceSupport/">Abrir</a>
+  </p>
+</div>
+
 
 
 </div>
@@ -586,13 +840,22 @@ Mi experiencia se fundamenta en recursos prácticos de plataformas líderes como
 <div class="cards-grid shortcuts portfolio-list">
 
   <div class="card">
-    <h3>🛠️ Dominando la Visión Artificial con TensorFlow/Keras: De CNNs a Modelos Pre-entrenados</h3>
-    <p>xxxxxxx</p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica08">Abrir</a>
-    </p>
-  </div>
+  <h3>De notebook a producción con MLOps en Vertex AI 🚀</h3>
+  
+  <p>
+    Demo guiado de un sistema de ML en producción con Vertex AI: pipelines, Model Registry, endpoints y monitoreo, conectado con lecturas de MLOps y análisis de deuda técnica.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · AutoMLOps · Vertex AI Pipelines · Model Monitoring
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="MLOpsSistemaProduccion/">Abrir</a>
+  </p>
+</div>
+
 
 </div>
 
