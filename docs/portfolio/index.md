@@ -178,13 +178,22 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 </div>
 
 <div class="card">
-    <h3>Extra 2 - Construyendo Soluciones </h3>
-    <p></p>
-    <p class="actions">
-      <span class="pill">Completado</span>
-      <a class="md-button md-button--primary" href="Practica4.2/">Abrir</a>
-    </p>
-  </div>
+  <h3>Diagnóstico y Gravedad del Cáncer de Mama 🧬</h3>
+  
+  <p>
+    Clasificación de tumores (Maligno vs Benigno) y estimación del tamaño crítico <code>(worst area)</code>.
+    <br>
+    <small style="opacity: 0.7; font-size: 0.85em;">
+      Stack: Python · Pandas · Seaborn · Scikit-Learn · LinearRegression
+    </small>
+  </p>
+
+  <p class="actions">
+    <span class="pill">Completado</span>
+    <a class="md-button md-button--primary" href="Practica4.2/">Abrir</a>
+  </p>
+</div>
+
 
 <div class="card">
     <h3> Optimizando el Rendimiento Mediante Validación Cruzada y Selección</h3>
