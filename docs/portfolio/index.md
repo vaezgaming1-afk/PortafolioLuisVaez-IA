@@ -306,43 +306,23 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 
 ---
 
-## UT2: Deep Learning - Implementación y Optimización Avanzada 🧠
+## Deep Learning Aplicado al Diseño y Optimización de Redes Neuronales 
 
-En esta unidad, profundicé en el campo del **Deep Learning**, enfocándome en el diseño, entrenamiento y optimización de redes neuronales. Mi trabajo consistió en traducir los fundamentos teóricos en soluciones prácticas y de alto rendimiento, utilizando el ecosistema de **PyTorch** para desarrollar modelos robustos y escalables.
+Desarrollé experiencia sólida en el **diseño, entrenamiento y optimización de redes neuronales profundas**, transformando fundamentos teóricos de Deep Learning en soluciones prácticas de alto rendimiento. Utilizo el ecosistema de **PyTorch** para construir modelos robustos, modulares y escalables, orientados a entornos experimentales exigentes y a la toma de decisiones basada en evidencia.  
 
----
+### Competencias Clave  
 
-### Competencias Profesionales y Logros Clave
+- **Diseño de Arquitecturas Neuronales:** Implementación de **Perceptrones Multicapa (MLPs)** complejos, con selección estratégica de **funciones de activación**, número de capas y neuronas, ajustando la arquitectura al tipo de problema (clasificación, regresión, etc.).  
+- **Desarrollo Eficiente con PyTorch Lightning:** Construcción de pipelines de entrenamiento limpios y reproducibles con **PyTorch Lightning**, favoreciendo buenas prácticas como separación de lógica de modelo, entrenamiento y validación, así como la ejecución eficiente de múltiples experimentos.  
+- **Optimización Avanzada de Modelos:** Configuración y ajuste de optimizadores como **SGD** y **AdamW**, comprensión profunda del proceso de **backpropagation** y uso de **schedulers de learning rate** para mejorar la convergencia, estabilidad y rendimiento final de los modelos.  
+- **Tuning y Análisis de Rendimiento:** Aplicación de técnicas de **regularización** (Dropout, Batch Normalization) para mitigar el sobreajuste y mejorar la capacidad de generalización. Uso de **TensorBoard** y herramientas de visualización para monitorear métricas, diagnosticar cuellos de botella y entender el comportamiento del modelo durante el entrenamiento.  
 
-* **Diseño de Arquitecturas Neuronales:** Diseñé e implementé **Perceptrones Multicapa (MLPs)** complejos, demostrando un dominio de sus componentes fundamentales, como la selección estratégica de **funciones de activación** para resolver problemas específicos.
+### Ecosistema Tecnológico y Base de Conocimiento  
 
+**Herramientas:** PyTorch · PyTorch Lightning · NumPy · DataLoader & Transforms (PyTorch) · TensorBoard · Matplotlib  
 
-* **Desarrollo Eficiente con PyTorch Lightning:** Adquirí una competencia avanzada en **PyTorch Lightning** para construir pipelines de Deep Learning modulares y reproducibles. Esto me permitió acelerar el ciclo de desarrollo y experimentación para aplicaciones del mundo real.
+**Fundamento:** Curso *Intro to Deep Learning* (Kaggle) · Materiales de *Deep Learning* de Google · Documentación oficial de PyTorch y PyTorch Lightning.  
 
-* **Optimización Avanzada de Modelos:** Implementé y ajusté algoritmos de optimización de vanguardia, como **SGD** y **AdamW**, comprendiendo a fondo el mecanismo de **backpropagation**. Gestioné de forma sistemática la convergencia y el rendimiento del modelo a través de técnicas avanzadas como el **ajuste de la tasa de aprendizaje (learning rate scheduling)**.
-
-* **Tuning y Análisis de Rendimiento:** Apliqué técnicas clave de **regularización** (como Dropout y Batch Normalization) para mitigar el sobreajuste y mejorar la capacidad de generalización del modelo. Utilicé herramientas de visualización como **TensorBoard** para monitorear el proceso de entrenamiento, diagnosticar problemas y analizar el comportamiento del modelo en tiempo real.
-
----
-
-### Ecosistema Tecnológico y Base de Conocimiento
-
-El desarrollo de estos proyectos se sustentó en un stack tecnológico moderno y en recursos de referencia en la industria.
-
-* **Frameworks Fundamentales:**
-    * **PyTorch:** Para la construcción de modelos y tensores.
-    * **PyTorch Lightning:** Para la estructuración y escalado de pipelines de entrenamiento.
-    * **NumPy:** Para operaciones numéricas eficientes.
-
-* **Herramientas de Optimización y Visualización:**
-    * **Optimización:** Módulo `torch.optim` para optimizadores y schedulers.
-    * **Visualización y Monitoreo:** TensorBoard y Matplotlib.
-
-* **Manejo de Datos:**
-    * **Carga y Procesamiento:** `DataLoader` y `Transforms` de PyTorch.
-
-* **Fundamento Teórico-Práctico:**
-    * Mi experiencia práctica se basa en una sólida base teórica obtenida de recursos líderes como el curso **Intro to Deep Learning de Kaggle**, los materiales de **Deep Learning de Google** y la documentación oficial de **PyTorch** y **PyTorch Lightning**.
 
 <div class="cards-grid shortcuts portfolio-list">
 
@@ -456,39 +436,25 @@ El desarrollo de estos proyectos se sustentó en un stack tecnológico moderno y
 </div>
 
 ---
-## UT3: Computer Vision - Aplicaciones Avanzadas y Soluciones Prácticas 👁️
 
-En esta unidad, me especialicé en el desarrollo de soluciones de **Visión por Computadora**, construyendo sistemas capaces de interpretar y analizar contenido visual. Mi trabajo abarcó desde la clasificación de imágenes hasta tareas complejas como la detección y segmentación de objetos en tiempo real, utilizando arquitecturas de vanguardia.
+## Computer Vision Aplicada y Detección en Tiempo Real  
 
----
+Desarrollé experiencia en la construcción de **soluciones de Visión por Computadora** capaces de interpretar y analizar contenido visual en escenarios reales. Trabajé desde la **clasificación de imágenes** hasta tareas avanzadas de **detección y segmentación de objetos**, utilizando arquitecturas de Deep Learning de última generación y técnicas modernas de entrenamiento para lograr modelos robustos y eficientes.  
 
-### Competencias Profesionales y Logros Clave 🏆
+### Competencias Clave  
 
-* **Dominio de Arquitecturas Convolucionales (CNNs):** Adquirí un entendimiento profundo de la arquitectura y el funcionamiento de las **Redes Neuronales Convolucionales**, la base de la visión por computadora moderna, implementando redes personalizadas y eficientes.
+- **Redes Neuronales Convolucionales (CNNs):** Dominio del diseño y funcionamiento de **CNNs**, implementando arquitecturas personalizadas y eficientes como base de sistemas modernos de visión por computadora.  
+- **Transfer Learning con Modelos SOTA:** Aplicación de **transfer learning** sobre modelos *State-of-the-Art* para maximizar el rendimiento en tareas de clasificación de imágenes, optimizando el uso de recursos de cómputo.  
+- **Robustez mediante Data Augmentation:** Uso de técnicas avanzadas de **data augmentation** para mejorar la generalización de los modelos frente a variaciones de iluminación, escala, ángulo y ruido presentes en datos del mundo real.  
+- **Detección de Objetos en Tiempo Real:** Desarrollo de soluciones de **detección de objetos** con **YOLO**, entrenando modelos capaces de identificar y localizar múltiples objetos en imágenes y video con desempeño en tiempo real.  
+- **Segmentación de Alta Precisión:** Implementación de **segmentación de instancias** mediante **Segment Anything Model (SAM)** y enfoques relacionados, logrando delimitación de objetos a nivel de píxel para aplicaciones que requieren alta precisión espacial.  
 
-* **Transfer Learning con Modelos SOTA:** Implementé técnicas de **transfer learning** utilizando modelos de última generación (State-Of-The-Art) para lograr un alto rendimiento con una eficiencia computacional óptima en tareas de clasificación.
+### Ecosistema Tecnológico y Herramientas 🛠️  
 
-* **Robustez mediante Data Augmentation:** Apliqué estrategias avanzadas de **aumento de datos** para crear modelos más robustos y capaces de generalizar ante variaciones en datos del mundo real.
-
-* **Detección de Objetos en Tiempo Real:** Desarrollé sistemas completos de **detección de objetos** utilizando el framework **YOLO**, entrenando modelos capaces de identificar y localizar múltiples objetos en imágenes y video para aplicaciones prácticas.
-
-* **Segmentación Precisa de Instancias:** Implementé soluciones de **segmentación** utilizando el innovador **Segment Anything Model (SAM)** para delimitar objetos con una precisión a nivel de píxel.
-
----
-
-### Ecosistema Tecnológico y Herramientas 🛠️
-
-Para el desarrollo de estos proyectos, utilicé un stack tecnológico especializado y de alto rendimiento.
-
-* **Frameworks de Deep Learning:**
-    * PyTorch Lightning, `timm` (para modelos SOTA), `torchvision`.
-* **Detección de Objetos:**
-    * YOLO (Ultralytics), `detectron2`.
-* **Segmentación:**
-    * Segment Anything Model 2 (SAM), HuggingFace Transformers.
-* **Aumento de Datos:**
-    * `Albumentations`.
-
+**Frameworks de Deep Learning:** PyTorch Lightning · `timm` (modelos SOTA) · `torchvision`  
+**Detección de Objetos:** YOLO (Ultralytics) · `detectron2`  
+**Segmentación:** Segment Anything Model 2 (SAM) · HuggingFace Transformers  
+**Aumento de Datos:** `Albumentations`  
 
 <div class="cards-grid shortcuts portfolio-list">
 
@@ -668,35 +634,29 @@ Para el desarrollo de estos proyectos, utilicé un stack tecnológico especializ
 </div>
 
 ---
-## DOMINIO DE NLP MODERNO Y MODELADO DE TEXTO
+## Procesamiento de Lenguaje Natural (NLP) y Modelado de Texto Moderno  
 
-Desarrollé experiencia en el **ciclo completo de proyectos de Procesamiento de Lenguaje Natural (NLP)**, integrando modelos clásicos y arquitecturas modernas basadas en Transformers. Trabajé en representación, modelado y evaluación de texto para construir sistemas de clasificación ofensiva, análisis de sentimiento y aplicaciones basadas en modelos de lenguaje (LLMs).
+Desarrollé experiencia en el **ciclo completo de proyectos de NLP**, combinando modelos clásicos y arquitecturas modernas basadas en **Transformers**. Trabajé en representación, modelado y evaluación de texto para construir sistemas de clasificación de contenido ofensivo, análisis de sentimiento y aplicaciones apoyadas en **modelos de lenguaje (LLMs)** orientadas a casos reales.  
 
----
-
-### COMPETENCIAS CLAVE
+### Competencias Clave  
 
 - **Procesamiento y Representación del Texto:**  
-  Técnicas de limpieza, normalización, tokenización y construcción de representaciones mediante **TF-IDF**, embeddings y tokenizers propios de arquitecturas Transformer.
+  Limpieza, normalización y tokenización de texto, así como construcción de representaciones mediante **TF-IDF**, *embeddings* y tokenizers propios de arquitecturas Transformer.  
 
-- **Modelado Clásico y Transformers:**  
-  Desarrollo de modelos base (TF-IDF + regresión logística) y comparación con modelos modernos **BERT**, **RoBERTa** y **FinBERT** mediante *fine-tuning* para clasificación de contenido ofensivo y análisis de sentimiento.
+- **Modelado Clásico y con Transformers:**  
+  Desarrollo de modelos base (TF-IDF + regresión logística) y comparación sistemática con modelos modernos como **BERT**, **RoBERTa** y **FinBERT**, aplicando *fine-tuning* para tareas de clasificación ofensiva y análisis de sentimiento.  
 
-- **Evaluación y Robustez:**  
-  Uso de métricas como **accuracy**, **precision**, **recall** y **F1-score**, junto con validación cruzada para asegurar estabilidad y capacidad de generalización.
+- **Evaluación y Robustez de Modelos:**  
+  Uso de métricas como **accuracy**, **precision**, **recall** y **F1-score**, junto con estrategias de **validación cruzada** para garantizar estabilidad, capacidad de generalización y comparaciones justas entre enfoques clásicos y modernos.  
 
 - **Aplicaciones con LLMs:**  
-  Construcción de prototipos utilizando **LangChain** y **OpenAI**, incorporando cadenas, memoria contextual y prompts estructurados para automatizar análisis y generación de respuestas basadas en modelos GPT.
+  Construcción de prototipos con **LangChain** y **OpenAI**, diseñando cadenas, memoria contextual y *prompts* estructurados para automatizar análisis de texto y generación de respuestas basadas en modelos GPT.  
 
----
+### Ecosistema Tecnológico y Base de Conocimiento  
 
-### ECOSISTEMA TECNOLÓGICO Y BASE DE CONOCIMIENTO
+**Herramientas:** HuggingFace Transformers · Scikit-learn · LangChain · OpenAI API · PyTorch/TensorFlow · Matplotlib · Seaborn · Jupyter Notebooks  
 
-**Herramientas:**  
-*HuggingFace Transformers* · *Scikit-learn* · *LangChain* · *OpenAI API* · *PyTorch/TensorFlow* · *Matplotlib* · *Seaborn* · *Jupyter Notebooks*
-
-**Fundamento:**  
-Unidad Temática 4 (NLP): clasificación ofensiva, *fine-tuning* de Transformers, comparación TF-IDF vs modelos modernos, y construcción de aplicaciones con LLMs utilizando *LangChain* y *OpenAI*.
+**Fundamento:** Proyectos de clasificación ofensiva y análisis de sentimiento, *fine-tuning* de Transformers, comparación TF-IDF vs modelos modernos y desarrollo de aplicaciones con LLMs utilizando LangChain y OpenAI.  
 
 <div class="cards-grid shortcuts portfolio-list">
 
@@ -833,9 +793,34 @@ Unidad Temática 4 (NLP): clasificación ofensiva, *fine-tuning* de Transformers
 </div>
 
 ---
-### Base de Conocimiento 📚
+## MLOps y Sistemas de Machine Learning en Producción  
 
-Mi experiencia se fundamenta en recursos prácticos de plataformas líderes como **Kaggle (Computer Vision)** y **HuggingFace (Computer Vision Course)**, complementado con la sólida base teórica del prestigioso curso **CS231n de Stanford**.
+Desarrollé experiencia en el **ciclo de vida completo de sistemas de Machine Learning en producción**, pasando de modelos en notebook a soluciones desplegadas de forma escalable y monitorizada. Apliqué principios de **MLOps** para diseñar pipelines automatizados, gestionar la calidad del modelo en el tiempo y reducir la deuda técnica asociada a sistemas de ML, tomando como referencia arquitecturas reales en la nube como **Vertex AI**.  
+
+### Competencias Clave  
+
+- **Diseño de Pipelines de ML Automatizados:**  
+  Definición de pipelines de entrenamiento que integran ingesta y validación de datos, generación de features, entrenamiento, evaluación y registro de modelos, alineados con prácticas de **CI/CD/CT** para ML.  
+
+- **Deployment Escalable de Modelos:**  
+  Comprensión de flujos de despliegue desde el registro del modelo hasta su exposición como **servicio en producción** (endpoints online o procesos batch), incluyendo versionado, *rollbacks* y separación clara entre entornos (desarrollo, pruebas, producción).  
+
+- **Monitoreo y Mantenimiento de Modelos:**  
+  Diseño de estrategias de **monitoreo continuo** de modelos en producción: métricas de rendimiento, detección de **data drift** y **concept drift**, análisis de tráfico y alertas para activar procesos de reentrenamiento o sustitución de modelos cuando su desempeño se degrada.  
+
+- **Gestión de Deuda Técnica en Sistemas de ML:**  
+  Identificación de fuentes de **deuda técnica oculta** (dependencias frágiles de datos, *glue code*, configuraciones complejas, falta de monitoreo) y aplicación de prácticas de MLOps inspiradas en *Hidden Technical Debt in Machine Learning Systems* para mitigar riesgos y mejorar la mantenibilidad.  
+
+- **Buenas Prácticas de Ingeniería de ML:**  
+  Aplicación de las **Rules of Machine Learning** de Google para priorizar sistemas simples, medibles y robustos: introducción gradual de ML, control de complejidad, enfoque en datos y en la calidad del sistema completo más que en maximizar una métrica aislada en el notebook.  
+
+### Ecosistema Tecnológico y Base de Conocimiento  
+
+**Herramientas:** Python · Jupyter Notebooks · Google Cloud Platform · Vertex AI (Pipelines, Model Registry, Endpoints, Model Monitoring) · Cloud Storage  
+
+**Fundamento:**  
+Production ML Systems (Google ML Crash Course) · *MLOps: Continuous Delivery and Automation Pipelines in Machine Learning* (Google Cloud Architecture Center) · *Rules of Machine Learning: Best Practices for ML Engineering* (Google Developers) · *Hidden Technical Debt in Machine Learning Systems* (Sculley et al., NIPS 2015) y actividades prácticas de transición “de notebook a sistema MLOps” usando Vertex AI.  
+
 
 <div class="cards-grid shortcuts portfolio-list">
 
@@ -859,23 +844,4 @@ Mi experiencia se fundamenta en recursos prácticos de plataformas líderes como
 
 </div>
 
----
-## Ademas De
-
-<div class="cards-grid shortcuts portfolio-list">
-
-  <div class="card">
-    <h3>Proxima Entrada</h3>
-    <p>Usá la plantilla base para crear una práctica numerada.</p>
-    <p class="actions">
-      <a class="md-button" href="plantilla/">Crear desde plantilla</a>
-    </p>
-  </div>
-
-</div>
----
-
----
-
-_Última actualización: {{ page.meta.date }}_
 
