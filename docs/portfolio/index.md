@@ -53,7 +53,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
   <h3>Análisis Predictivo del Titanic 🚢 </h3>
   
   <p>
-    Descubriendo Patrones de Supervivencia a través de EDA.
+    Descubriendo patrones de supervivencia a través de EDA.
     <br>
     <small style="opacity: 0.7; font-size: 0.85em;">Stack: Python · Pandas · Seaborn</small>
   </p>
@@ -83,7 +83,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
   <h3>Estrategia de Negocio: Tips Dataset 💵</h3>
   
   <p>
-    Segmentación de clientes, grupos y mapas de rentabilidad.
+    Segmentación de clientes y mapas de rentabilidad.
     <br>
     <small style="opacity: 0.7; font-size: 0.85em;">Stack: Python · Pandas · Seaborn · Matplotlib</small>
   </p>
@@ -112,7 +112,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 </div>
 
 <div class="card">
-  <h3>Clasificación de Inventario: El Detector de Lujo 💎</h3>
+  <h3>Clasificación de Inventario "El Detector de Lujo" 💎</h3>
   
   <p>
     Automatizando la tasación con Future Engineering y Deteccion de Fraudes.
@@ -289,7 +289,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
   <h3>Descubriendo perfiles de clientes con análisis de personalidad 🧠</h3>
   
   <p>
-    Segmentación de clientes según ingresos, hábitos de compra y respuesta a campañas directas de empresa.
+    Segmentación de clientes según ingresos, hábitos de compra y respuestas a campañas internas.
     <br>
     <small style="opacity: 0.7; font-size: 0.85em;">
       Stack: Python · Pandas · Scikit-Learn · PCA · K-Means
@@ -327,7 +327,7 @@ Desarrollé experiencia sólida en el **diseño, entrenamiento y optimización d
 <div class="cards-grid shortcuts portfolio-list">
 
 <div class="card">
-  <h3>Cuando una recta estricta no basta en redes neuronales establecidas🧠</h3>
+  <h3>Cuando una recta estricta no basta en redes neuronales 🧠</h3>
   
   <p>
     De problemas lógicos clásicos a MLP capaces de resolver XOR, exploramos superficies de decisión y activacion.
@@ -348,7 +348,7 @@ Desarrollé experiencia sólida en el **diseño, entrenamiento y optimización d
   <h3>Reconociendo dígitos escritos a mano con redes neuronales 🔢</h3>
   
   <p>
-    Clasificación de imágenes 28×28 de MNIST comparando modelos lineales y MLP con distintas funciones de activación.
+    Clasificación de imágenes 28×28 de MNIST comparando modelos lineales y MLP con funciones de activación.
     <br>
     <small style="opacity: 0.7; font-size: 0.85em;">
       Stack: Python · TensorFlow · Keras · Matplotlib
@@ -401,7 +401,7 @@ Desarrollé experiencia sólida en el **diseño, entrenamiento y optimización d
   <h3>Analisis de imágenes pequeñas con CIFAR 100 DataSet🧩</h3>
   
   <p>
-    Clasificación de imágenes 32×32 en 100 clases para probar arquitecturas, learning rate y optimizadores con backprop.
+    Clasificación de imágenes 32×32 para probar arquitecturas, learning rate y optimizadores con backprop.
     <br>
     <small style="opacity: 0.7; font-size: 0.85em;">
       Stack: Python · TensorFlow · Keras · TensorBoard
