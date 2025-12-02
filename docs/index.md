@@ -1,51 +1,45 @@
----
-title: "Portafolio — Inicio"
-date: 2025-01-01
----
-
-  <div>
-    <h1 style="margin:0">Portafolio de Luis Vaez Alvarez</h1>
-    <p style="margin:.25rem 0 0 0">
-      Ingeniería de Sistemas
+<div class="hero hero--portfolio">
+  <div class="hero__content">
+    <p class="hero__eyebrow">Portafolio académico · Ingeniería de Sistemas</p>
+    <h1>Portafolio de Luis Vaez Alvarez</h1>
+    <p class="hero__subtitle">
+      Evidencias, proyectos y reflexiones del semestre en una sola página.
     </p>
-    <p style="margin-top:.6rem">
-      <a class="md-button md-button--primary" href="portafolio/">Ver Portfolio</a>
-      <a class="md-button" href="acerca/">Acerca de mí</a>
-      <a class="md-button" href="assets/VAEZ ALVAREZ LUIS- CV[1].pdf">Descargar CV</a>
-    </p> 
+
+  <div class="hero__actions">
+      <div class="hero__actions-row hero__actions-row--main">
+        <a class="md-button md-button--primary" href="portfolio/">
+          Ver Portfolio
+        </a>
+      </div>
+
+  <div class="hero__actions-row hero__actions-row--secondary">
+        <a class="md-button" href="acerca/">Acerca de mí</a>
+        <a class="md-button" href="assets/VAEZ ALVAREZ LUIS- CV[1].pdf">
+          Descargar CV
+        </a>
+      </div>
+    </div>
+
+  <ul class="hero__meta">
+      <li>🎓 UCU · 2025</li>
+      <li>📂 Prácticas, proyectos y reflexiones</li>
+      <li>🧠 Enfoque en aprendizaje basado en evidencia</li>
+    </ul>
   </div>
 
----
-
-## ¿Cómo navegar?
-
-1. **Acerca de mí:** contexto, habilidades y galería breve.  
-2. **Portafolio:** cada práctica es una entrada con objetivo → proceso → evidencia → reflexión.  
-3. **Recursos:** snippets, plantillas y referencias utilizadas durante el semestre.
-
-## Atajos
-
-<div class="cards-grid shortcuts">   <!-- 👈 antes era solo cards-grid -->
-
-  <div class="card">
-    <h3>Estudiantes empezar aquí</h3>
-    <p>Creación de primera entrada usando la plantilla base del curso.</p>
-    <p><a class="md-button" href="portfolio/plantilla/">Usar plantilla</a></p>
+  <div class="hero__side">
+    <div class="hero-chip">
+      <span class="hero-chip__label">Portafolio</span>
+      <span class="hero-chip__value">Curso IA / Data Science</span>
+    </div>
+    <div class="hero-chip">
+      <span class="hero-chip__label">Estructura</span>
+      <span class="hero-chip__value">Objetivo → Proceso → Evidencia → Reflexión</span>
+    </div>
   </div>
-
-  <div class="card">
-    <h3>Entregas del curso</h3>
-    <p>Lista de prácticas y proyectos con evidencias y reflexiones.</p>
-    <p><a class="md-button md-button--primary" href="portfolio/">Abrir Portfolio</a></p>
-  </div>
-
-  <div class="card">
-    <h3>Recursos</h3>
-    <p>Material de apoyo: datasets, guías rápidas y enlaces útiles.</p>
-    <p><a class="md-button" href="recursos/">Ver recursos</a></p>
-  </div>
-
+  
 </div>
 
 
-_Última actualización: {{ page.meta.date }}_
+

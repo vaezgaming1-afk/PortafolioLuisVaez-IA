@@ -226,7 +226,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="StudentsPortugal/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica5.1/">Abrir</a>
   </p>
 </div>
 
@@ -244,7 +244,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="TelcoChurn/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica5.2/">Abrir</a>
   </p>
 </div>
 
@@ -262,7 +262,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="ClusteringPCA/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica6">Abrir</a>
   </p>
 </div>
 
@@ -280,7 +280,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="WineQuality/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica6.1">Abrir</a>
   </p>
 </div>
 
@@ -298,7 +298,7 @@ Consolidé experiencia en el **ciclo completo de proyectos de Machine Learning**
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="CustomerPersonality/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica6.2">Abrir</a>
   </p>
 </div>
 
@@ -339,7 +339,7 @@ Desarrollé experiencia sólida en el **diseño, entrenamiento y optimización d
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="MLPActivaciones/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica7">Abrir</a>
   </p>
 </div>
 
@@ -357,7 +357,7 @@ Desarrollé experiencia sólida en el **diseño, entrenamiento y optimización d
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="MNISTDigitos/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica7.1">Abrir</a>
   </p>
 </div>
 
@@ -375,7 +375,7 @@ Desarrollé experiencia sólida en el **diseño, entrenamiento y optimización d
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="FashionMNIST/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica7.2">Abrir</a>
   </p>
 </div>
 
@@ -393,7 +393,7 @@ Desarrollé experiencia sólida en el **diseño, entrenamiento y optimización d
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="BackpropOptimizadores/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica8">Abrir</a>
   </p>
 </div>
 
@@ -410,7 +410,7 @@ Desarrollé experiencia sólida en el **diseño, entrenamiento y optimización d
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="CIFAR100/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica8.1">Abrir</a>
   </p>
 </div>
 
@@ -428,7 +428,7 @@ Desarrollé experiencia sólida en el **diseño, entrenamiento y optimización d
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="IMDBSentiment/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica8.2">Abrir</a>
   </p>
 </div>
 
@@ -471,7 +471,7 @@ Desarrollé experiencia en la construcción de **soluciones de Visión por Compu
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="CNNTransferLearning/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica9">Abrir</a>
   </p>
 </div>
 
@@ -489,7 +489,7 @@ Desarrollé experiencia en la construcción de **soluciones de Visión por Compu
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="Food101/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica9.1">Abrir</a>
   </p>
 </div>
 
@@ -516,7 +516,7 @@ Desarrollé experiencia en la construcción de **soluciones de Visión por Compu
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="FlowersXAI/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica10">Abrir</a>
   </p>
 </div>
 
@@ -533,7 +533,7 @@ Desarrollé experiencia en la construcción de **soluciones de Visión por Compu
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="OxfordPetsXAI/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica10.1">Abrir</a>
   </p>
 </div>
 
@@ -561,7 +561,7 @@ Desarrollé experiencia en la construcción de **soluciones de Visión por Compu
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="YOLOv8DeteccionTracking/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica11">Abrir</a>
   </p>
 </div>
 
@@ -579,7 +579,7 @@ Desarrollé experiencia en la construcción de **soluciones de Visión por Compu
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="TrafficYOLOv8/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica11.1">Abrir</a>
   </p>
 </div>
 
@@ -607,7 +607,7 @@ Desarrollé experiencia en la construcción de **soluciones de Visión por Compu
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="SAMInundaciones/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica12">Abrir</a>
   </p>
 </div>
 
@@ -625,7 +625,7 @@ Desarrollé experiencia en la construcción de **soluciones de Visión por Compu
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="SAMAerialSegmentation/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica12.1">Abrir</a>
   </p>
 </div>
 
@@ -673,7 +673,7 @@ Desarrollé experiencia en el **ciclo completo de proyectos de NLP**, combinando
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="NLPTransformersFinanzas/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica13">Abrir</a>
   </p>
 </div>
 
@@ -690,7 +690,7 @@ Desarrollé experiencia en el **ciclo completo de proyectos de NLP**, combinando
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="OffendESTransformers/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica13.1">Abrir</a>
   </p>
 </div>
 
@@ -718,7 +718,7 @@ Desarrollé experiencia en el **ciclo completo de proyectos de NLP**, combinando
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="LangChainOpenAIIntro/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica14">Abrir</a>
   </p>
 </div>
 
@@ -736,7 +736,7 @@ Desarrollé experiencia en el **ciclo completo de proyectos de NLP**, combinando
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="LangChainDocsRAG/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica14.1">Abrir</a>
   </p>
 </div>
 
@@ -766,7 +766,7 @@ Desarrollé experiencia en el **ciclo completo de proyectos de NLP**, combinando
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="LangGraphAgents/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica15">Abrir</a>
   </p>
 </div>
 
@@ -784,7 +784,7 @@ Desarrollé experiencia en el **ciclo completo de proyectos de NLP**, combinando
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="LangGraphEcommerceSupport/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica15.1">Abrir</a>
   </p>
 </div>
 

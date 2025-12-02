@@ -1,9 +1,9 @@
 ---
-title: "Acerca de mí"
+title: "Acerca de mi"
 date: 2025-01-01
----
+--- 
 
-# Acerca de mí
+## Acerca de mí
 
 <div class="profile-hero">
   <img src="../assets/acerca/luis.png"Foto de perfil de Luis" loading="lazy">
@@ -43,33 +43,58 @@ Este portfolio reúne proyectos que reflejan mi **perfil colaborativo**, mi **vo
 
 ## Certificados
 
-<div class="x-cards-grid">
+<style>
+  /* Estilo para el efecto de zoom suave al pasar el ratón */
+  .cert-img {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+  }
+  .cert-img:hover {
+    transform: scale(1.05); /* Aumenta un 5% el tamaño al pasar el mouse */
+  }
+</style>
 
-  <div class="x-card">
-    <img src="../assets/acerca/cert1.png" alt="Cisco">
-    <div class="x-caption">Certificado en Programación en Python.
-      <small>Certificación obtenida por completar con éxito el curso "PCAP - Programming Essentials in Python" a través de la Cisco Networking Academy. El curso abarcó fundamentos de programación en Python aplicados a redes y automatización.</small>
+<div style="display: flex; flex-wrap: wrap; gap: 25px; justify-content: center;">
+
+  <div style="width: 300px; border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+    <a href="../assets/acerca/cert1.png" class="glightbox" data-type="image">
+      <img src="../assets/acerca/cert1.png" alt="Cisco" class="cert-img"
+           style="width: 100%; height: 300px; object-fit: cover; display: block;">
+    </a>    
+    <div style="padding: 20px;">
+      <h4 style="margin-top: 0; text-align: center; color: #333;">Programación en Python</h4>
+      <p style="font-size: 0.9em; color: #666; line-height: 1.5;">
+        Certificación "PCAP - Programming Essentials in Python" (Cisco). Clic en la imagen para ampliar.
+      </p>
+    </div>
+  </div>
+
+  <div style="width: 300px; border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">   
+    <a href="../assets/acerca/cert2.png" class="glightbox" data-type="image">
+      <img src="../assets/acerca/cert2.png" alt="Desafío ANCAP" class="cert-img"
+           style="width: 100%; height: 300px; object-fit: cover; display: block;">
+    </a>   
+    <div style="padding: 20px;">
+      <h4 style="margin-top: 0; text-align: center; color: #333;">Transformación 360°</h4>
+      <p style="font-size: 0.9em; color: #666; line-height: 1.5;">
+        Conferencia UTP y Google (Nov 2023). Clic en la imagen para ampliar.
+      </p>
+    </div>
+  </div>
+
+  <div style="width: 300px; border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">  
+    <a href="../assets/acerca/cert3.png" class="glightbox" data-type="image">
+      <img src="../assets/acerca/cert3.png" alt="Feria de Ciencias" class="cert-img"
+           style="width: 100%; height: 300px; object-fit: cover; display: block;">
+    </a>
+    <div style="padding: 20px;">
+      <h4 style="margin-top: 0; text-align: center; color: #333;">Feria de Ciencias</h4>
+      <p style="font-size: 0.9em; color: #666; line-height: 1.5;">
+        Certificado por participación destacada. Clic en la imagen para ampliar.
+      </p>
+    </div>
+  </div>
+
 </div>
 
 
-  <div class="x-card">
-    <img src="../assets/acerca/cert2.png" alt="Desafío ANCAP">
-  <div class="x-caption">Certificado de Participación en la conferencia "Transformación 360°".
-      <small>Certificado otorgado a Luis Eduardo Vaez Alvarez por asistir a la conferencia sobre cambios y usos de la tecnología en el crecimiento profesional y personal, organizada por la Universidad Tecnológica del Perú (UTP) en colaboración con Google, realizada en el Campus Trujillo en noviembre de 2023.</small>
-</div>
-
-
-  <div class="x-card">
-    <img src="../assets/acerca/cert3.png" alt="Feria de Ciencias">
-    <div class="x-caption">
-  Certificado de Participación en la conferencia "Transformación 360°".
-  <small>Certificado otorgado a Luis Eduardo Vaez Alvarez por asistir a la conferencia sobre cambios y usos de la tecnología en el crecimiento profesional y personal, organizada por la Universidad Tecnológica del Perú (UTP) en colaboración con Google, realizada en el Campus Trujillo en noviembre de 2023.</small>
-</div>
-
-
---- 
- ## Contacto
- 
-- 📧 <a href="mailto:luis.vaezx@correo.ucu.edu.uy">luis.vaezx@correo.ucu.edu.uy</a>  
-- 🌐 <a href="https://www.linkedin.com/in/luis-v%C3%A1ez-%C3%A1lvarez-514a5a357/" target="_blank">LinkedIn</a>
-- 💻 <a href="https://vaezgaming1-afk.github.io/PortafolioLuisVaez-IA/" target="_blank">GitHub</a> 

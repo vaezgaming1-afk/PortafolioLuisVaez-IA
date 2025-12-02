@@ -691,3 +691,336 @@ a.md-button.md-button--primary:focus-visible,
   color: var(--text-1);
   opacity: .9;
 }
+
+/* ==== HERO MÁS GRANDE ==== */
+
+.hero.hero--portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.8rem;
+  padding: 3rem 3.2rem 3.3rem;  /* más alto y ancho */
+  margin: 0 0 2.8rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    var(--md-primary-fg-color),
+    var(--md-accent-fg-color)
+  );
+  color: #fff;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.38);
+}
+
+.hero__content h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.1rem;     /* título más grande */
+}
+
+/* ==== BOTONES ORGANIZADOS Y VISIBLES ==== */
+
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.hero__actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+/* CTA principal */
+.hero__actions-row--main .md-button--primary {
+  padding-inline: 2.1rem;
+  font-weight: 600;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.5);
+}
+
+/* Botones secundarios: Acerca de mí / Descargar CV */
+.hero__actions-row--secondary .md-button {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.3);
+}
+
+.hero__actions-row--secondary .md-button:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* ==== "CARPETAS" EN UNA SOLA FILA ==== */
+
+.hero__meta {
+  list-style: none;
+  padding: 0;
+  margin: 1.3rem 0 0;
+  display: flex;
+  flex-wrap: nowrap;     /* una sola fila en desktop */
+  gap: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.hero__meta li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.24);
+  white-space: nowrap;   /* que no se corten las frases */
+}
+
+/* En pantallas pequeñas permitimos que se rompan en varias filas */
+@media (max-width: 900px) {
+  .hero.hero--portfolio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero__meta {
+    flex-wrap: wrap;
+  }
+}
+
+/* ===========================
+   HERO PORTAFOLIO (LAYOUT)
+   =========================== */
+
+.hero.hero--portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 3rem 3.2rem 3.3rem;
+  margin: 0 0 2.8rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    var(--md-primary-fg-color),
+    var(--md-accent-fg-color)
+  );
+  color: #fff;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.38);
+}
+
+/* Columna izquierda (texto) */
+.hero.hero--portfolio .hero__content {
+  flex: 2;
+  min-width: 0;
+}
+
+.hero.hero--portfolio .hero__content h1 {
+  margin: 0 0 0.6rem;
+  font-size: 2.1rem;
+  line-height: 1.15;
+}
+
+/* Columna derecha (tarjetas) */
+.hero.hero--portfolio .hero__side {
+  flex: 1;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  align-self: stretch;
+  justify-content: center;
+}
+
+/* ===========================
+   TARJETAS DERECHA ("CUADRADOS")
+   =========================== */
+
+.hero.hero--portfolio .hero-chip {
+  padding: 0.95rem 1.15rem;
+  border-radius: 1rem;
+  background: rgba(15, 23, 42, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.35);
+}
+
+.hero.hero--portfolio .hero-chip__label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
+.hero.hero--portfolio .hero-chip__value {
+  display: block;
+  margin-top: 0.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+/* ===========================
+   BOTONES ORDENADOS
+   =========================== */
+
+.hero.hero--portfolio .hero__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.hero.hero--portfolio .hero__actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+/* CTA principal */
+.hero.hero--portfolio .hero__actions-row--main .md-button--primary {
+  padding-inline: 2.1rem;
+  font-weight: 600;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.5);
+}
+
+/* Secundarios: Acerca de mí / CV */
+.hero.hero--portfolio .hero__actions-row--secondary .md-button {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.3);
+}
+
+.hero.hero--portfolio .hero__actions-row--secondary .md-button:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Pills de abajo en una fila limpia */
+.hero.hero--portfolio .hero__meta {
+  list-style: none;
+  padding: 0;
+  margin: 1.3rem 0 0;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.hero.hero--portfolio .hero__meta li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.24);
+  white-space: nowrap;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 900px) {
+  .hero.hero--portfolio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero.hero--portfolio .hero__side {
+    max-width: none;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hero.hero--portfolio .hero-chip {
+    flex: 1 1 220px;
+  }
+
+  .hero.hero--portfolio .hero__meta {
+    flex-wrap: wrap;
+  }
+}
+
+/* 1) Títulos y subtítulo un poco más grandes */
+
+.hero.hero--portfolio .hero__eyebrow {
+  margin: 0 0 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.9rem;       /* antes más chico */
+  opacity: 0.95;
+}
+
+.hero.hero--portfolio .hero__subtitle {
+  margin: 0 0 1.2rem;
+  max-width: 38rem;
+  font-size: 1.05rem;      /* un poco más grande */
+  opacity: 0.98;
+}
+
+/* 2) Centrar el bloque de botones y la fila secundaria */
+
+.hero.hero--portfolio .hero__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* centra todo el grupo */
+  gap: 0.7rem;
+  margin-top: 1.7rem;
+}
+
+.hero.hero--portfolio .hero__actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;  /* centra cada fila */
+}
+
+.hero.hero--portfolio .hero__actions-row--main .md-button--primary {
+  padding-inline: 2.2rem;
+  font-weight: 600;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.5);
+}
+
+/* 3) Pills de abajo sin overflow del hero */
+
+.hero.hero--portfolio .hero__meta {
+  list-style: none;
+  padding: 0;
+  margin: 1.4rem 0 0;
+  display: flex;
+  flex-wrap: wrap;          /* permite que bajen a segunda fila */
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  max-width: 100%;          /* no se pasan del contenedor */
+}
+
+.hero.hero--portfolio .hero__meta li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.24);
+  white-space: normal;      /* deja que el texto se corte en varias líneas */
+}
+
+/* En pantallas grandes, limitamos un poco el ancho para que se vean ordenadas */
+@media (min-width: 900px) {
+  .hero.hero--portfolio .hero__meta {
+    max-width: 36rem;
+  }
+}
+
+/* Mantener "Portafolio académico · Ingeniería de Sistemas" en una sola línea en desktop */
+@media (min-width: 900px) {
+  .hero.hero--portfolio .hero__eyebrow {
+    white-space: nowrap;   /* no permite el salto de línea */
+  }
+}
+
+/* En pantallas pequeñas sí dejamos que se parta si hace falta */
+@media (max-width: 899px) {
+  .hero.hero--portfolio .hero__eyebrow {
+    white-space: normal;
+  }
+}

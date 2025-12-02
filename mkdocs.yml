@@ -130,7 +130,14 @@ nav:
       - "Práctica 14":
           - 'Práctica 14 (Principal)': 'portfolio/Practica14.md'
           - 'Práctica 14.1': 'portfolio/Practica14.1.md'
-          
+
+      - "Práctica 15":
+          - 'Práctica 15 (Principal)': 'portfolio/Practica15.md'
+          - 'Práctica 15.1': 'portfolio/Practica15.1.md'          
+ 
+      - "Práctica 16":
+          - 'Práctica 16 (Principal)': 'portfolio/Practica16.md'
+       
       - 'Plantilla': 'portfolio/plantilla.md'
       
   - Recursos: recursos.md
