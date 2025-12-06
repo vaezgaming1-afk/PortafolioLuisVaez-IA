@@ -11,7 +11,9 @@ time_est: "4 h"
 time_spent: "—"
 ---
 
-# 📝 **Tarea: Análisis y Modelado de Enfermedad Cardíaca - Heart Disease Prediction**
+# 📝 **Análisis y Modelado de Enfermedad Cardíaca - Heart Disease Prediction**
+
+![comparation](../assets/ImgPractica6/img6.1.png)
 
 [![📘 Abrir Notebook en Google Colab](https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1ruGVGflNUR9ZF2bkXEzxsMMeHEkBoVSv?usp=sharing)  
 [![📊 Ver Visualizaciones en Drive](https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1OobureLwE9zKKL2xJLGCC6JcAJOD71DA?usp=drive_link)

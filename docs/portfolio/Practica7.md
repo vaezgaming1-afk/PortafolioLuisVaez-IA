@@ -1,25 +1,30 @@
-# 🚀 **Dominando el Ecosistema Neuronal: De Prototipos en Scikit-learn a Soluciones Avanzadas con PyTorch/TensorFlow**
+<h1 align="center"> Dominando el Ecosistema Neuronal: De Prototipos en Scikit-learn a Soluciones Avanzadas con PyTorch/TensorFlow 🚀</h1>
 
 ![BackpropagationBanner](../assets/acerca/Img8.png)
 
-> ✨ *Explorando arquitecturas avanzadas de redes neuronales y ajustando hiperparámetros en PyTorch para optimizar la precisión en tareas de reconocimiento de patrones.*
+<p align="center">
+  <em>Explorando arquitecturas avanzadas de redes neuronales y ajustando hiperparámetros en PyTorch para optimizar la precisión en tareas de reconocimiento de patrones.</em>
+</p>
 
----
-
-## 🏷️ **Etiquetas Rápidas**
+🏷️ **Etiquetas Rápidas**  
 `#8` `#Backpropagation` `#RedesNeuronales` `#Optimizadores` `#MachineLearning`
 
 
----
+## 🚀 Accesos Directos Importantes
 
-## 🚀 **Accesos Directos Importantes**
+> *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
 
-[![📘 Abrir Notebook en Google Colab](https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1Coz1MIP1lD7-wEgttMrmKsKcTKB92Nuo?usp=sharing)  
-[![📊 Ver Visualizaciones en Drive](https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1QLX5i7Hup0F2UCR660jwE_f9jYkQQoHO?usp=sharing)
+<div align="center">
 
-> ✅ *Haz clic en los botones para abrir el notebook y explorar las visualizaciones interactivas.*
+<a href="https://colab.research.google.com/drive/1Coz1MIP1lD7-wEgttMrmKsKcTKB92Nuo?usp=sharing">
+  <img src="https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Abrir Notebook en Colab" />
+</a>
+&nbsp;
+<a href="https://drive.google.com/drive/folders/1QLX5i7Hup0F2UCR660jwE_f9jYkQQoHO?usp=sharing">
+  <img src="https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white" alt="Ver visualizaciones en Drive" />
+</a>
 
----
+</div>
 
 ---
 

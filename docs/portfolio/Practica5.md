@@ -12,7 +12,7 @@ time_spent: "—"
 
 ---
 
-# 📝 **TAREA 5: Validación y Selección de Modelos**
+# 📝 **Validación y Selección de Modelos**
 
 [![📘 Abrir Notebook en Google Colab](https://img.shields.io/badge/Abrir%20Notebook-Google%20Colab-brightgreen?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/11HF94BcKLXSQA5HYoROzCNkrZ5YMThvc?usp=sharing)  
 [![📊 Ver Visualizaciones en Drive](https://img.shields.io/badge/Visualizaciones-Google%20Drive-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/1u5slVR1ntJ0QzvihEHKp0MX1on18Jo3y?usp=drive_link)

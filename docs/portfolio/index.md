@@ -837,7 +837,7 @@ Production ML Systems (Google ML Crash Course) · *MLOps: Continuous Delivery an
 
   <p class="actions">
     <span class="pill">Completado</span>
-    <a class="md-button md-button--primary" href="MLOpsSistemaProduccion/">Abrir</a>
+    <a class="md-button md-button--primary" href="Practica16">Abrir</a>
   </p>
 </div>
 

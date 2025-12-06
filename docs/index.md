@@ -38,8 +38,15 @@
       <span class="hero-chip__value">Objetivo → Proceso → Evidencia → Reflexión</span>
     </div>
   </div>
-  
+
 </div>
+
+### Contacto
+ 
+- 📧 <a href="mailto:luis.vaezx@correo.ucu.edu.uy">luis.vaezx@correo.ucu.edu.uy</a>  
+- 🌐 <a href="https://www.linkedin.com/in/luis-v%C3%A1ez-%C3%A1lvarez-514a5a357/" target="_blank">LinkedIn</a>
+- 💻 <a href="https://vaezgaming1-afk.github.io/PortafolioLuisVaez-IA/" target="_blank">GitHub</a> 
+
 
 
 
